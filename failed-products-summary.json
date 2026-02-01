@@ -1,0 +1,76 @@
+{
+  "timestamp": "2025-07-08T22:01:28.317Z",
+  "analysis": {
+    "totalCsvProducts": 213,
+    "successfulUpdates": 140,
+    "failedUpdates": 73,
+    "keyFinding": "Failures are NOT due to missing barcodes - barcode 41-000005-A exists in database",
+    "likelyFailureReasons": [
+      "Invalid unit_id values (non-existent unit names or malformed UUIDs)",
+      "Missing required fields (empty barcode, missing price, etc.)",
+      "Data type mismatches (non-numeric price, invalid stock_quantity)",
+      "Constraint violations (negative stock, invalid categories)",
+      "Character encoding issues in CSV parsing",
+      "Malformed barcode formats that don't match database patterns"
+    ],
+    "databaseStats": {
+      "totalProducts": 2502,
+      "productsWithBarcodes": 2498,
+      "nullUnitProducts": 0,
+      "unitDistribution": [
+        {
+          "unit_name": "UNITS",
+          "unit_id": "137a47e674e46179e996a40668389c1d",
+          "product_count": 2482
+        },
+        {
+          "unit_name": "INCHES",
+          "unit_id": "e8fae8be7b12e13fba1ee0aa84864fef",
+          "product_count": 15
+        },
+        {
+          "unit_name": "FT",
+          "unit_id": "d5f2fdf3d7db18133ad28d10299da292",
+          "product_count": 3
+        },
+        {
+          "unit_name": "GRAMS",
+          "unit_id": "abc31eb28f0ae45079096daa98848ec0",
+          "product_count": 2
+        },
+        {
+          "unit_name": "BOXES",
+          "unit_id": "cc11ed2c52ca95a06c925c14eafd1932",
+          "product_count": 0
+        }
+      ],
+      "priceDistribution": [
+        {
+          "price_category": "Normal Price",
+          "count": 2465
+        },
+        {
+          "price_category": "Very High Price",
+          "count": 3
+        },
+        {
+          "price_category": "Zero Price",
+          "count": 34
+        }
+      ]
+    }
+  },
+  "recommendations": [
+    "Provide the original UpdateTest4units.csv file to identify exact failures",
+    "Most likely cause: Invalid unit_id values in CSV that don't match database units",
+    "Secondary causes: Data format issues, constraint violations, encoding problems",
+    "Required action: Validate CSV data against database schema before creating import file"
+  ],
+  "nextSteps": [
+    "1. Upload or provide the UpdateTest4units.csv file",
+    "2. Run validation to capture specific error messages",
+    "3. Extract the 73 failed products with their specific issues",
+    "4. Create corrected import CSV for new product creation",
+    "5. Import the missing products to complete the inventory update"
+  ]
+}

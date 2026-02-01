@@ -1,0 +1,144 @@
+{
+  "baseline_id": "BASELINE_20250529_130346",
+  "creation_timestamp": "2025-05-29T13:03:47.010221+00:00",
+  "source_audit_session": "9d70b7ad-4eb9-4111-88b3-58369c6a116d",
+  "system_info": {
+    "total_pages": 13,
+    "audit_version": "1.0.0",
+    "system_state": "BASELINE_ESTABLISHED",
+    "health_score": 94,
+    "completion_percentage": 100.0
+  },
+  "baseline_components": {
+    "page_definitions": "baseline/page_definitions/",
+    "error_patterns": "baseline/error_patterns/",
+    "performance_benchmarks": "baseline/performance_benchmarks/",
+    "navigation_maps": "baseline/navigation_maps/",
+    "functionality_catalog": "baseline/functionality_catalog/",
+    "known_issues": "baseline/known_issues/",
+    "remediation_tracking": "baseline/remediation_tracking/"
+  },
+  "page_catalog": {
+    "home": {
+      "url": "http://localhost:3000/",
+      "category": "core",
+      "risk_level": "low",
+      "baseline_status": "PASSED"
+    },
+    "dashboard": {
+      "url": "http://localhost:3000/dashboard",
+      "category": "core", 
+      "risk_level": "medium",
+      "baseline_status": "PASSED"
+    },
+    "products": {
+      "url": "http://localhost:3000/products",
+      "category": "core",
+      "risk_level": "high",
+      "baseline_status": "PASSED"
+    },
+    "image-cataloging": {
+      "url": "http://localhost:3000/image-cataloging",
+      "category": "core",
+      "risk_level": "high",
+      "baseline_status": "PASSED"
+    },
+    "scan": {
+      "url": "http://localhost:3000/scan",
+      "category": "core",
+      "risk_level": "high",
+      "baseline_status": "PASSED"
+    },
+    "orders": {
+      "url": "http://localhost:3000/orders",
+      "category": "core",
+      "risk_level": "medium",
+      "baseline_status": "PASSED"
+    },
+    "customers": {
+      "url": "http://localhost:3000/customers",
+      "category": "core",
+      "risk_level": "medium",
+      "baseline_status": "PASSED"
+    },
+    "reports": {
+      "url": "http://localhost:3000/reports",
+      "category": "core",
+      "risk_level": "medium",
+      "baseline_status": "PASSED"
+    },
+    "inventory-alerts": {
+      "url": "http://localhost:3000/inventory/alerts",
+      "category": "core",
+      "risk_level": "medium",
+      "baseline_status": "PASSED"
+    },
+    "ai-assistant": {
+      "url": "http://localhost:3000/ai-assistant",
+      "category": "ai",
+      "risk_level": "high",
+      "baseline_status": "PASSED"
+    },
+    "ai-assistant-custom-agents": {
+      "url": "http://localhost:3000/ai-assistant/custom-agents",
+      "category": "ai",
+      "risk_level": "high",
+      "baseline_status": "PASSED"
+    },
+    "ai-assistant-settings": {
+      "url": "http://localhost:3000/ai-assistant/settings",
+      "category": "ai",
+      "risk_level": "high",
+      "baseline_status": "PASSED"
+    },
+    "settings": {
+      "url": "http://localhost:3000/settings",
+      "category": "system",
+      "risk_level": "medium",
+      "baseline_status": "PASSED"
+    }
+  },
+  "baseline_metrics": {
+    "error_summary": {
+      "critical": 0,
+      "high": 0,
+      "medium": 1,
+      "low": 1,
+      "total": 2
+    },
+    "checkpoint_summary": {
+      "total_checkpoints": 118,
+      "macro_checkpoints": 13,
+      "micro_checkpoints": 104,
+      "recovery_checkpoints": 1
+    },
+    "performance_baseline": {
+      "average_response_time": "< 3000ms",
+      "accessibility_pass_rate": "100%",
+      "navigation_pass_rate": "100%",
+      "functionality_pass_rate": "100%",
+      "error_handling_pass_rate": "100%"
+    }
+  },
+  "next_audit_preparation": {
+    "comparative_analysis_enabled": true,
+    "regression_detection_enabled": true,
+    "improvement_tracking_enabled": true,
+    "delta_analysis_enabled": true,
+    "baseline_comparison_enabled": true
+  },
+  "known_baseline_issues": [
+    {
+      "severity": "medium",
+      "type": "response_time",
+      "description": "One page with response time between 3-5 seconds",
+      "tracking_status": "monitored"
+    },
+    {
+      "severity": "low", 
+      "type": "content_length",
+      "description": "One page with content length below 1000 bytes",
+      "tracking_status": "monitored"
+    }
+  ]
+}

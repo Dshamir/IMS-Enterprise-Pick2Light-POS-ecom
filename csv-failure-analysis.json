@@ -1,0 +1,985 @@
+{
+  "timestamp": "2025-07-08T22:08:27.351Z",
+  "csvFile": "UpdateTest4units.csv",
+  "totalRows": 214,
+  "validRows": 135,
+  "failedRows": 79,
+  "failurePatterns": {
+    "Barcode contains whitespace/tabs": 71,
+    "Duplicate barcode in CSV (5 occurrences)": 5,
+    "Product not found in database (would need to be imported as new)": 2,
+    "Missing price": 2,
+    "Duplicate barcode in CSV (2 occurrences)": 4,
+    "Invalid unit_id: \"FT^2\"": 1,
+    "Missing barcode": 1,
+    "Missing unit_id": 1,
+    "Missing stock_quantity": 1
+  },
+  "detailedFailures": [
+    {
+      "rowNumber": 10,
+      "barcode": "41-000004-A",
+      "issues": [
+        "Barcode contains whitespace/tabs"
+      ],
+      "data": {
+        "unit_id": "UNITS",
+        "price": "0.16",
+        "stock_quantity": "281"
+      }
+    },
+    {
+      "rowNumber": 11,
+      "barcode": "41-000005-A",
+      "issues": [
+        "Barcode contains whitespace/tabs"
+      ],
+      "data": {
+        "unit_id": "UNITS",
+        "price": "0.17",
+        "stock_quantity": "670"
+      }
+    },
+    {
+      "rowNumber": 12,
+      "barcode": "41-000006-A",
+      "issues": [
+        "Barcode contains whitespace/tabs"
+      ],
+      "data": {
+        "unit_id": "UNITS",
+        "price": "0.1",
+        "stock_quantity": "3036"
+      }
+    },
+    {
+      "rowNumber": 13,
+      "barcode": "41-000007-A",
+      "issues": [
+        "Barcode contains whitespace/tabs"
+      ],
+      "data": {
+        "unit_id": "UNITS",
+        "price": "0.28",
+        "stock_quantity": "121"
+      }
+    },
+    {
+      "rowNumber": 14,
+      "barcode": "41-000008-A",
+      "issues": [
+        "Barcode contains whitespace/tabs"
+      ],
+      "data": {
+        "unit_id": "UNITS",
+        "price": "0.39",
+        "stock_quantity": "153"
+      }
+    },
+    {
+      "rowNumber": 15,
+      "barcode": "41-000010-A",
+      "issues": [
+        "Barcode contains whitespace/tabs"
+      ],
+      "data": {
+        "unit_id": "UNITS",
+        "price": "0.09",
+        "stock_quantity": "500"
+      }
+    },
+    {
+      "rowNumber": 16,
+      "barcode": "41-000011-A",
+      "issues": [
+        "Duplicate barcode in CSV (5 occurrences)"
+      ],
+      "data": {
+        "unit_id": "UNITS",
+        "price": "0.09",
+        "stock_quantity": "362"
+      }
+    },
+    {
+      "rowNumber": 17,
+      "barcode": "41-000011-A",
+      "issues": [
+        "Barcode contains whitespace/tabs",
+        "Duplicate barcode in CSV (5 occurrences)"
+      ],
+      "data": {
+        "unit_id": "UNITS",
+        "price": "0.09",
+        "stock_quantity": "204"
+      }
+    },
+    {
+      "rowNumber": 18,
+      "barcode": "41-000011-A",
+      "issues": [
+        "Barcode contains whitespace/tabs",
+        "Duplicate barcode in CSV (5 occurrences)"
+      ],
+      "data": {
+        "unit_id": "UNITS",
+        "price": "0.09",
+        "stock_quantity": "307"
+      }
+    },
+    {
+      "rowNumber": 19,
+      "barcode": "41-000011-A",
+      "issues": [
+        "Barcode contains whitespace/tabs",
+        "Duplicate barcode in CSV (5 occurrences)"
+      ],
+      "data": {
+        "unit_id": "UNITS",
+        "price": "0.09",
+        "stock_quantity": "213"
+      }
+    },
+    {
+      "rowNumber": 20,
+      "barcode": "41-000011-A",
+      "issues": [
+        "Barcode contains whitespace/tabs",
+        "Duplicate barcode in CSV (5 occurrences)"
+      ],
+      "data": {
+        "unit_id": "UNITS",
+        "price": "0.09",
+        "stock_quantity": "140"
+      }
+    },
+    {
+      "rowNumber": 22,
+      "barcode": "41-000013-A",
+      "issues": [
+        "Barcode contains whitespace/tabs"
+      ],
+      "data": {
+        "unit_id": "UNITS",
+        "price": "0.65",
+        "stock_quantity": "137"
+      }
+    },
+    {
+      "rowNumber": 23,
+      "barcode": "41-000014-A",
+      "issues": [
+        "Barcode contains whitespace/tabs"
+      ],
+      "data": {
+        "unit_id": "UNITS",
+        "price": "0.53",
+        "stock_quantity": "47"
+      }
+    },
+    {
+      "rowNumber": 30,
+      "barcode": "48-000001-A",
+      "issues": [
+        "Barcode contains whitespace/tabs"
+      ],
+      "data": {
+        "unit_id": "INCHES",
+        "price": "0.03",
+        "stock_quantity": "300"
+      }
+    },
+    {
+      "rowNumber": 31,
+      "barcode": "48-000002-A",
+      "issues": [
+        "Barcode contains whitespace/tabs"
+      ],
+      "data": {
+        "unit_id": "INCHES",
+        "price": "0.05",
+        "stock_quantity": "118"
+      }
+    },
+    {
+      "rowNumber": 32,
+      "barcode": "48-000003-A",
+      "issues": [
+        "Barcode contains whitespace/tabs"
+      ],
+      "data": {
+        "unit_id": "INCHES",
+        "price": "0.03",
+        "stock_quantity": "118"
+      }
+    },
+    {
+      "rowNumber": 33,
+      "barcode": "48-000004-A",
+      "issues": [
+        "Barcode contains whitespace/tabs"
+      ],
+      "data": {
+        "unit_id": "INCHES",
+        "price": "0.03",
+        "stock_quantity": "1176.4"
+      }
+    },
+    {
+      "rowNumber": 34,
+      "barcode": "48-000005-A",
+      "issues": [
+        "Barcode contains whitespace/tabs"
+      ],
+      "data": {
+        "unit_id": "INCHES",
+        "price": "0.3",
+        "stock_quantity": "1164"
+      }
+    },
+    {
+      "rowNumber": 35,
+      "barcode": "48-000006-A",
+      "issues": [
+        "Barcode contains whitespace/tabs"
+      ],
+      "data": {
+        "unit_id": "INCHES",
+        "price": "0.4",
+        "stock_quantity": "36"
+      }
+    },
+    {
+      "rowNumber": 36,
+      "barcode": "48-000007-A",
+      "issues": [
+        "Barcode contains whitespace/tabs"
+      ],
+      "data": {
+        "unit_id": "UNITS",
+        "price": "2.67",
+        "stock_quantity": "18"
+      }
+    },
+    {
+      "rowNumber": 37,
+      "barcode": "48-000010-A",
+      "issues": [
+        "Barcode contains whitespace/tabs"
+      ],
+      "data": {
+        "unit_id": "INCHES",
+        "price": "0.44",
+        "stock_quantity": "100"
+      }
+    },
+    {
+      "rowNumber": 38,
+      "barcode": "48-000013-A",
+      "issues": [
+        "Barcode contains whitespace/tabs"
+      ],
+      "data": {
+        "unit_id": "INCHES",
+        "price": "0.31",
+        "stock_quantity": "100"
+      }
+    },
+    {
+      "rowNumber": 39,
+      "barcode": "48-000014-A",
+      "issues": [
+        "Barcode contains whitespace/tabs"
+      ],
+      "data": {
+        "unit_id": "INCHES",
+        "price": "0.31",
+        "stock_quantity": "140"
+      }
+    },
+    {
+      "rowNumber": 42,
+      "barcode": "48-000064",
+      "issues": [
+        "Product not found in database (would need to be imported as new)"
+      ],
+      "data": {
+        "unit_id": "UNITS",
+        "price": "3.47",
+        "stock_quantity": "32"
+      }
+    },
+    {
+      "rowNumber": 55,
+      "barcode": "49-000015-A",
+      "issues": [
+        "Barcode contains whitespace/tabs"
+      ],
+      "data": {
+        "unit_id": "UNITS",
+        "price": "5.93",
+        "stock_quantity": "60"
+      }
+    },
+    {
+      "rowNumber": 60,
+      "barcode": "49-000020-B",
+      "issues": [
+        "Barcode contains whitespace/tabs"
+      ],
+      "data": {
+        "unit_id": "UNITS",
+        "price": "91.8",
+        "stock_quantity": "19"
+      }
+    },
+    {
+      "rowNumber": 62,
+      "barcode": "49-000022-C",
+      "issues": [
+        "Barcode contains whitespace/tabs"
+      ],
+      "data": {
+        "unit_id": "UNITS",
+        "price": "44.54",
+        "stock_quantity": "44"
+      }
+    },
+    {
+      "rowNumber": 63,
+      "barcode": "49-000026-A",
+      "issues": [
+        "Barcode contains whitespace/tabs"
+      ],
+      "data": {
+        "unit_id": "UNITS",
+        "price": "0.8",
+        "stock_quantity": "11"
+      }
+    },
+    {
+      "rowNumber": 65,
+      "barcode": "49-000032-A",
+      "issues": [
+        "Barcode contains whitespace/tabs"
+      ],
+      "data": {
+        "unit_id": "UNITS",
+        "price": "13.68",
+        "stock_quantity": "44"
+      }
+    },
+    {
+      "rowNumber": 66,
+      "barcode": "49-000033-A",
+      "issues": [
+        "Barcode contains whitespace/tabs"
+      ],
+      "data": {
+        "unit_id": "UNITS",
+        "price": "3.93",
+        "stock_quantity": "9"
+      }
+    },
+    {
+      "rowNumber": 72,
+      "barcode": "49-000043-A",
+      "issues": [
+        "Barcode contains whitespace/tabs"
+      ],
+      "data": {
+        "unit_id": "UNITS",
+        "price": "0.62",
+        "stock_quantity": "1"
+      }
+    },
+    {
+      "rowNumber": 80,
+      "barcode": "49-000064-A",
+      "issues": [
+        "Barcode contains whitespace/tabs"
+      ],
+      "data": {
+        "unit_id": "UNITS",
+        "price": "16.98",
+        "stock_quantity": "6"
+      }
+    },
+    {
+      "rowNumber": 82,
+      "barcode": "49-000075-A",
+      "issues": [
+        "Barcode contains whitespace/tabs"
+      ],
+      "data": {
+        "unit_id": "UNITS",
+        "price": "91.97",
+        "stock_quantity": "19"
+      }
+    },
+    {
+      "rowNumber": 83,
+      "barcode": "49-000076 -A",
+      "issues": [
+        "Product not found in database (would need to be imported as new)"
+      ],
+      "data": {
+        "unit_id": "UNITS",
+        "price": "45.56",
+        "stock_quantity": "6"
+      }
+    },
+    {
+      "rowNumber": 85,
+      "barcode": "49-500001-D",
+      "issues": [
+        "Missing price"
+      ],
+      "data": {
+        "unit_id": "UNITS",
+        "price": "",
+        "stock_quantity": "36"
+      }
+    },
+    {
+      "rowNumber": 86,
+      "barcode": "49-500002-A",
+      "issues": [
+        "Barcode contains whitespace/tabs"
+      ],
+      "data": {
+        "unit_id": "UNITS",
+        "price": "94.71",
+        "stock_quantity": "9"
+      }
+    },
+    {
+      "rowNumber": 87,
+      "barcode": "49-600002-A",
+      "issues": [
+        "Duplicate barcode in CSV (2 occurrences)"
+      ],
+      "data": {
+        "unit_id": "UNITS",
+        "price": "154",
+        "stock_quantity": "6"
+      }
+    },
+    {
+      "rowNumber": 88,
+      "barcode": "49-600002-A",
+      "issues": [
+        "Duplicate barcode in CSV (2 occurrences)"
+      ],
+      "data": {
+        "unit_id": "UNITS",
+        "price": "10",
+        "stock_quantity": "2"
+      }
+    },
+    {
+      "rowNumber": 90,
+      "barcode": "50-000001-A",
+      "issues": [
+        "Barcode contains whitespace/tabs"
+      ],
+      "data": {
+        "unit_id": "UNITS",
+        "price": "11.39",
+        "stock_quantity": "64"
+      }
+    },
+    {
+      "rowNumber": 92,
+      "barcode": "80-000009-A",
+      "issues": [
+        "Barcode contains whitespace/tabs"
+      ],
+      "data": {
+        "unit_id": "UNITS",
+        "price": "0.17",
+        "stock_quantity": "616"
+      }
+    },
+    {
+      "rowNumber": 99,
+      "barcode": "80-000026-A",
+      "issues": [
+        "Barcode contains whitespace/tabs",
+        "Duplicate barcode in CSV (2 occurrences)"
+      ],
+      "data": {
+        "unit_id": "ML",
+        "price": "0.74",
+        "stock_quantity": "122"
+      }
+    },
+    {
+      "rowNumber": 100,
+      "barcode": "80-000026-A",
+      "issues": [
+        "Barcode contains whitespace/tabs",
+        "Duplicate barcode in CSV (2 occurrences)"
+      ],
+      "data": {
+        "unit_id": "ML",
+        "price": "0.74",
+        "stock_quantity": "300"
+      }
+    },
+    {
+      "rowNumber": 107,
+      "barcode": "80-000039-A",
+      "issues": [
+        "Barcode contains whitespace/tabs"
+      ],
+      "data": {
+        "unit_id": "UNITS",
+        "price": "0.17",
+        "stock_quantity": "176"
+      }
+    },
+    {
+      "rowNumber": 111,
+      "barcode": "80-000050-A",
+      "issues": [
+        "Barcode contains whitespace/tabs"
+      ],
+      "data": {
+        "unit_id": "UNITS",
+        "price": "0.3",
+        "stock_quantity": "52"
+      }
+    },
+    {
+      "rowNumber": 112,
+      "barcode": "80-000053-A",
+      "issues": [
+        "Barcode contains whitespace/tabs"
+      ],
+      "data": {
+        "unit_id": "UNITS",
+        "price": "0.95",
+        "stock_quantity": "0.95"
+      }
+    },
+    {
+      "rowNumber": 115,
+      "barcode": "80-000072-A",
+      "issues": [
+        "Barcode contains whitespace/tabs"
+      ],
+      "data": {
+        "unit_id": "UNITS",
+        "price": "0.27",
+        "stock_quantity": "37"
+      }
+    },
+    {
+      "rowNumber": 127,
+      "barcode": "80-000102-A",
+      "issues": [
+        "Barcode contains whitespace/tabs"
+      ],
+      "data": {
+        "unit_id": "GRAMS",
+        "price": "1.81",
+        "stock_quantity": "16.5"
+      }
+    },
+    {
+      "rowNumber": 128,
+      "barcode": "80-000113-A",
+      "issues": [
+        "Barcode contains whitespace/tabs"
+      ],
+      "data": {
+        "unit_id": "UNITS",
+        "price": "0.16",
+        "stock_quantity": "87"
+      }
+    },
+    {
+      "rowNumber": 129,
+      "barcode": "80-000114-A",
+      "issues": [
+        "Barcode contains whitespace/tabs"
+      ],
+      "data": {
+        "unit_id": "UNITS",
+        "price": "0.61",
+        "stock_quantity": "118"
+      }
+    },
+    {
+      "rowNumber": 132,
+      "barcode": "80-000123-A",
+      "issues": [
+        "Barcode contains whitespace/tabs"
+      ],
+      "data": {
+        "unit_id": "UNITS",
+        "price": "0.1",
+        "stock_quantity": "166"
+      }
+    },
+    {
+      "rowNumber": 133,
+      "barcode": "80-000144-A",
+      "issues": [
+        "Barcode contains whitespace/tabs"
+      ],
+      "data": {
+        "unit_id": "INCHES",
+        "price": "0.86",
+        "stock_quantity": "24"
+      }
+    },
+    {
+      "rowNumber": 134,
+      "barcode": "80-000145-A",
+      "issues": [
+        "Barcode contains whitespace/tabs"
+      ],
+      "data": {
+        "unit_id": "UNITS",
+        "price": "0.05",
+        "stock_quantity": "63"
+      }
+    },
+    {
+      "rowNumber": 135,
+      "barcode": "80-000146-A",
+      "issues": [
+        "Barcode contains whitespace/tabs"
+      ],
+      "data": {
+        "unit_id": "UNITS",
+        "price": "0.1",
+        "stock_quantity": "38"
+      }
+    },
+    {
+      "rowNumber": 136,
+      "barcode": "80-000147-A",
+      "issues": [
+        "Barcode contains whitespace/tabs"
+      ],
+      "data": {
+        "unit_id": "INCHES",
+        "price": "0.34",
+        "stock_quantity": "4041"
+      }
+    },
+    {
+      "rowNumber": 140,
+      "barcode": "80-000220-A",
+      "issues": [
+        "Barcode contains whitespace/tabs"
+      ],
+      "data": {
+        "unit_id": "UNITS",
+        "price": "0.24",
+        "stock_quantity": "60"
+      }
+    },
+    {
+      "rowNumber": 141,
+      "barcode": "80-000283-A",
+      "issues": [
+        "Barcode contains whitespace/tabs"
+      ],
+      "data": {
+        "unit_id": "UNITS",
+        "price": "1",
+        "stock_quantity": "283"
+      }
+    },
+    {
+      "rowNumber": 147,
+      "barcode": "85-000010-D",
+      "issues": [
+        "Barcode contains whitespace/tabs"
+      ],
+      "data": {
+        "unit_id": "UNITS",
+        "price": "10",
+        "stock_quantity": "28"
+      }
+    },
+    {
+      "rowNumber": 148,
+      "barcode": "85-000019-A",
+      "issues": [
+        "Barcode contains whitespace/tabs"
+      ],
+      "data": {
+        "unit_id": "UNITS",
+        "price": "10",
+        "stock_quantity": "32"
+      }
+    },
+    {
+      "rowNumber": 160,
+      "barcode": "87-000018-A",
+      "issues": [
+        "Barcode contains whitespace/tabs"
+      ],
+      "data": {
+        "unit_id": "UNITS",
+        "price": "15",
+        "stock_quantity": "13"
+      }
+    },
+    {
+      "rowNumber": 162,
+      "barcode": "87-000020-A",
+      "issues": [
+        "Barcode contains whitespace/tabs"
+      ],
+      "data": {
+        "unit_id": "UNITS",
+        "price": "9.22",
+        "stock_quantity": "282"
+      }
+    },
+    {
+      "rowNumber": 166,
+      "barcode": "87-000025-A",
+      "issues": [
+        "Barcode contains whitespace/tabs"
+      ],
+      "data": {
+        "unit_id": "UNITS",
+        "price": "90.45",
+        "stock_quantity": "61"
+      }
+    },
+    {
+      "rowNumber": 170,
+      "barcode": "87-000042-A",
+      "issues": [
+        "Barcode contains whitespace/tabs"
+      ],
+      "data": {
+        "unit_id": "UNITS",
+        "price": "15",
+        "stock_quantity": "12"
+      }
+    },
+    {
+      "rowNumber": 171,
+      "barcode": "87-000043-A",
+      "issues": [
+        "Barcode contains whitespace/tabs"
+      ],
+      "data": {
+        "unit_id": "UNITS",
+        "price": "15",
+        "stock_quantity": "12"
+      }
+    },
+    {
+      "rowNumber": 183,
+      "barcode": "87-000080-A",
+      "issues": [
+        "Barcode contains whitespace/tabs"
+      ],
+      "data": {
+        "unit_id": "UNITS",
+        "price": "12",
+        "stock_quantity": "6"
+      }
+    },
+    {
+      "rowNumber": 184,
+      "barcode": "87-000081-A",
+      "issues": [
+        "Barcode contains whitespace/tabs"
+      ],
+      "data": {
+        "unit_id": "UNITS",
+        "price": "20",
+        "stock_quantity": "9"
+      }
+    },
+    {
+      "rowNumber": 185,
+      "barcode": "87-000082-A",
+      "issues": [
+        "Barcode contains whitespace/tabs"
+      ],
+      "data": {
+        "unit_id": "UNITS",
+        "price": "15",
+        "stock_quantity": "8"
+      }
+    },
+    {
+      "rowNumber": 186,
+      "barcode": "88-000001-A",
+      "issues": [
+        "Barcode contains whitespace/tabs"
+      ],
+      "data": {
+        "unit_id": "INCHES",
+        "price": "8.93",
+        "stock_quantity": "408.34"
+      }
+    },
+    {
+      "rowNumber": 187,
+      "barcode": "88-000002-A",
+      "issues": [
+        "Barcode contains whitespace/tabs"
+      ],
+      "data": {
+        "unit_id": "INCHES",
+        "price": "6.46",
+        "stock_quantity": "561.06"
+      }
+    },
+    {
+      "rowNumber": 194,
+      "barcode": "88-000009-A",
+      "issues": [
+        "Barcode contains whitespace/tabs"
+      ],
+      "data": {
+        "unit_id": "INCHES",
+        "price": "5.48",
+        "stock_quantity": "250.89"
+      }
+    },
+    {
+      "rowNumber": 196,
+      "barcode": "90-000048-A",
+      "issues": [
+        "Barcode contains whitespace/tabs"
+      ],
+      "data": {
+        "unit_id": "UNITS",
+        "price": "50",
+        "stock_quantity": "6"
+      }
+    },
+    {
+      "rowNumber": 197,
+      "barcode": "90-000053-A",
+      "issues": [
+        "Barcode contains whitespace/tabs"
+      ],
+      "data": {
+        "unit_id": "UNITS",
+        "price": "50",
+        "stock_quantity": "100"
+      }
+    },
+    {
+      "rowNumber": 198,
+      "barcode": "90-000092-A",
+      "issues": [
+        "Barcode contains whitespace/tabs"
+      ],
+      "data": {
+        "unit_id": "INCHES",
+        "price": "0.21",
+        "stock_quantity": "1000"
+      }
+    },
+    {
+      "rowNumber": 199,
+      "barcode": "90-000112-A",
+      "issues": [
+        "Barcode contains whitespace/tabs"
+      ],
+      "data": {
+        "unit_id": "UNITS",
+        "price": "25",
+        "stock_quantity": "43"
+      }
+    },
+    {
+      "rowNumber": 202,
+      "barcode": "93-000004-A",
+      "issues": [
+        "Barcode contains whitespace/tabs"
+      ],
+      "data": {
+        "unit_id": "UNITS",
+        "price": "12.68",
+        "stock_quantity": "31"
+      }
+    },
+    {
+      "rowNumber": 203,
+      "barcode": "93-000005-A",
+      "issues": [
+        "Barcode contains whitespace/tabs"
+      ],
+      "data": {
+        "unit_id": "UNITS",
+        "price": "23",
+        "stock_quantity": "6"
+      }
+    },
+    {
+      "rowNumber": 204,
+      "barcode": "93-000006-A",
+      "issues": [
+        "Barcode contains whitespace/tabs"
+      ],
+      "data": {
+        "unit_id": "UNITS",
+        "price": "20",
+        "stock_quantity": "13"
+      }
+    },
+    {
+      "rowNumber": 206,
+      "barcode": "93-000013-A",
+      "issues": [
+        "Barcode contains whitespace/tabs"
+      ],
+      "data": {
+        "unit_id": "UNITS",
+        "price": "6.85",
+        "stock_quantity": "9"
+      }
+    },
+    {
+      "rowNumber": 213,
+      "barcode": "90-000109-A",
+      "issues": [
+        "Invalid unit_id: \"FT^2\""
+      ],
+      "data": {
+        "unit_id": "FT^2",
+        "price": "15.23",
+        "stock_quantity": "1000"
+      }
+    },
+    {
+      "rowNumber": 215,
+      "barcode": "",
+      "issues": [
+        "Missing barcode",
+        "Missing unit_id",
+        "Missing price",
+        "Missing stock_quantity"
+      ],
+      "data": {
+        "unit_id": "",
+        "price": "",
+        "stock_quantity": ""
+      }
+    }
+  ],
+  "newProductsToImport": 2,
+  "recommendations": [
+    "Fix whitespace/tab issues in barcodes",
+    "Replace FT^2 with FT2 in unit_id",
+    "Handle empty price values",
+    "Import missing products as new items",
+    "Check for duplicate barcodes in CSV"
+  ]
+}

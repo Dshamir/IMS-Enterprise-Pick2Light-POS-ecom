@@ -1,0 +1,188 @@
+{
+  "timestamp": "2025-07-08T22:09:30.381Z",
+  "totalItems": 11,
+  "items": [
+    {
+      "rowNumber": 16,
+      "originalBarcode": "41-000011-A",
+      "cleanBarcode": "41-000011-A",
+      "unit_id": "UNITS",
+      "price": "0.09",
+      "stock_quantity": "362",
+      "issues": [
+        "Duplicate barcode in CSV (5 occurrences)"
+      ],
+      "existingProduct": {
+        "id": "be72d0d78dfe73d2a29455720a807180",
+        "name": "NCR-001 - 41-000011-A CONN HOUSING 2.5MM XH 4POS"
+      },
+      "recommendation": "Resolve duplicate entries - keep only one or use different barcodes"
+    },
+    {
+      "rowNumber": 17,
+      "originalBarcode": "41-000011-A\t",
+      "cleanBarcode": "41-000011-A",
+      "unit_id": "UNITS",
+      "price": "0.09",
+      "stock_quantity": "204",
+      "issues": [
+        "Barcode contains whitespace/tabs",
+        "Duplicate barcode in CSV (5 occurrences)"
+      ],
+      "existingProduct": {
+        "id": "be72d0d78dfe73d2a29455720a807180",
+        "name": "NCR-001 - 41-000011-A CONN HOUSING 2.5MM XH 4POS"
+      },
+      "recommendation": "Resolve duplicate entries - keep only one or use different barcodes"
+    },
+    {
+      "rowNumber": 18,
+      "originalBarcode": "41-000011-A\t",
+      "cleanBarcode": "41-000011-A",
+      "unit_id": "UNITS",
+      "price": "0.09",
+      "stock_quantity": "307",
+      "issues": [
+        "Barcode contains whitespace/tabs",
+        "Duplicate barcode in CSV (5 occurrences)"
+      ],
+      "existingProduct": {
+        "id": "be72d0d78dfe73d2a29455720a807180",
+        "name": "NCR-001 - 41-000011-A CONN HOUSING 2.5MM XH 4POS"
+      },
+      "recommendation": "Resolve duplicate entries - keep only one or use different barcodes"
+    },
+    {
+      "rowNumber": 19,
+      "originalBarcode": "41-000011-A\t",
+      "cleanBarcode": "41-000011-A",
+      "unit_id": "UNITS",
+      "price": "0.09",
+      "stock_quantity": "213",
+      "issues": [
+        "Barcode contains whitespace/tabs",
+        "Duplicate barcode in CSV (5 occurrences)"
+      ],
+      "existingProduct": {
+        "id": "be72d0d78dfe73d2a29455720a807180",
+        "name": "NCR-001 - 41-000011-A CONN HOUSING 2.5MM XH 4POS"
+      },
+      "recommendation": "Resolve duplicate entries - keep only one or use different barcodes"
+    },
+    {
+      "rowNumber": 20,
+      "originalBarcode": "41-000011-A\t",
+      "cleanBarcode": "41-000011-A",
+      "unit_id": "UNITS",
+      "price": "0.09",
+      "stock_quantity": "140",
+      "issues": [
+        "Barcode contains whitespace/tabs",
+        "Duplicate barcode in CSV (5 occurrences)"
+      ],
+      "existingProduct": {
+        "id": "be72d0d78dfe73d2a29455720a807180",
+        "name": "NCR-001 - 41-000011-A CONN HOUSING 2.5MM XH 4POS"
+      },
+      "recommendation": "Resolve duplicate entries - keep only one or use different barcodes"
+    },
+    {
+      "rowNumber": 85,
+      "originalBarcode": "49-500001-D",
+      "cleanBarcode": "49-500001-D",
+      "unit_id": "UNITS",
+      "price": "",
+      "stock_quantity": "36",
+      "issues": [
+        "Missing price"
+      ],
+      "existingProduct": {
+        "id": "0cd514d38400d77258a9c69cd3f1dde9",
+        "name": "ECO-006 - 49-500001-D PCR 4x tester Assembly"
+      },
+      "recommendation": "Add price value and retry"
+    },
+    {
+      "rowNumber": 87,
+      "originalBarcode": "49-600002-A",
+      "cleanBarcode": "49-600002-A",
+      "unit_id": "UNITS",
+      "price": "154",
+      "stock_quantity": "6",
+      "issues": [
+        "Duplicate barcode in CSV (2 occurrences)"
+      ],
+      "existingProduct": {
+        "id": "ac9da32561f1a1fff17f4823c82fee9b",
+        "name": "NCR-001 - 49-600002-A LCD CAPE 7.0\" CAP TOUCH"
+      },
+      "recommendation": "Resolve duplicate entries - keep only one or use different barcodes"
+    },
+    {
+      "rowNumber": 88,
+      "originalBarcode": "49-600002-A",
+      "cleanBarcode": "49-600002-A",
+      "unit_id": "UNITS",
+      "price": "10",
+      "stock_quantity": "2",
+      "issues": [
+        "Duplicate barcode in CSV (2 occurrences)"
+      ],
+      "existingProduct": {
+        "id": "ac9da32561f1a1fff17f4823c82fee9b",
+        "name": "NCR-001 - 49-600002-A LCD CAPE 7.0\" CAP TOUCH"
+      },
+      "recommendation": "Resolve duplicate entries - keep only one or use different barcodes"
+    },
+    {
+      "rowNumber": 99,
+      "originalBarcode": "80-000026-A\t",
+      "cleanBarcode": "80-000026-A",
+      "unit_id": "ML",
+      "price": "0.74",
+      "stock_quantity": "122",
+      "issues": [
+        "Barcode contains whitespace/tabs",
+        "Duplicate barcode in CSV (2 occurrences)"
+      ],
+      "existingProduct": {
+        "id": "76659c7b9269b567a79453c5573371d3",
+        "name": "NCR-001 - 80-000026-A SEALANT RTV SILICONE LOCTITE 5910 300ML"
+      },
+      "recommendation": "Resolve duplicate entries - keep only one or use different barcodes"
+    },
+    {
+      "rowNumber": 100,
+      "originalBarcode": "80-000026-A\t",
+      "cleanBarcode": "80-000026-A",
+      "unit_id": "ML",
+      "price": "0.74",
+      "stock_quantity": "300",
+      "issues": [
+        "Barcode contains whitespace/tabs",
+        "Duplicate barcode in CSV (2 occurrences)"
+      ],
+      "existingProduct": {
+        "id": "76659c7b9269b567a79453c5573371d3",
+        "name": "NCR-001 - 80-000026-A SEALANT RTV SILICONE LOCTITE 5910 300ML"
+      },
+      "recommendation": "Resolve duplicate entries - keep only one or use different barcodes"
+    },
+    {
+      "rowNumber": 213,
+      "originalBarcode": "90-000109-A",
+      "cleanBarcode": "90-000109-A",
+      "unit_id": "FT^2",
+      "price": "15.23",
+      "stock_quantity": "1000",
+      "issues": [
+        "Invalid unit_id: \"FT^2\""
+      ],
+      "existingProduct": {
+        "id": "b0e70e06f0d79c738bd53513bb807e64",
+        "name": "NCR-007 - 90-000109-A FDM FOUNDATION SHEETS, SMALL, NYLON"
+      },
+      "recommendation": "Change unit_id to valid value: UNITS, FT, FT2, GRAMS, INCHES, ML, METERS, LITERS, KILOGRAMS, POUNDS, OUNCES, PIECES, PAIRS, SETS, BOXES, PACKS"
+    }
+  ]
+}

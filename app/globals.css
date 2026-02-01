@@ -1,0 +1,979 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Force basic styles if CSS variables fail */
+html {
+  background: white;
+  color: black;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: white;
+  color: black;
+  margin: 0;
+  padding: 0;
+}
+
+/* Force some basic utility classes */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.block {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
+.bg-white {
+  background-color: white !important;
+}
+
+.text-black {
+  color: black !important;
+}
+
+.p-4 {
+  padding: 1rem !important;
+}
+
+.mb-6 {
+  margin-bottom: 1.5rem !important;
+}
+
+.text-3xl {
+  font-size: 1.875rem !important;
+}
+
+.font-bold {
+  font-weight: 700 !important;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 3.9%;
+    --primary: 0 0% 9%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 0 0% 96.1%;
+    --secondary-foreground: 0 0% 9%;
+    --muted: 0 0% 96.1%;
+    --muted-foreground: 0 0% 45.1%;
+    --accent: 0 0% 96.1%;
+    --accent-foreground: 0 0% 9%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 89.8%;
+    --input: 0 0% 89.8%;
+    --ring: 0 0% 3.9%;
+    --chart-1: 12 76% 61%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+    --radius: 0.5rem;
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+  .dark {
+    --background: 0 0% 3.9%;
+    --foreground: 0 0% 98%;
+    --card: 0 0% 3.9%;
+    --card-foreground: 0 0% 98%;
+    --popover: 0 0% 3.9%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 0 0% 98%;
+    --primary-foreground: 0 0% 9%;
+    --secondary: 0 0% 14.9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 0 0% 14.9%;
+    --muted-foreground: 0 0% 63.9%;
+    --accent: 0 0% 14.9%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 14.9%;
+    --input: 0 0% 14.9%;
+    --ring: 0 0% 83.1%;
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Mobile-specific optimizations */
+@layer utilities {
+  /* Touch-friendly tap targets */
+  .touch-target {
+    min-height: 44px;
+    min-width: 44px;
+  }
+  
+  /* Prevent zoom on input focus */
+  @media screen and (max-width: 768px) {
+    input[type="text"],
+    input[type="email"],
+    input[type="number"],
+    input[type="tel"],
+    input[type="url"],
+    input[type="password"],
+    textarea,
+    select {
+      font-size: 16px;
+    }
+  }
+  
+  /* Mobile viewport fixes */
+  .mobile-full-height {
+    height: 100vh;
+    height: 100dvh; /* Dynamic viewport height for mobile browsers */
+  }
+  
+  /* Safe area handling for iOS */
+  .safe-area-inset {
+    padding-left: env(safe-area-inset-left);
+    padding-right: env(safe-area-inset-right);
+    padding-top: env(safe-area-inset-top);
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+  
+  /* Camera interface optimizations */
+  .camera-preview {
+    aspect-ratio: 4/3;
+    object-fit: cover;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .camera-preview {
+      aspect-ratio: 16/9;
+    }
+  }
+  
+  /* Improve button accessibility on mobile */
+  @media (hover: none) and (pointer: coarse) {
+    .hover\:bg-muted:hover {
+      background-color: hsl(var(--muted));
+    }
+    
+    button:active {
+      transform: scale(0.98);
+      transition: transform 0.1s ease-in-out;
+    }
+  }
+}
+
+/* LED System Styles */
+@layer components {
+  /* LED Location Section */
+  .led-section {
+    @apply bg-gradient-to-r from-blue-50 to-indigo-50 border-2 border-blue-200 rounded-xl p-6 my-6;
+  }
+
+  .led-section-title {
+    @apply flex items-center gap-2 text-blue-900 font-semibold text-lg mb-2;
+  }
+
+  .led-section-badge {
+    @apply bg-blue-100 text-blue-700 border-blue-300 text-xs px-3 py-1 rounded-full font-medium;
+  }
+
+  /* LED Segment Cards */
+  .led-segment-card {
+    @apply bg-white border-2 border-gray-200 rounded-lg p-5 mb-4 transition-all duration-200 hover:border-blue-300 hover:shadow-lg;
+  }
+
+  .led-segment-card.led-segment-card--active {
+    @apply border-blue-400 shadow-md;
+  }
+
+  .led-segment-header {
+    @apply flex items-center justify-between mb-4 pb-3 border-b border-gray-200;
+  }
+
+  .led-segment-number {
+    @apply flex items-center gap-2 font-semibold text-gray-900;
+  }
+
+  .led-segment-actions {
+    @apply flex gap-2;
+  }
+
+  /* LED Preview */
+  .led-preview {
+    @apply flex flex-wrap gap-2 p-4 bg-gray-900 rounded-lg border border-gray-300 min-h-[80px] items-center justify-center;
+  }
+
+  .led-preview-item {
+    @apply w-8 h-8 rounded-full border-2 border-gray-400 flex items-center justify-center text-xs font-mono font-bold text-white shadow-sm transition-all duration-200;
+  }
+
+  .led-preview-item:hover {
+    @apply scale-110 shadow-md;
+  }
+
+  /* Color Picker */
+  .led-color-picker-group {
+    @apply flex items-center gap-3;
+  }
+
+  .led-color-preview {
+    @apply w-10 h-10 rounded-md border-2 border-gray-300 cursor-pointer shadow-sm transition-all duration-200 hover:scale-105 hover:shadow-md;
+  }
+
+  .led-color-input {
+    @apply flex-1 font-mono text-sm;
+  }
+
+  /* Status Badges */
+  .led-status-badges {
+    @apply flex flex-wrap gap-2 mt-3;
+  }
+
+  .led-status-badge {
+    @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium;
+  }
+
+  .led-status-badge--auto {
+    @apply bg-green-100 text-green-800 border border-green-200;
+  }
+
+  .led-status-badge--manual {
+    @apply bg-blue-100 text-blue-800 border border-blue-200;
+  }
+
+  .led-status-badge--override {
+    @apply bg-amber-100 text-amber-800 border border-amber-200;
+  }
+
+  /* Device Selector */
+  .led-device-selector {
+    @apply relative;
+  }
+
+  .led-device-option {
+    @apply flex items-center gap-3 py-2;
+  }
+
+  .led-device-status {
+    @apply w-2 h-2 rounded-full;
+  }
+
+  .led-device-status--online {
+    @apply bg-green-500;
+  }
+
+  .led-device-status--offline {
+    @apply bg-red-500;
+  }
+
+  .led-device-info {
+    @apply flex-1;
+  }
+
+  .led-device-name {
+    @apply font-medium text-gray-900;
+  }
+
+  .led-device-details {
+    @apply text-xs text-gray-500;
+  }
+
+  /* Add Segment Button */
+  .led-add-segment-btn {
+    @apply w-full h-16 border-2 border-dashed border-gray-300 rounded-lg bg-white hover:border-blue-400 hover:bg-blue-50 flex items-center justify-center gap-2 text-gray-600 hover:text-blue-600 transition-all duration-200 cursor-pointer;
+  }
+
+  .led-add-segment-btn:hover {
+    @apply transform scale-[1.02];
+  }
+
+  /* Info Boxes */
+  .led-info-box {
+    @apply bg-blue-50 border border-blue-200 rounded-lg p-4 mb-6;
+  }
+
+  .led-info-box--warning {
+    @apply bg-yellow-50 border-yellow-200;
+  }
+
+  .led-info-box--error {
+    @apply bg-red-50 border-red-200;
+  }
+
+  .led-info-title {
+    @apply flex items-center gap-2 font-semibold text-blue-900 mb-2;
+  }
+
+  .led-info-title--warning {
+    @apply text-yellow-800;
+  }
+
+  .led-info-title--error {
+    @apply text-red-800;
+  }
+
+  .led-info-description {
+    @apply text-blue-700;
+  }
+
+  .led-info-description--warning {
+    @apply text-yellow-700;
+  }
+
+  .led-info-description--error {
+    @apply text-red-700;
+  }
+
+  /* Configuration Modal */
+  .led-config-modal {
+    @apply max-w-4xl;
+  }
+
+  .led-config-tabs {
+    @apply space-y-6;
+  }
+
+  .led-config-tab-trigger {
+    @apply flex items-center gap-2;
+  }
+
+  .led-config-section {
+    @apply space-y-4;
+  }
+
+  .led-config-card {
+    @apply bg-white border border-gray-200 rounded-lg;
+  }
+
+  .led-config-card-header {
+    @apply px-6 py-4 border-b border-gray-200;
+  }
+
+  .led-config-card-title {
+    @apply text-lg font-semibold;
+  }
+
+  .led-config-card-description {
+    @apply text-sm text-gray-600 mt-1;
+  }
+
+  .led-config-card-content {
+    @apply p-6 space-y-4;
+  }
+
+  /* Animations */
+  @keyframes led-pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+  }
+
+  .led-pulse {
+    animation: led-pulse 2s infinite;
+  }
+
+  @keyframes led-flash {
+    0%, 50% { opacity: 1; }
+    51%, 100% { opacity: 0; }
+  }
+
+  .led-flash {
+    animation: led-flash 1s infinite;
+  }
+
+  @keyframes led-flash-solid {
+    0% { opacity: 1; }
+    10%, 20% { opacity: 0; }
+    30%, 40% { opacity: 1; }
+    50%, 60% { opacity: 0; }
+    70% { opacity: 1; }
+    100% { opacity: 1; }
+  }
+
+  .led-flash-solid {
+    animation: led-flash-solid 3s infinite;
+  }
+
+  @keyframes led-chaser {
+    0% {
+      opacity: 1;
+      transform: scale(1.2);
+      box-shadow: 0 0 8px currentColor;
+    }
+    25% {
+      opacity: 0.7;
+      transform: scale(1);
+    }
+    50% {
+      opacity: 0.3;
+      transform: scale(0.8);
+    }
+    100% {
+      opacity: 0.1;
+      transform: scale(0.8);
+    }
+  }
+
+  .led-chaser {
+    animation: led-chaser 2s infinite linear;
+  }
+
+  @keyframes led-chaser-twice {
+    0% {
+      opacity: 1;
+      transform: scale(1.2);
+      box-shadow: 0 0 8px currentColor;
+    }
+    12.5% {
+      opacity: 0.7;
+      transform: scale(1);
+    }
+    25% {
+      opacity: 0.3;
+      transform: scale(0.8);
+    }
+    50% {
+      opacity: 1;
+      transform: scale(1.2);
+      box-shadow: 0 0 8px currentColor;
+    }
+    62.5% {
+      opacity: 0.7;
+      transform: scale(1);
+    }
+    75% {
+      opacity: 0.3;
+      transform: scale(0.8);
+    }
+    100% {
+      opacity: 0.3;
+      transform: scale(0.8);
+    }
+  }
+
+  .led-chaser-twice {
+    animation: led-chaser-twice 4s ease-in-out;
+  }
+
+  .led-off {
+    opacity: 0.3 !important;
+    background-color: #333333 !important;
+  }
+
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .led-section {
+      @apply px-4 py-4;
+    }
+
+    .led-segment-card {
+      @apply p-4;
+    }
+
+    .led-preview-item {
+      @apply w-6 h-6 text-[10px];
+    }
+
+    .led-config-modal {
+      @apply max-w-full mx-4;
+    }
+
+    .led-add-segment-btn {
+      @apply h-12;
+    }
+  }
+}
+
+/* AI Command Center Styles */
+@layer components {
+  /* Purple/Pink Gradient Theme */
+  .command-center-gradient {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+  }
+
+  .command-center-gradient-subtle {
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 50%, rgba(240, 147, 251, 0.1) 100%);
+  }
+
+  .command-center-card {
+    @apply bg-white/90 backdrop-blur-lg border border-purple-200 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300;
+  }
+
+  .command-center-card-dark {
+    @apply bg-gray-900/90 backdrop-blur-lg border border-purple-500/30 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300;
+  }
+
+  .command-center-metric-card {
+    @apply relative overflow-hidden bg-gradient-to-br from-purple-50 to-pink-50 border-2 border-purple-200 rounded-xl p-6 transition-all duration-300 hover:scale-105 hover:shadow-xl;
+  }
+
+  .command-center-metric-card-dark {
+    @apply relative overflow-hidden bg-gradient-to-br from-purple-900/20 to-pink-900/20 border-2 border-purple-500/30 rounded-xl p-6 transition-all duration-300 hover:scale-105 hover:shadow-xl;
+  }
+
+  .command-center-feature-tile {
+    @apply relative overflow-hidden bg-white border-2 border-purple-300 rounded-xl p-6 cursor-pointer transition-all duration-300 hover:border-purple-500 hover:shadow-2xl hover:-translate-y-1;
+  }
+
+  .command-center-feature-tile-dark {
+    @apply relative overflow-hidden bg-gray-900 border-2 border-purple-500/30 rounded-xl p-6 cursor-pointer transition-all duration-300 hover:border-purple-400 hover:shadow-2xl hover:-translate-y-1;
+  }
+
+  .command-center-badge {
+    @apply inline-flex items-center gap-1 px-3 py-1 rounded-full text-xs font-semibold bg-gradient-to-r from-purple-500 to-pink-500 text-white shadow-md;
+  }
+
+  .command-center-badge-outline {
+    @apply inline-flex items-center gap-1 px-3 py-1 rounded-full text-xs font-semibold border-2 border-purple-500 text-purple-700 bg-white;
+  }
+
+  .command-center-button-primary {
+    @apply bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white font-semibold py-2 px-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-0.5;
+  }
+
+  .command-center-button-secondary {
+    @apply bg-white border-2 border-purple-300 text-purple-700 hover:bg-purple-50 font-semibold py-2 px-6 rounded-lg shadow-md hover:shadow-lg transition-all duration-300;
+  }
+
+  /* Glass morphism effects */
+  .command-center-glass {
+    @apply bg-white/80 backdrop-blur-md border border-white/20 shadow-xl;
+  }
+
+  .command-center-glass-dark {
+    @apply bg-gray-900/80 backdrop-blur-md border border-gray-700/20 shadow-xl;
+  }
+
+  /* Animated gradient backgrounds */
+  @keyframes gradient-shift {
+    0%, 100% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+  }
+
+  .command-center-animated-gradient {
+    background: linear-gradient(270deg, #667eea, #764ba2, #f093fb, #667eea);
+    background-size: 400% 400%;
+    animation: gradient-shift 15s ease infinite;
+  }
+
+  /* Pulse animations for real-time indicators */
+  @keyframes command-center-pulse {
+    0%, 100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+    50% {
+      opacity: 0.8;
+      transform: scale(1.05);
+    }
+  }
+
+  .command-center-pulse {
+    animation: command-center-pulse 2s ease-in-out infinite;
+  }
+
+  /* Zone visualization colors */
+  .zone-receiving {
+    @apply bg-green-500/20 border-green-500;
+  }
+
+  .zone-storage {
+    @apply bg-blue-500/20 border-blue-500;
+  }
+
+  .zone-picking {
+    @apply bg-amber-500/20 border-amber-500;
+  }
+
+  .zone-packing {
+    @apply bg-pink-500/20 border-pink-500;
+  }
+
+  .zone-shipping {
+    @apply bg-purple-500/20 border-purple-500;
+  }
+
+  .zone-quality {
+    @apply bg-yellow-500/20 border-yellow-500;
+  }
+
+  .zone-returns {
+    @apply bg-red-500/20 border-red-500;
+  }
+
+  /* Accuracy indicators */
+  .accuracy-excellent {
+    @apply text-green-600 bg-green-100 border-green-300;
+  }
+
+  .accuracy-good {
+    @apply text-blue-600 bg-blue-100 border-blue-300;
+  }
+
+  .accuracy-warning {
+    @apply text-yellow-600 bg-yellow-100 border-yellow-300;
+  }
+
+  .accuracy-critical {
+    @apply text-red-600 bg-red-100 border-red-300;
+  }
+
+  /* 3D Transform effects */
+  .command-center-3d-card {
+    transform-style: preserve-3d;
+    transition: transform 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+
+  .command-center-3d-card:hover {
+    transform: rotateY(5deg) rotateX(5deg);
+  }
+
+  /* Voice command indicator */
+  @keyframes voice-listening {
+    0%, 100% {
+      box-shadow: 0 0 0 0 rgba(147, 51, 234, 0.7);
+    }
+    50% {
+      box-shadow: 0 0 0 15px rgba(147, 51, 234, 0);
+    }
+  }
+
+  .voice-listening {
+    animation: voice-listening 1.5s ease-out infinite;
+  }
+
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .command-center-metric-card {
+      @apply p-4;
+    }
+
+    .command-center-feature-tile {
+      @apply p-4;
+    }
+  }
+}
+
+/* ===================================================================
+   PER-PAGE THEME SYSTEM
+   Supports 4 themes with light/dark variants where applicable
+   =================================================================== */
+
+/* Theme 1: Standard (Light/Dark Toggle)
+   Default clean black/white theme - uses existing :root and .dark */
+
+/* Theme 2: Bumblebee (Always Dark)
+   Black background with yellow (#ffd60a) accents
+   No light variant support
+   IMPORTANT: Uses exact hex colors, not HSL, to match Pick2Light design */
+.theme-bumblebee {
+  /* Pure black backgrounds - DO NOT USE HSL */
+  --background: 0 0% 5.88%; /* #0f0f0f */
+  --foreground: 0 0% 100%; /* #FFFFFF white */
+  --card: 0 0% 10.2%; /* #1a1a1a */
+  --card-foreground: 0 0% 100%;
+  --popover: 0 0% 10.2%; /* #1a1a1a */
+  --popover-foreground: 0 0% 100%;
+
+  /* Yellow accent (#ffd60a) */
+  --primary: 48 100% 52%; /* #ffd60a */
+  --primary-foreground: 0 0% 0%;
+
+  /* Dark gray secondary (#212529) */
+  --secondary: 210 6% 12%; /* #212529 */
+  --secondary-foreground: 0 0% 100%;
+  --muted: 210 6% 12%;
+  --muted-foreground: 0 0% 63%; /* gray-400 */
+
+  /* Yellow accent */
+  --accent: 48 100% 52%; /* #ffd60a */
+  --accent-foreground: 0 0% 0%;
+
+  /* Red for errors */
+  --destructive: 0 84% 60%;
+  --destructive-foreground: 0 0% 100%;
+
+  /* Borders */
+  --border: 210 6% 12%; /* #212529 */
+  --input: 210 6% 12%;
+  --ring: 48 100% 52%;
+  --radius: 0.5rem;
+
+  /* Sidebar - pure black */
+  --sidebar-background: 0 0% 5.88%; /* #0f0f0f */
+  --sidebar-foreground: 0 0% 100%;
+  --sidebar-primary: 48 100% 52%; /* #ffd60a */
+  --sidebar-primary-foreground: 0 0% 0%;
+  --sidebar-accent: 0 0% 10.2%; /* #1a1a1a */
+  --sidebar-accent-foreground: 0 0% 100%;
+  --sidebar-border: 210 6% 12%;
+  --sidebar-ring: 48 100% 52%;
+}
+
+/* Force exact background colors for Bumblebee */
+.theme-bumblebee body {
+  background-color: #0f0f0f !important;
+  color: white !important;
+}
+
+.theme-bumblebee .bg-background {
+  background-color: #0f0f0f !important;
+}
+
+.theme-bumblebee .bg-card {
+  background-color: #1a1a1a !important;
+}
+
+/* Theme 3: Modern Punch (Light/Dark Toggle)
+   Purple/pink gradients - leverages command-center classes */
+.theme-modern-punch {
+  --background: 255 255 255;
+  --foreground: 107 33 168; /* purple-800 */
+  --card: 255 255 255;
+  --card-foreground: 107 33 168;
+  --popover: 255 255 255;
+  --popover-foreground: 107 33 168;
+  --primary: 147 51 234; /* purple-600 */
+  --primary-foreground: 255 255 255;
+  --secondary: 250 232 255; /* purple-50 */
+  --secondary-foreground: 107 33 168;
+  --muted: 243 232 255; /* purple-100 */
+  --muted-foreground: 107 33 168;
+  --accent: 192 132 252; /* purple-400 */
+  --accent-foreground: 107 33 168;
+  --destructive: 239 68 68;
+  --destructive-foreground: 255 255 255;
+  --border: 233 213 255; /* purple-200 */
+  --input: 233 213 255;
+  --ring: 147 51 234;
+  --radius: 0.5rem;
+
+  --sidebar-background: 250 245 255; /* purple-50 */
+  --sidebar-foreground: 107 33 168;
+  --sidebar-primary: 147 51 234;
+  --sidebar-primary-foreground: 255 255 255;
+  --sidebar-accent: 243 232 255;
+  --sidebar-accent-foreground: 107 33 168;
+  --sidebar-border: 233 213 255;
+  --sidebar-ring: 147 51 234;
+}
+
+.theme-modern-punch.dark {
+  --background: 30 27 75; /* #1E1B4B purple-900 */
+  --foreground: 233 213 255;
+  --card: 45 42 95; /* darker purple */
+  --card-foreground: 233 213 255;
+  --popover: 45 42 95;
+  --popover-foreground: 233 213 255;
+  --primary: 192 132 252; /* purple-400 */
+  --primary-foreground: 30 27 75;
+  --secondary: 67 56 202; /* purple-700 */
+  --secondary-foreground: 233 213 255;
+  --muted: 67 56 202;
+  --muted-foreground: 196 181 253; /* purple-300 */
+  --accent: 167 139 250; /* purple-400 */
+  --accent-foreground: 233 213 255;
+  --destructive: 220 38 38;
+  --destructive-foreground: 255 255 255;
+  --border: 67 56 202;
+  --input: 67 56 202;
+  --ring: 192 132 252;
+
+  --sidebar-background: 30 27 75;
+  --sidebar-foreground: 233 213 255;
+  --sidebar-primary: 192 132 252;
+  --sidebar-primary-foreground: 30 27 75;
+  --sidebar-accent: 45 42 95;
+  --sidebar-accent-foreground: 233 213 255;
+  --sidebar-border: 67 56 202;
+  --sidebar-ring: 192 132 252;
+}
+
+/* Theme 4: Marvel (Light/Dark Toggle)
+   Light lavender with vibrant colorful accents */
+.theme-marvel {
+  --background: 240 235 255; /* #F0EBFF */
+  --foreground: 107 33 168; /* purple-800 */
+  --card: 255 255 255;
+  --card-foreground: 107 33 168;
+  --popover: 255 255 255;
+  --popover-foreground: 107 33 168;
+  --primary: 167 139 250; /* #A78BFA purple-400 */
+  --primary-foreground: 255 255 255;
+  --secondary: 232 224 255; /* #E8E0FF lighter lavender */
+  --secondary-foreground: 107 33 168;
+  --muted: 232 224 255;
+  --muted-foreground: 107 114 142; /* gray-600 */
+  --accent: 139 92 246; /* #8B5CF6 purple-500 */
+  --accent-foreground: 255 255 255;
+  --destructive: 239 68 68;
+  --destructive-foreground: 255 255 255;
+  --border: 216 180 254; /* purple-300 */
+  --input: 216 180 254;
+  --ring: 167 139 250;
+  --radius: 0.75rem; /* slightly rounder for Marvel */
+
+  --sidebar-background: 250 245 255;
+  --sidebar-foreground: 107 33 168;
+  --sidebar-primary: 167 139 250;
+  --sidebar-primary-foreground: 255 255 255;
+  --sidebar-accent: 243 232 255;
+  --sidebar-accent-foreground: 107 33 168;
+  --sidebar-border: 233 213 255;
+  --sidebar-ring: 167 139 250;
+
+  /* Marvel-specific gradient variables */
+  --marvel-header-gradient: linear-gradient(135deg, #A78BFA 0%, #C084FC 100%);
+  --marvel-gradient-blue: linear-gradient(135deg, #3B82F6, #06B6D4);
+  --marvel-gradient-green: linear-gradient(135deg, #10B981, #34D399);
+  --marvel-gradient-purple: linear-gradient(135deg, #8B5CF6, #A78BFA);
+  --marvel-gradient-orange: linear-gradient(135deg, #F97316, #FB923C);
+  --marvel-gradient-pink: linear-gradient(135deg, #EC4899, #F472B6);
+  --marvel-gradient-red: linear-gradient(135deg, #EF4444, #F87171);
+}
+
+.theme-marvel.dark {
+  --background: 30 27 75; /* #1E1B4B deep purple */
+  --foreground: 240 235 255;
+  --card: 45 42 95; /* #2D2A5F darker purple */
+  --card-foreground: 240 235 255;
+  --popover: 45 42 95;
+  --popover-foreground: 240 235 255;
+  --primary: 192 132 252; /* #C084FC lighter purple for dark mode */
+  --primary-foreground: 30 27 75;
+  --secondary: 49 46 129; /* #312E81 */
+  --secondary-foreground: 240 235 255;
+  --muted: 49 46 129;
+  --muted-foreground: 196 181 253; /* purple-300 */
+  --accent: 167 139 250;
+  --accent-foreground: 240 235 255;
+  --destructive: 220 38 38;
+  --destructive-foreground: 255 255 255;
+  --border: 88 80 236; /* purple-600 */
+  --input: 88 80 236;
+  --ring: 192 132 252;
+
+  --sidebar-background: 30 27 75;
+  --sidebar-foreground: 240 235 255;
+  --sidebar-primary: 192 132 252;
+  --sidebar-primary-foreground: 30 27 75;
+  --sidebar-accent: 45 42 95;
+  --sidebar-accent-foreground: 240 235 255;
+  --sidebar-border: 67 56 202;
+  --sidebar-ring: 192 132 252;
+
+  /* Marvel dark mode gradients (brighter for contrast) */
+  --marvel-header-gradient: linear-gradient(135deg, #C084FC 0%, #E879F9 100%);
+  --marvel-gradient-blue: linear-gradient(135deg, #60A5FA, #22D3EE);
+  --marvel-gradient-green: linear-gradient(135deg, #34D399, #6EE7B7);
+  --marvel-gradient-purple: linear-gradient(135deg, #A78BFA, #C084FC);
+  --marvel-gradient-orange: linear-gradient(135deg, #FB923C, #FDBA74);
+  --marvel-gradient-pink: linear-gradient(135deg, #F472B6, #F9A8D4);
+  --marvel-gradient-red: linear-gradient(135deg, #F87171, #FCA5A5);
+}
+
+/* Marvel Theme Specific Styles */
+@layer components {
+  .theme-marvel .marvel-header {
+    background: var(--marvel-header-gradient);
+  }
+
+  .theme-marvel .marvel-card {
+    @apply bg-white border-2 border-purple-300 rounded-xl shadow-lg;
+  }
+
+  .theme-marvel.dark .marvel-card {
+    background: hsl(var(--card));
+    @apply border-purple-600;
+  }
+
+  .theme-marvel .marvel-metric-card {
+    @apply bg-white border-2 border-purple-200 rounded-xl p-6 shadow-md;
+  }
+
+  .theme-marvel.dark .marvel-metric-card {
+    background: hsl(var(--card));
+    @apply border-purple-600;
+  }
+
+  .theme-marvel .marvel-gradient-icon-blue {
+    background: var(--marvel-gradient-blue);
+  }
+
+  .theme-marvel .marvel-gradient-icon-green {
+    background: var(--marvel-gradient-green);
+  }
+
+  .theme-marvel .marvel-gradient-icon-purple {
+    background: var(--marvel-gradient-purple);
+  }
+
+  .theme-marvel .marvel-gradient-icon-orange {
+    background: var(--marvel-gradient-orange);
+  }
+
+  .theme-marvel .marvel-gradient-icon-pink {
+    background: var(--marvel-gradient-pink);
+  }
+
+  .theme-marvel .marvel-gradient-icon-red {
+    background: var(--marvel-gradient-red);
+  }
+
+  .theme-marvel .marvel-button {
+    @apply bg-black text-white hover:bg-gray-800 font-semibold py-2 px-6 rounded-lg shadow-md hover:shadow-lg transition-all duration-300;
+  }
+
+  .theme-marvel.dark .marvel-button {
+    @apply bg-purple-600 hover:bg-purple-700;
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "page": "ai-assistant-custom-agents",
+  "test_phase": "navigation",
+  "timestamp": "2025-05-29T13:03:41.283391+00:00",
+  "results": [
+    {
+      "test": "nav_nav",
+      "status": "PASS",
+      "details": "found"
+    },
+    {
+      "test": "nav_menu",
+      "status": "WARN",
+      "details": "missing"
+    },
+    {
+      "test": "nav_sidebar",
+      "status": "WARN",
+      "details": "missing"
+    },
+    {
+      "test": "nav_header",
+      "status": "PASS",
+      "details": "found"
+    },
+    {
+      "test": "nav_dashboard",
+      "status": "PASS",
+      "details": "found"
+    },
+    {
+      "test": "nav_products",
+      "status": "PASS",
+      "details": "found"
+    },
+    {
+      "test": "navigation_overall",
+      "status": "PASS",
+      "details": "4/6"
+    }
+  ]
+}

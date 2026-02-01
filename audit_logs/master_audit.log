@@ -1,0 +1,912 @@
+[0;34m2025-05-29T07:56:47-04:00 - Starting Inventory System Audit Initialization[0m
+[0;31m2025-05-29T07:56:47-04:00 - ERROR: jq is required but not installed[0m
+2025-05-29T13:03:16.191569+00:00 - === INVENTORY SYSTEM AUDIT LOG ===
+2025-05-29T13:03:16.191873+00:00 - Audit Started: 2025-05-29T13:03:16.191541+00:00
+2025-05-29T13:03:16.191911+00:00 - Session ID: 9d70b7ad-4eb9-4111-88b3-58369c6a116d
+2025-05-29T13:03:16.191933+00:00 - Checkpoint System: ENABLED
+2025-05-29T13:03:16.191953+00:00 - Recovery Support: ENABLED
+2025-05-29T13:03:16.192407+00:00 - Initial session state created
+2025-05-29T13:03:16.192437+00:00 - 🚀 STARTING FULL INVENTORY SYSTEM AUDIT
+2025-05-29T13:03:16.316856+00:00 - 📋 Audit Plan: 13 pages to audit
+2025-05-29T13:03:16.317038+00:00 -   1. home (http://localhost:3000/)
+2025-05-29T13:03:16.317064+00:00 -   2. dashboard (http://localhost:3000/dashboard)
+2025-05-29T13:03:16.317086+00:00 -   3. products (http://localhost:3000/products)
+2025-05-29T13:03:16.317106+00:00 -   4. image-cataloging (http://localhost:3000/image-cataloging)
+2025-05-29T13:03:16.317126+00:00 -   5. scan (http://localhost:3000/scan)
+2025-05-29T13:03:16.317146+00:00 -   6. orders (http://localhost:3000/orders)
+2025-05-29T13:03:16.317165+00:00 -   7. customers (http://localhost:3000/customers)
+2025-05-29T13:03:16.317210+00:00 -   8. reports (http://localhost:3000/reports)
+2025-05-29T13:03:16.317238+00:00 -   9. inventory-alerts (http://localhost:3000/inventory/alerts)
+2025-05-29T13:03:16.317259+00:00 -   10. ai-assistant (http://localhost:3000/ai-assistant)
+2025-05-29T13:03:16.317278+00:00 -   11. ai-assistant-custom-agents (http://localhost:3000/ai-assistant/custom-agents)
+2025-05-29T13:03:16.317297+00:00 -   12. ai-assistant-settings (http://localhost:3000/ai-assistant/settings)
+2025-05-29T13:03:16.317316+00:00 -   13. settings (http://localhost:3000/settings)
+2025-05-29T13:03:16.317341+00:00 - 
+2025-05-29T13:03:16.317360+00:00 - 🎯 Beginning page audits...
+2025-05-29T13:03:16.317385+00:00 - 
+2025-05-29T13:03:16.317407+00:00 - 📄 Auditing page 1/13: home
+2025-05-29T13:03:16.317428+00:00 - ==================================================
+2025-05-29T13:03:16.317449+00:00 - 🔍 AUDITING PAGE: home (http://localhost:3000/)
+2025-05-29T13:03:16.317809+00:00 - 📊 Phase 1: Accessibility Tests
+2025-05-29T13:03:16.318063+00:00 - Creating MICRO checkpoint: CP_001_HOME_ACCESSIBILITY_START
+2025-05-29T13:03:16.327978+00:00 - ✓ MICRO Checkpoint CP_001_HOME_ACCESSIBILITY_START recorded
+2025-05-29T13:03:16.328083+00:00 - 🔍 Testing accessibility for: home
+2025-05-29T13:03:16.328115+00:00 - Testing HTTP status...
+2025-05-29T13:03:16.442062+00:00 - ✅ HTTP Status: 200 (OK)
+2025-05-29T13:03:16.442181+00:00 - Testing response time...
+2025-05-29T13:03:16.442228+00:00 - ✅ Response Time: 93ms (Good)
+2025-05-29T13:03:16.442252+00:00 - Testing content length...
+2025-05-29T13:03:16.442274+00:00 - ✅ Content Length: 128257 bytes (Good)
+2025-05-29T13:03:16.452412+00:00 - Test results saved: home_accessibility_results.json
+2025-05-29T13:03:16.452514+00:00 - ✅ Accessibility tests: PASSED
+2025-05-29T13:03:16.452770+00:00 - Creating MICRO checkpoint: CP_002_HOME_ACCESSIBILITY_COMPLETE
+2025-05-29T13:03:16.453039+00:00 - ✓ MICRO Checkpoint CP_002_HOME_ACCESSIBILITY_COMPLETE recorded
+2025-05-29T13:03:16.453077+00:00 - 🧭 Phase 2: Navigation Tests
+2025-05-29T13:03:16.453209+00:00 - Creating MICRO checkpoint: CP_003_HOME_NAVIGATION_START
+2025-05-29T13:03:16.453422+00:00 - ✓ MICRO Checkpoint CP_003_HOME_NAVIGATION_START recorded
+2025-05-29T13:03:16.453461+00:00 - 🧭 Testing navigation for: home
+2025-05-29T13:03:16.567031+00:00 - Testing navigation elements...
+2025-05-29T13:03:16.567139+00:00 - ✅ Found navigation element
+2025-05-29T13:03:16.567223+00:00 - ⚠️ Missing menu element
+2025-05-29T13:03:16.567316+00:00 - ⚠️ Missing sidebar element
+2025-05-29T13:03:16.567353+00:00 - ✅ Found header element
+2025-05-29T13:03:16.567375+00:00 - ✅ Found dashboard link
+2025-05-29T13:03:16.567398+00:00 - ✅ Found products link
+2025-05-29T13:03:16.567419+00:00 - ✅ Navigation: Good (4/6 elements found)
+2025-05-29T13:03:16.567811+00:00 - Test results saved: home_navigation_results.json
+2025-05-29T13:03:16.567897+00:00 - ✅ Navigation tests: PASSED
+2025-05-29T13:03:16.568143+00:00 - Creating MICRO checkpoint: CP_004_HOME_NAVIGATION_COMPLETE
+2025-05-29T13:03:16.568426+00:00 - ✓ MICRO Checkpoint CP_004_HOME_NAVIGATION_COMPLETE recorded
+2025-05-29T13:03:16.568459+00:00 - ⚙️ Phase 3: Functionality Tests
+2025-05-29T13:03:16.578240+00:00 - Creating MICRO checkpoint: CP_005_HOME_FUNCTIONALITY_START
+2025-05-29T13:03:16.578579+00:00 - ✓ MICRO Checkpoint CP_005_HOME_FUNCTIONALITY_START recorded
+2025-05-29T13:03:16.578615+00:00 - ⚙️ Testing functionality for: home
+2025-05-29T13:03:16.688099+00:00 - Testing for JavaScript inclusion...
+2025-05-29T13:03:16.688206+00:00 - ✅ JavaScript: Scripts found
+2025-05-29T13:03:16.688231+00:00 - Testing for CSS inclusion...
+2025-05-29T13:03:16.688251+00:00 - ✅ CSS: Stylesheets found
+2025-05-29T13:03:16.688270+00:00 - Testing for interactive forms...
+2025-05-29T13:03:16.688330+00:00 - ℹ️ Forms: No forms found (may be expected)
+2025-05-29T13:03:16.688349+00:00 - Testing for interactive buttons...
+2025-05-29T13:03:16.688518+00:00 - ✅ Buttons: 3 button(s) found
+2025-05-29T13:03:16.688719+00:00 - Test results saved: home_functionality_results.json
+2025-05-29T13:03:16.688765+00:00 - ✅ Functionality tests: PASSED
+2025-05-29T13:03:16.688968+00:00 - Creating MICRO checkpoint: CP_006_HOME_FUNCTIONALITY_COMPLETE
+2025-05-29T13:03:16.689237+00:00 - ✓ MICRO Checkpoint CP_006_HOME_FUNCTIONALITY_COMPLETE recorded
+2025-05-29T13:03:16.689268+00:00 - 🚨 Phase 4: Error Handling Tests
+2025-05-29T13:03:16.698946+00:00 - Creating MICRO checkpoint: CP_007_HOME_ERROR_HANDLING_START
+2025-05-29T13:03:16.699299+00:00 - ✓ MICRO Checkpoint CP_007_HOME_ERROR_HANDLING_START recorded
+2025-05-29T13:03:16.699335+00:00 - 🚨 Testing error handling for: home
+2025-05-29T13:03:16.699356+00:00 - Testing 404 error handling...
+2025-05-29T13:03:17.513018+00:00 - ✅ 404 Handling: Proper 404 response
+2025-05-29T13:03:17.681730+00:00 - ℹ️ Error Boundaries: Error-related content found (may indicate error state)
+2025-05-29T13:03:17.682074+00:00 - Test results saved: home_error_handling_results.json
+2025-05-29T13:03:17.682198+00:00 - ✅ Error handling tests: PASSED
+2025-05-29T13:03:17.682399+00:00 - Creating MICRO checkpoint: CP_008_HOME_ERROR_HANDLING_COMPLETE
+2025-05-29T13:03:17.682655+00:00 - ✓ MICRO Checkpoint CP_008_HOME_ERROR_HANDLING_COMPLETE recorded
+2025-05-29T13:03:17.682766+00:00 - Page summary created: home_summary.md
+2025-05-29T13:03:17.692408+00:00 - Creating MACRO checkpoint: CP_009_HOME_COMPLETE
+2025-05-29T13:03:17.693298+00:00 - ✓ MACRO Checkpoint CP_009_HOME_COMPLETE created successfully
+2025-05-29T13:03:17.693344+00:00 - ✅ PAGE AUDIT COMPLETE: home (SUCCESS)
+2025-05-29T13:03:17.693377+00:00 - ✅ Page audit completed: home
+2025-05-29T13:03:18.694139+00:00 - 
+2025-05-29T13:03:18.694279+00:00 - 📄 Auditing page 2/13: dashboard
+2025-05-29T13:03:18.694304+00:00 - ==================================================
+2025-05-29T13:03:18.694327+00:00 - 🔍 AUDITING PAGE: dashboard (http://localhost:3000/dashboard)
+2025-05-29T13:03:18.694865+00:00 - 📊 Phase 1: Accessibility Tests
+2025-05-29T13:03:18.695042+00:00 - Creating MICRO checkpoint: CP_010_DASHBOARD_ACCESSIBILITY_START
+2025-05-29T13:03:18.695650+00:00 - ✓ MICRO Checkpoint CP_010_DASHBOARD_ACCESSIBILITY_START recorded
+2025-05-29T13:03:18.695720+00:00 - 🔍 Testing accessibility for: dashboard
+2025-05-29T13:03:18.695744+00:00 - Testing HTTP status...
+2025-05-29T13:03:19.312189+00:00 - ✅ HTTP Status: 200 (OK)
+2025-05-29T13:03:19.312288+00:00 - Testing response time...
+2025-05-29T13:03:19.312314+00:00 - ✅ Response Time: 610ms (Good)
+2025-05-29T13:03:19.312333+00:00 - Testing content length...
+2025-05-29T13:03:19.312352+00:00 - ✅ Content Length: 62074 bytes (Good)
+2025-05-29T13:03:19.312527+00:00 - Test results saved: dashboard_accessibility_results.json
+2025-05-29T13:03:19.312570+00:00 - ✅ Accessibility tests: PASSED
+2025-05-29T13:03:19.312762+00:00 - Creating MICRO checkpoint: CP_011_DASHBOARD_ACCESSIBILITY_COMPLETE
+2025-05-29T13:03:19.313053+00:00 - ✓ MICRO Checkpoint CP_011_DASHBOARD_ACCESSIBILITY_COMPLETE recorded
+2025-05-29T13:03:19.313084+00:00 - 🧭 Phase 2: Navigation Tests
+2025-05-29T13:03:19.322652+00:00 - Creating MICRO checkpoint: CP_012_DASHBOARD_NAVIGATION_START
+2025-05-29T13:03:19.323023+00:00 - ✓ MICRO Checkpoint CP_012_DASHBOARD_NAVIGATION_START recorded
+2025-05-29T13:03:19.323059+00:00 - 🧭 Testing navigation for: dashboard
+2025-05-29T13:03:19.422907+00:00 - Testing navigation elements...
+2025-05-29T13:03:19.423005+00:00 - ✅ Found navigation element
+2025-05-29T13:03:19.423060+00:00 - ⚠️ Missing menu element
+2025-05-29T13:03:19.423117+00:00 - ⚠️ Missing sidebar element
+2025-05-29T13:03:19.423163+00:00 - ✅ Found header element
+2025-05-29T13:03:19.423183+00:00 - ✅ Found dashboard link
+2025-05-29T13:03:19.423203+00:00 - ✅ Found products link
+2025-05-29T13:03:19.423221+00:00 - ✅ Navigation: Good (4/6 elements found)
+2025-05-29T13:03:19.423409+00:00 - Test results saved: dashboard_navigation_results.json
+2025-05-29T13:03:19.423449+00:00 - ✅ Navigation tests: PASSED
+2025-05-29T13:03:19.423638+00:00 - Creating MICRO checkpoint: CP_013_DASHBOARD_NAVIGATION_COMPLETE
+2025-05-29T13:03:19.423973+00:00 - ✓ MICRO Checkpoint CP_013_DASHBOARD_NAVIGATION_COMPLETE recorded
+2025-05-29T13:03:19.424011+00:00 - ⚙️ Phase 3: Functionality Tests
+2025-05-29T13:03:19.433547+00:00 - Creating MICRO checkpoint: CP_014_DASHBOARD_FUNCTIONALITY_START
+2025-05-29T13:03:19.433988+00:00 - ✓ MICRO Checkpoint CP_014_DASHBOARD_FUNCTIONALITY_START recorded
+2025-05-29T13:03:19.434031+00:00 - ⚙️ Testing functionality for: dashboard
+2025-05-29T13:03:19.527500+00:00 - Testing for JavaScript inclusion...
+2025-05-29T13:03:19.527596+00:00 - ✅ JavaScript: Scripts found
+2025-05-29T13:03:19.527622+00:00 - Testing for CSS inclusion...
+2025-05-29T13:03:19.527642+00:00 - ✅ CSS: Stylesheets found
+2025-05-29T13:03:19.527740+00:00 - Testing for interactive forms...
+2025-05-29T13:03:19.527790+00:00 - ℹ️ Forms: No forms found (may be expected)
+2025-05-29T13:03:19.527811+00:00 - Testing for interactive buttons...
+2025-05-29T13:03:19.527910+00:00 - ✅ Buttons: 12 button(s) found
+2025-05-29T13:03:19.527932+00:00 - Testing dashboard-specific features...
+2025-05-29T13:03:19.527962+00:00 - ✅ Dashboard: Cards/widgets found
+2025-05-29T13:03:19.527988+00:00 - ✅ Dashboard: Metrics/statistics found
+2025-05-29T13:03:19.528265+00:00 - Test results saved: dashboard_functionality_results.json
+2025-05-29T13:03:19.528321+00:00 - ✅ Functionality tests: PASSED
+2025-05-29T13:03:19.528544+00:00 - Creating MICRO checkpoint: CP_015_DASHBOARD_FUNCTIONALITY_COMPLETE
+2025-05-29T13:03:19.528969+00:00 - ✓ MICRO Checkpoint CP_015_DASHBOARD_FUNCTIONALITY_COMPLETE recorded
+2025-05-29T13:03:19.529011+00:00 - 🚨 Phase 4: Error Handling Tests
+2025-05-29T13:03:19.538457+00:00 - Creating MICRO checkpoint: CP_016_DASHBOARD_ERROR_HANDLING_START
+2025-05-29T13:03:19.538886+00:00 - ✓ MICRO Checkpoint CP_016_DASHBOARD_ERROR_HANDLING_START recorded
+2025-05-29T13:03:19.538922+00:00 - 🚨 Testing error handling for: dashboard
+2025-05-29T13:03:19.538944+00:00 - Testing 404 error handling...
+2025-05-29T13:03:19.583167+00:00 - ✅ 404 Handling: Proper 404 response
+2025-05-29T13:03:19.673424+00:00 - ℹ️ Error Boundaries: Error-related content found (may indicate error state)
+2025-05-29T13:03:19.673739+00:00 - Test results saved: dashboard_error_handling_results.json
+2025-05-29T13:03:19.673798+00:00 - ✅ Error handling tests: PASSED
+2025-05-29T13:03:19.674084+00:00 - Creating MICRO checkpoint: CP_017_DASHBOARD_ERROR_HANDLING_COMPLETE
+2025-05-29T13:03:19.674453+00:00 - ✓ MICRO Checkpoint CP_017_DASHBOARD_ERROR_HANDLING_COMPLETE recorded
+2025-05-29T13:03:19.674564+00:00 - Page summary created: dashboard_summary.md
+2025-05-29T13:03:19.684131+00:00 - Creating MACRO checkpoint: CP_018_DASHBOARD_COMPLETE
+2025-05-29T13:03:19.684838+00:00 - ✓ MACRO Checkpoint CP_018_DASHBOARD_COMPLETE created successfully
+2025-05-29T13:03:19.684877+00:00 - ✅ PAGE AUDIT COMPLETE: dashboard (SUCCESS)
+2025-05-29T13:03:19.684908+00:00 - ✅ Page audit completed: dashboard
+2025-05-29T13:03:20.686002+00:00 - 
+2025-05-29T13:03:20.686165+00:00 - 📄 Auditing page 3/13: products
+2025-05-29T13:03:20.686191+00:00 - ==================================================
+2025-05-29T13:03:20.686214+00:00 - 🔍 AUDITING PAGE: products (http://localhost:3000/products)
+2025-05-29T13:03:20.686722+00:00 - 📊 Phase 1: Accessibility Tests
+2025-05-29T13:03:20.686872+00:00 - Creating MICRO checkpoint: CP_019_PRODUCTS_ACCESSIBILITY_START
+2025-05-29T13:03:20.687309+00:00 - ✓ MICRO Checkpoint CP_019_PRODUCTS_ACCESSIBILITY_START recorded
+2025-05-29T13:03:20.687346+00:00 - 🔍 Testing accessibility for: products
+2025-05-29T13:03:20.687367+00:00 - Testing HTTP status...
+2025-05-29T13:03:20.884762+00:00 - ✅ HTTP Status: 200 (OK)
+2025-05-29T13:03:20.884885+00:00 - Testing response time...
+2025-05-29T13:03:20.884912+00:00 - ✅ Response Time: 189ms (Good)
+2025-05-29T13:03:20.884932+00:00 - Testing content length...
+2025-05-29T13:03:20.884951+00:00 - ✅ Content Length: 71120 bytes (Good)
+2025-05-29T13:03:20.885161+00:00 - Test results saved: products_accessibility_results.json
+2025-05-29T13:03:20.885207+00:00 - ✅ Accessibility tests: PASSED
+2025-05-29T13:03:20.885412+00:00 - Creating MICRO checkpoint: CP_020_PRODUCTS_ACCESSIBILITY_COMPLETE
+2025-05-29T13:03:20.885784+00:00 - ✓ MICRO Checkpoint CP_020_PRODUCTS_ACCESSIBILITY_COMPLETE recorded
+2025-05-29T13:03:20.885816+00:00 - 🧭 Phase 2: Navigation Tests
+2025-05-29T13:03:20.895252+00:00 - Creating MICRO checkpoint: CP_021_PRODUCTS_NAVIGATION_START
+2025-05-29T13:03:20.895699+00:00 - ✓ MICRO Checkpoint CP_021_PRODUCTS_NAVIGATION_START recorded
+2025-05-29T13:03:20.895735+00:00 - 🧭 Testing navigation for: products
+2025-05-29T13:03:21.031256+00:00 - Testing navigation elements...
+2025-05-29T13:03:21.031369+00:00 - ✅ Found navigation element
+2025-05-29T13:03:21.031429+00:00 - ⚠️ Missing menu element
+2025-05-29T13:03:21.031490+00:00 - ⚠️ Missing sidebar element
+2025-05-29T13:03:21.031600+00:00 - ✅ Found header element
+2025-05-29T13:03:21.031626+00:00 - ✅ Found dashboard link
+2025-05-29T13:03:21.031645+00:00 - ✅ Found products link
+2025-05-29T13:03:21.031664+00:00 - ✅ Navigation: Good (4/6 elements found)
+2025-05-29T13:03:21.031865+00:00 - Test results saved: products_navigation_results.json
+2025-05-29T13:03:21.031911+00:00 - ✅ Navigation tests: PASSED
+2025-05-29T13:03:21.032103+00:00 - Creating MICRO checkpoint: CP_022_PRODUCTS_NAVIGATION_COMPLETE
+2025-05-29T13:03:21.032514+00:00 - ✓ MICRO Checkpoint CP_022_PRODUCTS_NAVIGATION_COMPLETE recorded
+2025-05-29T13:03:21.032552+00:00 - ⚙️ Phase 3: Functionality Tests
+2025-05-29T13:03:21.042050+00:00 - Creating MICRO checkpoint: CP_023_PRODUCTS_FUNCTIONALITY_START
+2025-05-29T13:03:21.042622+00:00 - ✓ MICRO Checkpoint CP_023_PRODUCTS_FUNCTIONALITY_START recorded
+2025-05-29T13:03:21.042664+00:00 - ⚙️ Testing functionality for: products
+2025-05-29T13:03:21.178557+00:00 - Testing for JavaScript inclusion...
+2025-05-29T13:03:21.178662+00:00 - ✅ JavaScript: Scripts found
+2025-05-29T13:03:21.178687+00:00 - Testing for CSS inclusion...
+2025-05-29T13:03:21.178706+00:00 - ✅ CSS: Stylesheets found
+2025-05-29T13:03:21.178724+00:00 - Testing for interactive forms...
+2025-05-29T13:03:21.178770+00:00 - ✅ Forms: 1 form(s) found
+2025-05-29T13:03:21.178789+00:00 - Testing for interactive buttons...
+2025-05-29T13:03:21.178895+00:00 - ✅ Buttons: 13 button(s) found
+2025-05-29T13:03:21.178917+00:00 - Testing products-specific features...
+2025-05-29T13:03:21.178939+00:00 - ✅ Products: Product-related content found
+2025-05-29T13:03:21.179128+00:00 - Test results saved: products_functionality_results.json
+2025-05-29T13:03:21.179173+00:00 - ✅ Functionality tests: PASSED
+2025-05-29T13:03:21.179368+00:00 - Creating MICRO checkpoint: CP_024_PRODUCTS_FUNCTIONALITY_COMPLETE
+2025-05-29T13:03:21.179769+00:00 - ✓ MICRO Checkpoint CP_024_PRODUCTS_FUNCTIONALITY_COMPLETE recorded
+2025-05-29T13:03:21.179828+00:00 - 🚨 Phase 4: Error Handling Tests
+2025-05-29T13:03:21.189105+00:00 - Creating MICRO checkpoint: CP_025_PRODUCTS_ERROR_HANDLING_START
+2025-05-29T13:03:21.189581+00:00 - ✓ MICRO Checkpoint CP_025_PRODUCTS_ERROR_HANDLING_START recorded
+2025-05-29T13:03:21.189621+00:00 - 🚨 Testing error handling for: products
+2025-05-29T13:03:21.189645+00:00 - Testing 404 error handling...
+2025-05-29T13:03:23.341883+00:00 - ⚠️ 404 Handling: Unexpected response (200)
+2025-05-29T13:03:23.539304+00:00 - ℹ️ Error Boundaries: Error-related content found (may indicate error state)
+2025-05-29T13:03:23.539724+00:00 - Test results saved: products_error_handling_results.json
+2025-05-29T13:03:23.539805+00:00 - ✅ Error handling tests: PASSED
+2025-05-29T13:03:23.540073+00:00 - Creating MICRO checkpoint: CP_026_PRODUCTS_ERROR_HANDLING_COMPLETE
+2025-05-29T13:03:23.540576+00:00 - ✓ MICRO Checkpoint CP_026_PRODUCTS_ERROR_HANDLING_COMPLETE recorded
+2025-05-29T13:03:23.540790+00:00 - Page summary created: products_summary.md
+2025-05-29T13:03:23.549929+00:00 - Creating MACRO checkpoint: CP_027_PRODUCTS_COMPLETE
+2025-05-29T13:03:23.550789+00:00 - ✓ MACRO Checkpoint CP_027_PRODUCTS_COMPLETE created successfully
+2025-05-29T13:03:23.550826+00:00 - ✅ PAGE AUDIT COMPLETE: products (SUCCESS)
+2025-05-29T13:03:23.550892+00:00 - ✅ Page audit completed: products
+2025-05-29T13:03:24.551977+00:00 - 
+2025-05-29T13:03:24.552107+00:00 - 📄 Auditing page 4/13: image-cataloging
+2025-05-29T13:03:24.552202+00:00 - ==================================================
+2025-05-29T13:03:24.552229+00:00 - 🔍 AUDITING PAGE: image-cataloging (http://localhost:3000/image-cataloging)
+2025-05-29T13:03:24.552765+00:00 - 📊 Phase 1: Accessibility Tests
+2025-05-29T13:03:24.552912+00:00 - Creating MICRO checkpoint: CP_028_IMAGE-CATALOGING_ACCESSIBILITY_START
+2025-05-29T13:03:24.562967+00:00 - ✓ MICRO Checkpoint CP_028_IMAGE-CATALOGING_ACCESSIBILITY_START recorded
+2025-05-29T13:03:24.563051+00:00 - 🔍 Testing accessibility for: image-cataloging
+2025-05-29T13:03:24.563075+00:00 - Testing HTTP status...
+2025-05-29T13:03:25.473116+00:00 - ✅ HTTP Status: 200 (OK)
+2025-05-29T13:03:25.473225+00:00 - Testing response time...
+2025-05-29T13:03:25.473308+00:00 - ✅ Response Time: 905ms (Good)
+2025-05-29T13:03:25.473346+00:00 - Testing content length...
+2025-05-29T13:03:25.473368+00:00 - ✅ Content Length: 56771 bytes (Good)
+2025-05-29T13:03:25.473589+00:00 - Test results saved: image-cataloging_accessibility_results.json
+2025-05-29T13:03:25.473635+00:00 - ✅ Accessibility tests: PASSED
+2025-05-29T13:03:25.473959+00:00 - Creating MICRO checkpoint: CP_029_IMAGE-CATALOGING_ACCESSIBILITY_COMPLETE
+2025-05-29T13:03:25.474491+00:00 - ✓ MICRO Checkpoint CP_029_IMAGE-CATALOGING_ACCESSIBILITY_COMPLETE recorded
+2025-05-29T13:03:25.474534+00:00 - 🧭 Phase 2: Navigation Tests
+2025-05-29T13:03:25.474665+00:00 - Creating MICRO checkpoint: CP_030_IMAGE-CATALOGING_NAVIGATION_START
+2025-05-29T13:03:25.475088+00:00 - ✓ MICRO Checkpoint CP_030_IMAGE-CATALOGING_NAVIGATION_START recorded
+2025-05-29T13:03:25.475126+00:00 - 🧭 Testing navigation for: image-cataloging
+2025-05-29T13:03:25.562518+00:00 - Testing navigation elements...
+2025-05-29T13:03:25.562626+00:00 - ✅ Found navigation element
+2025-05-29T13:03:25.562682+00:00 - ⚠️ Missing menu element
+2025-05-29T13:03:25.562803+00:00 - ⚠️ Missing sidebar element
+2025-05-29T13:03:25.562851+00:00 - ✅ Found header element
+2025-05-29T13:03:25.562872+00:00 - ✅ Found dashboard link
+2025-05-29T13:03:25.562892+00:00 - ✅ Found products link
+2025-05-29T13:03:25.562910+00:00 - ✅ Navigation: Good (4/6 elements found)
+2025-05-29T13:03:25.563163+00:00 - Test results saved: image-cataloging_navigation_results.json
+2025-05-29T13:03:25.563207+00:00 - ✅ Navigation tests: PASSED
+2025-05-29T13:03:25.563391+00:00 - Creating MICRO checkpoint: CP_031_IMAGE-CATALOGING_NAVIGATION_COMPLETE
+2025-05-29T13:03:25.563856+00:00 - ✓ MICRO Checkpoint CP_031_IMAGE-CATALOGING_NAVIGATION_COMPLETE recorded
+2025-05-29T13:03:25.563894+00:00 - ⚙️ Phase 3: Functionality Tests
+2025-05-29T13:03:25.573207+00:00 - Creating MICRO checkpoint: CP_032_IMAGE-CATALOGING_FUNCTIONALITY_START
+2025-05-29T13:03:25.573763+00:00 - ✓ MICRO Checkpoint CP_032_IMAGE-CATALOGING_FUNCTIONALITY_START recorded
+2025-05-29T13:03:25.573928+00:00 - ⚙️ Testing functionality for: image-cataloging
+2025-05-29T13:03:25.654827+00:00 - Testing for JavaScript inclusion...
+2025-05-29T13:03:25.654930+00:00 - ✅ JavaScript: Scripts found
+2025-05-29T13:03:25.654955+00:00 - Testing for CSS inclusion...
+2025-05-29T13:03:25.654974+00:00 - ✅ CSS: Stylesheets found
+2025-05-29T13:03:25.654993+00:00 - Testing for interactive forms...
+2025-05-29T13:03:25.655034+00:00 - ℹ️ Forms: No forms found (may be expected)
+2025-05-29T13:03:25.655054+00:00 - Testing for interactive buttons...
+2025-05-29T13:03:25.655144+00:00 - ✅ Buttons: 9 button(s) found
+2025-05-29T13:03:25.655364+00:00 - Test results saved: image-cataloging_functionality_results.json
+2025-05-29T13:03:25.655419+00:00 - ✅ Functionality tests: PASSED
+2025-05-29T13:03:25.655794+00:00 - Creating MICRO checkpoint: CP_033_IMAGE-CATALOGING_FUNCTIONALITY_COMPLETE
+2025-05-29T13:03:25.656313+00:00 - ✓ MICRO Checkpoint CP_033_IMAGE-CATALOGING_FUNCTIONALITY_COMPLETE recorded
+2025-05-29T13:03:25.656358+00:00 - 🚨 Phase 4: Error Handling Tests
+2025-05-29T13:03:25.656491+00:00 - Creating MICRO checkpoint: CP_034_IMAGE-CATALOGING_ERROR_HANDLING_START
+2025-05-29T13:03:25.656962+00:00 - ✓ MICRO Checkpoint CP_034_IMAGE-CATALOGING_ERROR_HANDLING_START recorded
+2025-05-29T13:03:25.657001+00:00 - 🚨 Testing error handling for: image-cataloging
+2025-05-29T13:03:25.657022+00:00 - Testing 404 error handling...
+2025-05-29T13:03:25.706753+00:00 - ✅ 404 Handling: Proper 404 response
+2025-05-29T13:03:25.780170+00:00 - ℹ️ Error Boundaries: Error-related content found (may indicate error state)
+2025-05-29T13:03:25.780497+00:00 - Test results saved: image-cataloging_error_handling_results.json
+2025-05-29T13:03:25.780546+00:00 - ✅ Error handling tests: PASSED
+2025-05-29T13:03:25.780794+00:00 - Creating MICRO checkpoint: CP_035_IMAGE-CATALOGING_ERROR_HANDLING_COMPLETE
+2025-05-29T13:03:25.781370+00:00 - ✓ MICRO Checkpoint CP_035_IMAGE-CATALOGING_ERROR_HANDLING_COMPLETE recorded
+2025-05-29T13:03:25.781594+00:00 - Page summary created: image-cataloging_summary.md
+2025-05-29T13:03:25.781737+00:00 - Creating MACRO checkpoint: CP_036_IMAGE-CATALOGING_COMPLETE
+2025-05-29T13:03:25.782802+00:00 - ✓ MACRO Checkpoint CP_036_IMAGE-CATALOGING_COMPLETE created successfully
+2025-05-29T13:03:25.782847+00:00 - ✅ PAGE AUDIT COMPLETE: image-cataloging (SUCCESS)
+2025-05-29T13:03:25.782886+00:00 - ✅ Page audit completed: image-cataloging
+2025-05-29T13:03:26.783951+00:00 - 
+2025-05-29T13:03:26.784081+00:00 - 📄 Auditing page 5/13: scan
+2025-05-29T13:03:26.784107+00:00 - ==================================================
+2025-05-29T13:03:26.784129+00:00 - 🔍 AUDITING PAGE: scan (http://localhost:3000/scan)
+2025-05-29T13:03:26.784748+00:00 - 📊 Phase 1: Accessibility Tests
+2025-05-29T13:03:26.784967+00:00 - Creating MICRO checkpoint: CP_037_SCAN_ACCESSIBILITY_START
+2025-05-29T13:03:26.796459+00:00 - ✓ MICRO Checkpoint CP_037_SCAN_ACCESSIBILITY_START recorded
+2025-05-29T13:03:26.796537+00:00 - 🔍 Testing accessibility for: scan
+2025-05-29T13:03:26.796560+00:00 - Testing HTTP status...
+2025-05-29T13:03:28.303410+00:00 - ✅ HTTP Status: 200 (OK)
+2025-05-29T13:03:28.303521+00:00 - Testing response time...
+2025-05-29T13:03:28.303547+00:00 - ✅ Response Time: 1497ms (Good)
+2025-05-29T13:03:28.303566+00:00 - Testing content length...
+2025-05-29T13:03:28.303584+00:00 - ✅ Content Length: 49185 bytes (Good)
+2025-05-29T13:03:28.303802+00:00 - Test results saved: scan_accessibility_results.json
+2025-05-29T13:03:28.303853+00:00 - ✅ Accessibility tests: PASSED
+2025-05-29T13:03:28.304041+00:00 - Creating MICRO checkpoint: CP_038_SCAN_ACCESSIBILITY_COMPLETE
+2025-05-29T13:03:28.304565+00:00 - ✓ MICRO Checkpoint CP_038_SCAN_ACCESSIBILITY_COMPLETE recorded
+2025-05-29T13:03:28.304598+00:00 - 🧭 Phase 2: Navigation Tests
+2025-05-29T13:03:28.313893+00:00 - Creating MICRO checkpoint: CP_039_SCAN_NAVIGATION_START
+2025-05-29T13:03:28.314522+00:00 - ✓ MICRO Checkpoint CP_039_SCAN_NAVIGATION_START recorded
+2025-05-29T13:03:28.314561+00:00 - 🧭 Testing navigation for: scan
+2025-05-29T13:03:28.377464+00:00 - Testing navigation elements...
+2025-05-29T13:03:28.377578+00:00 - ✅ Found navigation element
+2025-05-29T13:03:28.377627+00:00 - ⚠️ Missing menu element
+2025-05-29T13:03:28.377677+00:00 - ⚠️ Missing sidebar element
+2025-05-29T13:03:28.377718+00:00 - ✅ Found header element
+2025-05-29T13:03:28.377739+00:00 - ✅ Found dashboard link
+2025-05-29T13:03:28.377760+00:00 - ✅ Found products link
+2025-05-29T13:03:28.377779+00:00 - ✅ Navigation: Good (4/6 elements found)
+2025-05-29T13:03:28.378109+00:00 - Test results saved: scan_navigation_results.json
+2025-05-29T13:03:28.378171+00:00 - ✅ Navigation tests: PASSED
+2025-05-29T13:03:28.378404+00:00 - Creating MICRO checkpoint: CP_040_SCAN_NAVIGATION_COMPLETE
+2025-05-29T13:03:28.378944+00:00 - ✓ MICRO Checkpoint CP_040_SCAN_NAVIGATION_COMPLETE recorded
+2025-05-29T13:03:28.379003+00:00 - ⚙️ Phase 3: Functionality Tests
+2025-05-29T13:03:28.379135+00:00 - Creating MICRO checkpoint: CP_041_SCAN_FUNCTIONALITY_START
+2025-05-29T13:03:28.379616+00:00 - ✓ MICRO Checkpoint CP_041_SCAN_FUNCTIONALITY_START recorded
+2025-05-29T13:03:28.379650+00:00 - ⚙️ Testing functionality for: scan
+2025-05-29T13:03:28.440254+00:00 - Testing for JavaScript inclusion...
+2025-05-29T13:03:28.440406+00:00 - ✅ JavaScript: Scripts found
+2025-05-29T13:03:28.440435+00:00 - Testing for CSS inclusion...
+2025-05-29T13:03:28.440458+00:00 - ✅ CSS: Stylesheets found
+2025-05-29T13:03:28.440476+00:00 - Testing for interactive forms...
+2025-05-29T13:03:28.440516+00:00 - ℹ️ Forms: No forms found (may be expected)
+2025-05-29T13:03:28.440535+00:00 - Testing for interactive buttons...
+2025-05-29T13:03:28.440613+00:00 - ✅ Buttons: 3 button(s) found
+2025-05-29T13:03:28.440638+00:00 - Testing scan-specific features...
+2025-05-29T13:03:28.440664+00:00 - ✅ Scan: Barcode/camera content found
+2025-05-29T13:03:28.440911+00:00 - Test results saved: scan_functionality_results.json
+2025-05-29T13:03:28.440962+00:00 - ✅ Functionality tests: PASSED
+2025-05-29T13:03:28.441173+00:00 - Creating MICRO checkpoint: CP_042_SCAN_FUNCTIONALITY_COMPLETE
+2025-05-29T13:03:28.441749+00:00 - ✓ MICRO Checkpoint CP_042_SCAN_FUNCTIONALITY_COMPLETE recorded
+2025-05-29T13:03:28.441791+00:00 - 🚨 Phase 4: Error Handling Tests
+2025-05-29T13:03:28.441984+00:00 - Creating MICRO checkpoint: CP_043_SCAN_ERROR_HANDLING_START
+2025-05-29T13:03:28.442494+00:00 - ✓ MICRO Checkpoint CP_043_SCAN_ERROR_HANDLING_START recorded
+2025-05-29T13:03:28.442529+00:00 - 🚨 Testing error handling for: scan
+2025-05-29T13:03:28.442549+00:00 - Testing 404 error handling...
+2025-05-29T13:03:28.498791+00:00 - ✅ 404 Handling: Proper 404 response
+2025-05-29T13:03:28.549701+00:00 - ℹ️ Error Boundaries: Error-related content found (may indicate error state)
+2025-05-29T13:03:28.550247+00:00 - Test results saved: scan_error_handling_results.json
+2025-05-29T13:03:28.550317+00:00 - ✅ Error handling tests: PASSED
+2025-05-29T13:03:28.550644+00:00 - Creating MICRO checkpoint: CP_044_SCAN_ERROR_HANDLING_COMPLETE
+2025-05-29T13:03:28.551573+00:00 - ✓ MICRO Checkpoint CP_044_SCAN_ERROR_HANDLING_COMPLETE recorded
+2025-05-29T13:03:28.551731+00:00 - Page summary created: scan_summary.md
+2025-05-29T13:03:28.551901+00:00 - Creating MACRO checkpoint: CP_045_SCAN_COMPLETE
+2025-05-29T13:03:28.553291+00:00 - ✓ MACRO Checkpoint CP_045_SCAN_COMPLETE created successfully
+2025-05-29T13:03:28.553338+00:00 - ✅ PAGE AUDIT COMPLETE: scan (SUCCESS)
+2025-05-29T13:03:28.553377+00:00 - ✅ Page audit completed: scan
+2025-05-29T13:03:29.554431+00:00 - 
+2025-05-29T13:03:29.554573+00:00 - 📄 Auditing page 6/13: orders
+2025-05-29T13:03:29.554691+00:00 - ==================================================
+2025-05-29T13:03:29.554733+00:00 - 🔍 AUDITING PAGE: orders (http://localhost:3000/orders)
+2025-05-29T13:03:29.555621+00:00 - 📊 Phase 1: Accessibility Tests
+2025-05-29T13:03:29.555792+00:00 - Creating MICRO checkpoint: CP_046_ORDERS_ACCESSIBILITY_START
+2025-05-29T13:03:29.565834+00:00 - ✓ MICRO Checkpoint CP_046_ORDERS_ACCESSIBILITY_START recorded
+2025-05-29T13:03:29.565974+00:00 - 🔍 Testing accessibility for: orders
+2025-05-29T13:03:29.566000+00:00 - Testing HTTP status...
+2025-05-29T13:03:29.760942+00:00 - ✅ HTTP Status: 200 (OK)
+2025-05-29T13:03:29.761079+00:00 - Testing response time...
+2025-05-29T13:03:29.761109+00:00 - ✅ Response Time: 177ms (Good)
+2025-05-29T13:03:29.761129+00:00 - Testing content length...
+2025-05-29T13:03:29.761147+00:00 - ✅ Content Length: 89639 bytes (Good)
+2025-05-29T13:03:29.761376+00:00 - Test results saved: orders_accessibility_results.json
+2025-05-29T13:03:29.761425+00:00 - ✅ Accessibility tests: PASSED
+2025-05-29T13:03:29.761656+00:00 - Creating MICRO checkpoint: CP_047_ORDERS_ACCESSIBILITY_COMPLETE
+2025-05-29T13:03:29.762399+00:00 - ✓ MICRO Checkpoint CP_047_ORDERS_ACCESSIBILITY_COMPLETE recorded
+2025-05-29T13:03:29.762466+00:00 - 🧭 Phase 2: Navigation Tests
+2025-05-29T13:03:29.771497+00:00 - Creating MICRO checkpoint: CP_048_ORDERS_NAVIGATION_START
+2025-05-29T13:03:29.772181+00:00 - ✓ MICRO Checkpoint CP_048_ORDERS_NAVIGATION_START recorded
+2025-05-29T13:03:29.772227+00:00 - 🧭 Testing navigation for: orders
+2025-05-29T13:03:29.851776+00:00 - Testing navigation elements...
+2025-05-29T13:03:29.851898+00:00 - ✅ Found navigation element
+2025-05-29T13:03:29.851965+00:00 - ⚠️ Missing menu element
+2025-05-29T13:03:29.852097+00:00 - ⚠️ Missing sidebar element
+2025-05-29T13:03:29.852142+00:00 - ✅ Found header element
+2025-05-29T13:03:29.852163+00:00 - ✅ Found dashboard link
+2025-05-29T13:03:29.852182+00:00 - ✅ Found products link
+2025-05-29T13:03:29.852201+00:00 - ✅ Navigation: Good (4/6 elements found)
+2025-05-29T13:03:29.852427+00:00 - Test results saved: orders_navigation_results.json
+2025-05-29T13:03:29.852474+00:00 - ✅ Navigation tests: PASSED
+2025-05-29T13:03:29.852682+00:00 - Creating MICRO checkpoint: CP_049_ORDERS_NAVIGATION_COMPLETE
+2025-05-29T13:03:29.853330+00:00 - ✓ MICRO Checkpoint CP_049_ORDERS_NAVIGATION_COMPLETE recorded
+2025-05-29T13:03:29.853369+00:00 - ⚙️ Phase 3: Functionality Tests
+2025-05-29T13:03:29.862487+00:00 - Creating MICRO checkpoint: CP_050_ORDERS_FUNCTIONALITY_START
+2025-05-29T13:03:29.863279+00:00 - ✓ MICRO Checkpoint CP_050_ORDERS_FUNCTIONALITY_START recorded
+2025-05-29T13:03:29.863323+00:00 - ⚙️ Testing functionality for: orders
+2025-05-29T13:03:29.935324+00:00 - Testing for JavaScript inclusion...
+2025-05-29T13:03:29.935431+00:00 - ✅ JavaScript: Scripts found
+2025-05-29T13:03:29.935457+00:00 - Testing for CSS inclusion...
+2025-05-29T13:03:29.935476+00:00 - ✅ CSS: Stylesheets found
+2025-05-29T13:03:29.935494+00:00 - Testing for interactive forms...
+2025-05-29T13:03:29.935546+00:00 - ℹ️ Forms: No forms found (may be expected)
+2025-05-29T13:03:29.935565+00:00 - Testing for interactive buttons...
+2025-05-29T13:03:29.935689+00:00 - ✅ Buttons: 2 button(s) found
+2025-05-29T13:03:29.936026+00:00 - Test results saved: orders_functionality_results.json
+2025-05-29T13:03:29.936079+00:00 - ✅ Functionality tests: PASSED
+2025-05-29T13:03:29.936272+00:00 - Creating MICRO checkpoint: CP_051_ORDERS_FUNCTIONALITY_COMPLETE
+2025-05-29T13:03:29.936897+00:00 - ✓ MICRO Checkpoint CP_051_ORDERS_FUNCTIONALITY_COMPLETE recorded
+2025-05-29T13:03:29.936942+00:00 - 🚨 Phase 4: Error Handling Tests
+2025-05-29T13:03:29.946049+00:00 - Creating MICRO checkpoint: CP_052_ORDERS_ERROR_HANDLING_START
+2025-05-29T13:03:29.946733+00:00 - ✓ MICRO Checkpoint CP_052_ORDERS_ERROR_HANDLING_START recorded
+2025-05-29T13:03:29.946822+00:00 - 🚨 Testing error handling for: orders
+2025-05-29T13:03:29.946850+00:00 - Testing 404 error handling...
+2025-05-29T13:03:29.996951+00:00 - ✅ 404 Handling: Proper 404 response
+2025-05-29T13:03:30.070907+00:00 - ℹ️ Error Boundaries: Error-related content found (may indicate error state)
+2025-05-29T13:03:30.071320+00:00 - Test results saved: orders_error_handling_results.json
+2025-05-29T13:03:30.071365+00:00 - ✅ Error handling tests: PASSED
+2025-05-29T13:03:30.071639+00:00 - Creating MICRO checkpoint: CP_053_ORDERS_ERROR_HANDLING_COMPLETE
+2025-05-29T13:03:30.072332+00:00 - ✓ MICRO Checkpoint CP_053_ORDERS_ERROR_HANDLING_COMPLETE recorded
+2025-05-29T13:03:30.072491+00:00 - Page summary created: orders_summary.md
+2025-05-29T13:03:30.081462+00:00 - Creating MACRO checkpoint: CP_054_ORDERS_COMPLETE
+2025-05-29T13:03:30.082701+00:00 - ✓ MACRO Checkpoint CP_054_ORDERS_COMPLETE created successfully
+2025-05-29T13:03:30.082740+00:00 - ✅ PAGE AUDIT COMPLETE: orders (SUCCESS)
+2025-05-29T13:03:30.082778+00:00 - ✅ Page audit completed: orders
+2025-05-29T13:03:31.083627+00:00 - 
+2025-05-29T13:03:31.083760+00:00 - 📄 Auditing page 7/13: customers
+2025-05-29T13:03:31.083785+00:00 - ==================================================
+2025-05-29T13:03:31.083904+00:00 - 🔍 AUDITING PAGE: customers (http://localhost:3000/customers)
+2025-05-29T13:03:31.085075+00:00 - 📊 Phase 1: Accessibility Tests
+2025-05-29T13:03:31.085281+00:00 - Creating MICRO checkpoint: CP_055_CUSTOMERS_ACCESSIBILITY_START
+2025-05-29T13:03:31.095422+00:00 - ✓ MICRO Checkpoint CP_055_CUSTOMERS_ACCESSIBILITY_START recorded
+2025-05-29T13:03:31.095499+00:00 - 🔍 Testing accessibility for: customers
+2025-05-29T13:03:31.095523+00:00 - Testing HTTP status...
+2025-05-29T13:03:31.179197+00:00 - ✅ HTTP Status: 200 (OK)
+2025-05-29T13:03:31.179303+00:00 - Testing response time...
+2025-05-29T13:03:31.179333+00:00 - ✅ Response Time: 71ms (Good)
+2025-05-29T13:03:31.179354+00:00 - Testing content length...
+2025-05-29T13:03:31.179373+00:00 - ✅ Content Length: 90990 bytes (Good)
+2025-05-29T13:03:31.179566+00:00 - Test results saved: customers_accessibility_results.json
+2025-05-29T13:03:31.179609+00:00 - ✅ Accessibility tests: PASSED
+2025-05-29T13:03:31.179813+00:00 - Creating MICRO checkpoint: CP_056_CUSTOMERS_ACCESSIBILITY_COMPLETE
+2025-05-29T13:03:31.180535+00:00 - ✓ MICRO Checkpoint CP_056_CUSTOMERS_ACCESSIBILITY_COMPLETE recorded
+2025-05-29T13:03:31.180579+00:00 - 🧭 Phase 2: Navigation Tests
+2025-05-29T13:03:31.180706+00:00 - Creating MICRO checkpoint: CP_057_CUSTOMERS_NAVIGATION_START
+2025-05-29T13:03:31.181400+00:00 - ✓ MICRO Checkpoint CP_057_CUSTOMERS_NAVIGATION_START recorded
+2025-05-29T13:03:31.181446+00:00 - 🧭 Testing navigation for: customers
+2025-05-29T13:03:31.254385+00:00 - Testing navigation elements...
+2025-05-29T13:03:31.254499+00:00 - ✅ Found navigation element
+2025-05-29T13:03:31.254568+00:00 - ⚠️ Missing menu element
+2025-05-29T13:03:31.254637+00:00 - ⚠️ Missing sidebar element
+2025-05-29T13:03:31.254670+00:00 - ✅ Found header element
+2025-05-29T13:03:31.254690+00:00 - ✅ Found dashboard link
+2025-05-29T13:03:31.254710+00:00 - ✅ Found products link
+2025-05-29T13:03:31.254729+00:00 - ✅ Navigation: Good (4/6 elements found)
+2025-05-29T13:03:31.255045+00:00 - Test results saved: customers_navigation_results.json
+2025-05-29T13:03:31.255091+00:00 - ✅ Navigation tests: PASSED
+2025-05-29T13:03:31.255284+00:00 - Creating MICRO checkpoint: CP_058_CUSTOMERS_NAVIGATION_COMPLETE
+2025-05-29T13:03:31.255965+00:00 - ✓ MICRO Checkpoint CP_058_CUSTOMERS_NAVIGATION_COMPLETE recorded
+2025-05-29T13:03:31.256008+00:00 - ⚙️ Phase 3: Functionality Tests
+2025-05-29T13:03:31.265106+00:00 - Creating MICRO checkpoint: CP_059_CUSTOMERS_FUNCTIONALITY_START
+2025-05-29T13:03:31.266008+00:00 - ✓ MICRO Checkpoint CP_059_CUSTOMERS_FUNCTIONALITY_START recorded
+2025-05-29T13:03:31.266061+00:00 - ⚙️ Testing functionality for: customers
+2025-05-29T13:03:31.347971+00:00 - Testing for JavaScript inclusion...
+2025-05-29T13:03:31.348080+00:00 - ✅ JavaScript: Scripts found
+2025-05-29T13:03:31.348105+00:00 - Testing for CSS inclusion...
+2025-05-29T13:03:31.348136+00:00 - ✅ CSS: Stylesheets found
+2025-05-29T13:03:31.348156+00:00 - Testing for interactive forms...
+2025-05-29T13:03:31.348207+00:00 - ℹ️ Forms: No forms found (may be expected)
+2025-05-29T13:03:31.348227+00:00 - Testing for interactive buttons...
+2025-05-29T13:03:31.348354+00:00 - ✅ Buttons: 2 button(s) found
+2025-05-29T13:03:31.348546+00:00 - Test results saved: customers_functionality_results.json
+2025-05-29T13:03:31.348596+00:00 - ✅ Functionality tests: PASSED
+2025-05-29T13:03:31.348794+00:00 - Creating MICRO checkpoint: CP_060_CUSTOMERS_FUNCTIONALITY_COMPLETE
+2025-05-29T13:03:31.349450+00:00 - ✓ MICRO Checkpoint CP_060_CUSTOMERS_FUNCTIONALITY_COMPLETE recorded
+2025-05-29T13:03:31.349511+00:00 - 🚨 Phase 4: Error Handling Tests
+2025-05-29T13:03:31.358430+00:00 - Creating MICRO checkpoint: CP_061_CUSTOMERS_ERROR_HANDLING_START
+2025-05-29T13:03:31.359111+00:00 - ✓ MICRO Checkpoint CP_061_CUSTOMERS_ERROR_HANDLING_START recorded
+2025-05-29T13:03:31.359157+00:00 - 🚨 Testing error handling for: customers
+2025-05-29T13:03:31.359180+00:00 - Testing 404 error handling...
+2025-05-29T13:03:31.403126+00:00 - ✅ 404 Handling: Proper 404 response
+2025-05-29T13:03:31.475200+00:00 - ℹ️ Error Boundaries: Error-related content found (may indicate error state)
+2025-05-29T13:03:31.475470+00:00 - Test results saved: customers_error_handling_results.json
+2025-05-29T13:03:31.475513+00:00 - ✅ Error handling tests: PASSED
+2025-05-29T13:03:31.475717+00:00 - Creating MICRO checkpoint: CP_062_CUSTOMERS_ERROR_HANDLING_COMPLETE
+2025-05-29T13:03:31.476419+00:00 - ✓ MICRO Checkpoint CP_062_CUSTOMERS_ERROR_HANDLING_COMPLETE recorded
+2025-05-29T13:03:31.476543+00:00 - Page summary created: customers_summary.md
+2025-05-29T13:03:31.485664+00:00 - Creating MACRO checkpoint: CP_063_CUSTOMERS_COMPLETE
+2025-05-29T13:03:31.487076+00:00 - ✓ MACRO Checkpoint CP_063_CUSTOMERS_COMPLETE created successfully
+2025-05-29T13:03:31.487118+00:00 - ✅ PAGE AUDIT COMPLETE: customers (SUCCESS)
+2025-05-29T13:03:31.487163+00:00 - ✅ Page audit completed: customers
+2025-05-29T13:03:32.488260+00:00 - 
+2025-05-29T13:03:32.488400+00:00 - 📄 Auditing page 8/13: reports
+2025-05-29T13:03:32.488431+00:00 - ==================================================
+2025-05-29T13:03:32.488453+00:00 - 🔍 AUDITING PAGE: reports (http://localhost:3000/reports)
+2025-05-29T13:03:32.489407+00:00 - 📊 Phase 1: Accessibility Tests
+2025-05-29T13:03:32.489572+00:00 - Creating MICRO checkpoint: CP_064_REPORTS_ACCESSIBILITY_START
+2025-05-29T13:03:32.500464+00:00 - ✓ MICRO Checkpoint CP_064_REPORTS_ACCESSIBILITY_START recorded
+2025-05-29T13:03:32.500518+00:00 - 🔍 Testing accessibility for: reports
+2025-05-29T13:03:32.500540+00:00 - Testing HTTP status...
+2025-05-29T13:03:32.663774+00:00 - ✅ HTTP Status: 200 (OK)
+2025-05-29T13:03:32.663867+00:00 - Testing response time...
+2025-05-29T13:03:32.663891+00:00 - ✅ Response Time: 156ms (Good)
+2025-05-29T13:03:32.663915+00:00 - Testing content length...
+2025-05-29T13:03:32.663939+00:00 - ✅ Content Length: 63471 bytes (Good)
+2025-05-29T13:03:32.664117+00:00 - Test results saved: reports_accessibility_results.json
+2025-05-29T13:03:32.664157+00:00 - ✅ Accessibility tests: PASSED
+2025-05-29T13:03:32.664356+00:00 - Creating MICRO checkpoint: CP_065_REPORTS_ACCESSIBILITY_COMPLETE
+2025-05-29T13:03:32.665062+00:00 - ✓ MICRO Checkpoint CP_065_REPORTS_ACCESSIBILITY_COMPLETE recorded
+2025-05-29T13:03:32.665102+00:00 - 🧭 Phase 2: Navigation Tests
+2025-05-29T13:03:32.674284+00:00 - Creating MICRO checkpoint: CP_066_REPORTS_NAVIGATION_START
+2025-05-29T13:03:32.675169+00:00 - ✓ MICRO Checkpoint CP_066_REPORTS_NAVIGATION_START recorded
+2025-05-29T13:03:32.675214+00:00 - 🧭 Testing navigation for: reports
+2025-05-29T13:03:32.762607+00:00 - Testing navigation elements...
+2025-05-29T13:03:32.762704+00:00 - ✅ Found navigation element
+2025-05-29T13:03:32.762759+00:00 - ⚠️ Missing menu element
+2025-05-29T13:03:32.762818+00:00 - ⚠️ Missing sidebar element
+2025-05-29T13:03:32.762867+00:00 - ✅ Found header element
+2025-05-29T13:03:32.762900+00:00 - ✅ Found dashboard link
+2025-05-29T13:03:32.762951+00:00 - ✅ Found products link
+2025-05-29T13:03:32.762975+00:00 - ✅ Navigation: Good (4/6 elements found)
+2025-05-29T13:03:32.763177+00:00 - Test results saved: reports_navigation_results.json
+2025-05-29T13:03:32.763238+00:00 - ✅ Navigation tests: PASSED
+2025-05-29T13:03:32.763433+00:00 - Creating MICRO checkpoint: CP_067_REPORTS_NAVIGATION_COMPLETE
+2025-05-29T13:03:32.764162+00:00 - ✓ MICRO Checkpoint CP_067_REPORTS_NAVIGATION_COMPLETE recorded
+2025-05-29T13:03:32.764201+00:00 - ⚙️ Phase 3: Functionality Tests
+2025-05-29T13:03:32.773075+00:00 - Creating MICRO checkpoint: CP_068_REPORTS_FUNCTIONALITY_START
+2025-05-29T13:03:32.773793+00:00 - ✓ MICRO Checkpoint CP_068_REPORTS_FUNCTIONALITY_START recorded
+2025-05-29T13:03:32.773888+00:00 - ⚙️ Testing functionality for: reports
+2025-05-29T13:03:32.857815+00:00 - Testing for JavaScript inclusion...
+2025-05-29T13:03:32.857963+00:00 - ✅ JavaScript: Scripts found
+2025-05-29T13:03:32.857994+00:00 - Testing for CSS inclusion...
+2025-05-29T13:03:32.858014+00:00 - ✅ CSS: Stylesheets found
+2025-05-29T13:03:32.858032+00:00 - Testing for interactive forms...
+2025-05-29T13:03:32.858075+00:00 - ℹ️ Forms: No forms found (may be expected)
+2025-05-29T13:03:32.858093+00:00 - Testing for interactive buttons...
+2025-05-29T13:03:32.858194+00:00 - ✅ Buttons: 17 button(s) found
+2025-05-29T13:03:32.858402+00:00 - Test results saved: reports_functionality_results.json
+2025-05-29T13:03:32.858451+00:00 - ✅ Functionality tests: PASSED
+2025-05-29T13:03:32.858671+00:00 - Creating MICRO checkpoint: CP_069_REPORTS_FUNCTIONALITY_COMPLETE
+2025-05-29T13:03:32.859402+00:00 - ✓ MICRO Checkpoint CP_069_REPORTS_FUNCTIONALITY_COMPLETE recorded
+2025-05-29T13:03:32.859442+00:00 - 🚨 Phase 4: Error Handling Tests
+2025-05-29T13:03:32.868350+00:00 - Creating MICRO checkpoint: CP_070_REPORTS_ERROR_HANDLING_START
+2025-05-29T13:03:32.869073+00:00 - ✓ MICRO Checkpoint CP_070_REPORTS_ERROR_HANDLING_START recorded
+2025-05-29T13:03:32.869111+00:00 - 🚨 Testing error handling for: reports
+2025-05-29T13:03:32.869186+00:00 - Testing 404 error handling...
+2025-05-29T13:03:32.914250+00:00 - ✅ 404 Handling: Proper 404 response
+2025-05-29T13:03:33.005927+00:00 - ℹ️ Error Boundaries: Error-related content found (may indicate error state)
+2025-05-29T13:03:33.006238+00:00 - Test results saved: reports_error_handling_results.json
+2025-05-29T13:03:33.006281+00:00 - ✅ Error handling tests: PASSED
+2025-05-29T13:03:33.006499+00:00 - Creating MICRO checkpoint: CP_071_REPORTS_ERROR_HANDLING_COMPLETE
+2025-05-29T13:03:33.007344+00:00 - ✓ MICRO Checkpoint CP_071_REPORTS_ERROR_HANDLING_COMPLETE recorded
+2025-05-29T13:03:33.007465+00:00 - Page summary created: reports_summary.md
+2025-05-29T13:03:33.016491+00:00 - Creating MACRO checkpoint: CP_072_REPORTS_COMPLETE
+2025-05-29T13:03:33.018081+00:00 - ✓ MACRO Checkpoint CP_072_REPORTS_COMPLETE created successfully
+2025-05-29T13:03:33.018129+00:00 - ✅ PAGE AUDIT COMPLETE: reports (SUCCESS)
+2025-05-29T13:03:33.018178+00:00 - ✅ Page audit completed: reports
+2025-05-29T13:03:34.019214+00:00 - 
+2025-05-29T13:03:34.019348+00:00 - 📄 Auditing page 9/13: inventory-alerts
+2025-05-29T13:03:34.019376+00:00 - ==================================================
+2025-05-29T13:03:34.019400+00:00 - 🔍 AUDITING PAGE: inventory-alerts (http://localhost:3000/inventory/alerts)
+2025-05-29T13:03:34.020450+00:00 - 📊 Phase 1: Accessibility Tests
+2025-05-29T13:03:34.020614+00:00 - Creating MICRO checkpoint: CP_073_INVENTORY-ALERTS_ACCESSIBILITY_START
+2025-05-29T13:03:34.030859+00:00 - ✓ MICRO Checkpoint CP_073_INVENTORY-ALERTS_ACCESSIBILITY_START recorded
+2025-05-29T13:03:34.030940+00:00 - 🔍 Testing accessibility for: inventory-alerts
+2025-05-29T13:03:34.030962+00:00 - Testing HTTP status...
+2025-05-29T13:03:34.107776+00:00 - ✅ HTTP Status: 200 (OK)
+2025-05-29T13:03:34.107891+00:00 - Testing response time...
+2025-05-29T13:03:34.107917+00:00 - ✅ Response Time: 68ms (Good)
+2025-05-29T13:03:34.107955+00:00 - Testing content length...
+2025-05-29T13:03:34.107975+00:00 - ✅ Content Length: 72907 bytes (Good)
+2025-05-29T13:03:34.108189+00:00 - Test results saved: inventory-alerts_accessibility_results.json
+2025-05-29T13:03:34.108236+00:00 - ✅ Accessibility tests: PASSED
+2025-05-29T13:03:34.108437+00:00 - Creating MICRO checkpoint: CP_074_INVENTORY-ALERTS_ACCESSIBILITY_COMPLETE
+2025-05-29T13:03:34.109237+00:00 - ✓ MICRO Checkpoint CP_074_INVENTORY-ALERTS_ACCESSIBILITY_COMPLETE recorded
+2025-05-29T13:03:34.109273+00:00 - 🧭 Phase 2: Navigation Tests
+2025-05-29T13:03:34.118346+00:00 - Creating MICRO checkpoint: CP_075_INVENTORY-ALERTS_NAVIGATION_START
+2025-05-29T13:03:34.119220+00:00 - ✓ MICRO Checkpoint CP_075_INVENTORY-ALERTS_NAVIGATION_START recorded
+2025-05-29T13:03:34.119265+00:00 - 🧭 Testing navigation for: inventory-alerts
+2025-05-29T13:03:34.184865+00:00 - Testing navigation elements...
+2025-05-29T13:03:34.184976+00:00 - ✅ Found navigation element
+2025-05-29T13:03:34.185037+00:00 - ⚠️ Missing menu element
+2025-05-29T13:03:34.185099+00:00 - ⚠️ Missing sidebar element
+2025-05-29T13:03:34.185142+00:00 - ✅ Found header element
+2025-05-29T13:03:34.185162+00:00 - ✅ Found dashboard link
+2025-05-29T13:03:34.185181+00:00 - ✅ Found products link
+2025-05-29T13:03:34.185200+00:00 - ✅ Navigation: Good (4/6 elements found)
+2025-05-29T13:03:34.185406+00:00 - Test results saved: inventory-alerts_navigation_results.json
+2025-05-29T13:03:34.185456+00:00 - ✅ Navigation tests: PASSED
+2025-05-29T13:03:34.185657+00:00 - Creating MICRO checkpoint: CP_076_INVENTORY-ALERTS_NAVIGATION_COMPLETE
+2025-05-29T13:03:34.186526+00:00 - ✓ MICRO Checkpoint CP_076_INVENTORY-ALERTS_NAVIGATION_COMPLETE recorded
+2025-05-29T13:03:34.186573+00:00 - ⚙️ Phase 3: Functionality Tests
+2025-05-29T13:03:34.195469+00:00 - Creating MICRO checkpoint: CP_077_INVENTORY-ALERTS_FUNCTIONALITY_START
+2025-05-29T13:03:34.196311+00:00 - ✓ MICRO Checkpoint CP_077_INVENTORY-ALERTS_FUNCTIONALITY_START recorded
+2025-05-29T13:03:34.196352+00:00 - ⚙️ Testing functionality for: inventory-alerts
+2025-05-29T13:03:34.263577+00:00 - Testing for JavaScript inclusion...
+2025-05-29T13:03:34.263682+00:00 - ✅ JavaScript: Scripts found
+2025-05-29T13:03:34.263707+00:00 - Testing for CSS inclusion...
+2025-05-29T13:03:34.263726+00:00 - ✅ CSS: Stylesheets found
+2025-05-29T13:03:34.263744+00:00 - Testing for interactive forms...
+2025-05-29T13:03:34.263789+00:00 - ℹ️ Forms: No forms found (may be expected)
+2025-05-29T13:03:34.263808+00:00 - Testing for interactive buttons...
+2025-05-29T13:03:34.263916+00:00 - ✅ Buttons: 4 button(s) found
+2025-05-29T13:03:34.264182+00:00 - Test results saved: inventory-alerts_functionality_results.json
+2025-05-29T13:03:34.264234+00:00 - ✅ Functionality tests: PASSED
+2025-05-29T13:03:34.264451+00:00 - Creating MICRO checkpoint: CP_078_INVENTORY-ALERTS_FUNCTIONALITY_COMPLETE
+2025-05-29T13:03:34.265316+00:00 - ✓ MICRO Checkpoint CP_078_INVENTORY-ALERTS_FUNCTIONALITY_COMPLETE recorded
+2025-05-29T13:03:34.265359+00:00 - 🚨 Phase 4: Error Handling Tests
+2025-05-29T13:03:34.274299+00:00 - Creating MICRO checkpoint: CP_079_INVENTORY-ALERTS_ERROR_HANDLING_START
+2025-05-29T13:03:34.275171+00:00 - ✓ MICRO Checkpoint CP_079_INVENTORY-ALERTS_ERROR_HANDLING_START recorded
+2025-05-29T13:03:34.275210+00:00 - 🚨 Testing error handling for: inventory-alerts
+2025-05-29T13:03:34.275230+00:00 - Testing 404 error handling...
+2025-05-29T13:03:34.321082+00:00 - ✅ 404 Handling: Proper 404 response
+2025-05-29T13:03:34.389097+00:00 - ℹ️ Error Boundaries: Error-related content found (may indicate error state)
+2025-05-29T13:03:34.389360+00:00 - Test results saved: inventory-alerts_error_handling_results.json
+2025-05-29T13:03:34.389396+00:00 - ✅ Error handling tests: PASSED
+2025-05-29T13:03:34.389599+00:00 - Creating MICRO checkpoint: CP_080_INVENTORY-ALERTS_ERROR_HANDLING_COMPLETE
+2025-05-29T13:03:34.390481+00:00 - ✓ MICRO Checkpoint CP_080_INVENTORY-ALERTS_ERROR_HANDLING_COMPLETE recorded
+2025-05-29T13:03:34.390680+00:00 - Page summary created: inventory-alerts_summary.md
+2025-05-29T13:03:34.399314+00:00 - Creating MACRO checkpoint: CP_081_INVENTORY-ALERTS_COMPLETE
+2025-05-29T13:03:34.400745+00:00 - ✓ MACRO Checkpoint CP_081_INVENTORY-ALERTS_COMPLETE created successfully
+2025-05-29T13:03:34.400781+00:00 - ✅ PAGE AUDIT COMPLETE: inventory-alerts (SUCCESS)
+2025-05-29T13:03:34.400824+00:00 - ✅ Page audit completed: inventory-alerts
+2025-05-29T13:03:35.400901+00:00 - 
+2025-05-29T13:03:35.401031+00:00 - 📄 Auditing page 10/13: ai-assistant
+2025-05-29T13:03:35.401056+00:00 - ==================================================
+2025-05-29T13:03:35.401078+00:00 - 🔍 AUDITING PAGE: ai-assistant (http://localhost:3000/ai-assistant)
+2025-05-29T13:03:35.402123+00:00 - 📊 Phase 1: Accessibility Tests
+2025-05-29T13:03:35.402300+00:00 - Creating MICRO checkpoint: CP_082_AI-ASSISTANT_ACCESSIBILITY_START
+2025-05-29T13:03:35.412510+00:00 - ✓ MICRO Checkpoint CP_082_AI-ASSISTANT_ACCESSIBILITY_START recorded
+2025-05-29T13:03:35.412586+00:00 - 🔍 Testing accessibility for: ai-assistant
+2025-05-29T13:03:35.412610+00:00 - Testing HTTP status...
+2025-05-29T13:03:38.920006+00:00 - ✅ HTTP Status: 200 (OK)
+2025-05-29T13:03:38.920122+00:00 - Testing response time...
+2025-05-29T13:03:38.920149+00:00 - ⚠️ Response Time: 3500ms (Slow)
+2025-05-29T13:03:38.921141+00:00 - Testing content length...
+2025-05-29T13:03:38.921174+00:00 - ✅ Content Length: 74438 bytes (Good)
+2025-05-29T13:03:38.921389+00:00 - Test results saved: ai-assistant_accessibility_results.json
+2025-05-29T13:03:38.921437+00:00 - ✅ Accessibility tests: PASSED
+2025-05-29T13:03:38.921618+00:00 - Creating MICRO checkpoint: CP_083_AI-ASSISTANT_ACCESSIBILITY_COMPLETE
+2025-05-29T13:03:38.922483+00:00 - ✓ MICRO Checkpoint CP_083_AI-ASSISTANT_ACCESSIBILITY_COMPLETE recorded
+2025-05-29T13:03:38.922529+00:00 - 🧭 Phase 2: Navigation Tests
+2025-05-29T13:03:38.922662+00:00 - Creating MICRO checkpoint: CP_084_AI-ASSISTANT_NAVIGATION_START
+2025-05-29T13:03:38.923456+00:00 - ✓ MICRO Checkpoint CP_084_AI-ASSISTANT_NAVIGATION_START recorded
+2025-05-29T13:03:38.923493+00:00 - 🧭 Testing navigation for: ai-assistant
+2025-05-29T13:03:39.031581+00:00 - Testing navigation elements...
+2025-05-29T13:03:39.031715+00:00 - ✅ Found navigation element
+2025-05-29T13:03:39.031780+00:00 - ⚠️ Missing menu element
+2025-05-29T13:03:39.031851+00:00 - ⚠️ Missing sidebar element
+2025-05-29T13:03:39.031907+00:00 - ✅ Found header element
+2025-05-29T13:03:39.031929+00:00 - ✅ Found dashboard link
+2025-05-29T13:03:39.031950+00:00 - ✅ Found products link
+2025-05-29T13:03:39.031969+00:00 - ✅ Navigation: Good (4/6 elements found)
+2025-05-29T13:03:39.032177+00:00 - Test results saved: ai-assistant_navigation_results.json
+2025-05-29T13:03:39.032223+00:00 - ✅ Navigation tests: PASSED
+2025-05-29T13:03:39.032462+00:00 - Creating MICRO checkpoint: CP_085_AI-ASSISTANT_NAVIGATION_COMPLETE
+2025-05-29T13:03:39.033347+00:00 - ✓ MICRO Checkpoint CP_085_AI-ASSISTANT_NAVIGATION_COMPLETE recorded
+2025-05-29T13:03:39.033384+00:00 - ⚙️ Phase 3: Functionality Tests
+2025-05-29T13:03:39.042771+00:00 - Creating MICRO checkpoint: CP_086_AI-ASSISTANT_FUNCTIONALITY_START
+2025-05-29T13:03:39.043842+00:00 - ✓ MICRO Checkpoint CP_086_AI-ASSISTANT_FUNCTIONALITY_START recorded
+2025-05-29T13:03:39.043888+00:00 - ⚙️ Testing functionality for: ai-assistant
+2025-05-29T13:03:39.143870+00:00 - Testing for JavaScript inclusion...
+2025-05-29T13:03:39.144002+00:00 - ✅ JavaScript: Scripts found
+2025-05-29T13:03:39.144028+00:00 - Testing for CSS inclusion...
+2025-05-29T13:03:39.144049+00:00 - ✅ CSS: Stylesheets found
+2025-05-29T13:03:39.144068+00:00 - Testing for interactive forms...
+2025-05-29T13:03:39.144122+00:00 - ℹ️ Forms: No forms found (may be expected)
+2025-05-29T13:03:39.144145+00:00 - Testing for interactive buttons...
+2025-05-29T13:03:39.144272+00:00 - ✅ Buttons: 23 button(s) found
+2025-05-29T13:03:39.144302+00:00 - Testing AI-specific features...
+2025-05-29T13:03:39.144350+00:00 - ✅ AI: AI-related content found
+2025-05-29T13:03:39.144585+00:00 - Test results saved: ai-assistant_functionality_results.json
+2025-05-29T13:03:39.144635+00:00 - ✅ Functionality tests: PASSED
+2025-05-29T13:03:39.144838+00:00 - Creating MICRO checkpoint: CP_087_AI-ASSISTANT_FUNCTIONALITY_COMPLETE
+2025-05-29T13:03:39.145835+00:00 - ✓ MICRO Checkpoint CP_087_AI-ASSISTANT_FUNCTIONALITY_COMPLETE recorded
+2025-05-29T13:03:39.145885+00:00 - 🚨 Phase 4: Error Handling Tests
+2025-05-29T13:03:39.155317+00:00 - Creating MICRO checkpoint: CP_088_AI-ASSISTANT_ERROR_HANDLING_START
+2025-05-29T13:03:39.156385+00:00 - ✓ MICRO Checkpoint CP_088_AI-ASSISTANT_ERROR_HANDLING_START recorded
+2025-05-29T13:03:39.156435+00:00 - 🚨 Testing error handling for: ai-assistant
+2025-05-29T13:03:39.156458+00:00 - Testing 404 error handling...
+2025-05-29T13:03:39.208467+00:00 - ✅ 404 Handling: Proper 404 response
+2025-05-29T13:03:39.303755+00:00 - ℹ️ Error Boundaries: Error-related content found (may indicate error state)
+2025-05-29T13:03:39.304178+00:00 - Test results saved: ai-assistant_error_handling_results.json
+2025-05-29T13:03:39.304218+00:00 - ✅ Error handling tests: PASSED
+2025-05-29T13:03:39.304411+00:00 - Creating MICRO checkpoint: CP_089_AI-ASSISTANT_ERROR_HANDLING_COMPLETE
+2025-05-29T13:03:39.305432+00:00 - ✓ MICRO Checkpoint CP_089_AI-ASSISTANT_ERROR_HANDLING_COMPLETE recorded
+2025-05-29T13:03:39.305595+00:00 - Page summary created: ai-assistant_summary.md
+2025-05-29T13:03:39.305830+00:00 - Creating MACRO checkpoint: CP_090_AI-ASSISTANT_COMPLETE
+2025-05-29T13:03:39.308225+00:00 - ✓ MACRO Checkpoint CP_090_AI-ASSISTANT_COMPLETE created successfully
+2025-05-29T13:03:39.308277+00:00 - ✅ PAGE AUDIT COMPLETE: ai-assistant (SUCCESS)
+2025-05-29T13:03:39.308330+00:00 - ✅ Page audit completed: ai-assistant
+2025-05-29T13:03:40.309707+00:00 - 
+2025-05-29T13:03:40.309858+00:00 - 📄 Auditing page 11/13: ai-assistant-custom-agents
+2025-05-29T13:03:40.309967+00:00 - ==================================================
+2025-05-29T13:03:40.309994+00:00 - 🔍 AUDITING PAGE: ai-assistant-custom-agents (http://localhost:3000/ai-assistant/custom-agents)
+2025-05-29T13:03:40.311064+00:00 - 📊 Phase 1: Accessibility Tests
+2025-05-29T13:03:40.311217+00:00 - Creating MICRO checkpoint: CP_091_AI-ASSISTANT-CUSTOM-AGENTS_ACCESSIBILITY_START
+2025-05-29T13:03:40.312311+00:00 - ✓ MICRO Checkpoint CP_091_AI-ASSISTANT-CUSTOM-AGENTS_ACCESSIBILITY_START recorded
+2025-05-29T13:03:40.312360+00:00 - 🔍 Testing accessibility for: ai-assistant-custom-agents
+2025-05-29T13:03:40.312383+00:00 - Testing HTTP status...
+2025-05-29T13:03:41.195227+00:00 - ✅ HTTP Status: 200 (OK)
+2025-05-29T13:03:41.195327+00:00 - Testing response time...
+2025-05-29T13:03:41.195353+00:00 - ✅ Response Time: 877ms (Good)
+2025-05-29T13:03:41.195378+00:00 - Testing content length...
+2025-05-29T13:03:41.195430+00:00 - ✅ Content Length: 57662 bytes (Good)
+2025-05-29T13:03:41.195686+00:00 - Test results saved: ai-assistant-custom-agents_accessibility_results.json
+2025-05-29T13:03:41.195728+00:00 - ✅ Accessibility tests: PASSED
+2025-05-29T13:03:41.195967+00:00 - Creating MICRO checkpoint: CP_092_AI-ASSISTANT-CUSTOM-AGENTS_ACCESSIBILITY_COMPLETE
+2025-05-29T13:03:41.196978+00:00 - ✓ MICRO Checkpoint CP_092_AI-ASSISTANT-CUSTOM-AGENTS_ACCESSIBILITY_COMPLETE recorded
+2025-05-29T13:03:41.197026+00:00 - 🧭 Phase 2: Navigation Tests
+2025-05-29T13:03:41.197166+00:00 - Creating MICRO checkpoint: CP_093_AI-ASSISTANT-CUSTOM-AGENTS_NAVIGATION_START
+2025-05-29T13:03:41.198256+00:00 - ✓ MICRO Checkpoint CP_093_AI-ASSISTANT-CUSTOM-AGENTS_NAVIGATION_START recorded
+2025-05-29T13:03:41.198326+00:00 - 🧭 Testing navigation for: ai-assistant-custom-agents
+2025-05-29T13:03:41.282878+00:00 - Testing navigation elements...
+2025-05-29T13:03:41.283023+00:00 - ✅ Found navigation element
+2025-05-29T13:03:41.283092+00:00 - ⚠️ Missing menu element
+2025-05-29T13:03:41.283151+00:00 - ⚠️ Missing sidebar element
+2025-05-29T13:03:41.283197+00:00 - ✅ Found header element
+2025-05-29T13:03:41.283236+00:00 - ✅ Found dashboard link
+2025-05-29T13:03:41.283258+00:00 - ✅ Found products link
+2025-05-29T13:03:41.283277+00:00 - ✅ Navigation: Good (4/6 elements found)
+2025-05-29T13:03:41.294003+00:00 - Test results saved: ai-assistant-custom-agents_navigation_results.json
+2025-05-29T13:03:41.294112+00:00 - ✅ Navigation tests: PASSED
+2025-05-29T13:03:41.294321+00:00 - Creating MICRO checkpoint: CP_094_AI-ASSISTANT-CUSTOM-AGENTS_NAVIGATION_COMPLETE
+2025-05-29T13:03:41.295357+00:00 - ✓ MICRO Checkpoint CP_094_AI-ASSISTANT-CUSTOM-AGENTS_NAVIGATION_COMPLETE recorded
+2025-05-29T13:03:41.295399+00:00 - ⚙️ Phase 3: Functionality Tests
+2025-05-29T13:03:41.295567+00:00 - Creating MICRO checkpoint: CP_095_AI-ASSISTANT-CUSTOM-AGENTS_FUNCTIONALITY_START
+2025-05-29T13:03:41.297206+00:00 - ✓ MICRO Checkpoint CP_095_AI-ASSISTANT-CUSTOM-AGENTS_FUNCTIONALITY_START recorded
+2025-05-29T13:03:41.297262+00:00 - ⚙️ Testing functionality for: ai-assistant-custom-agents
+2025-05-29T13:03:41.377759+00:00 - Testing for JavaScript inclusion...
+2025-05-29T13:03:41.377939+00:00 - ✅ JavaScript: Scripts found
+2025-05-29T13:03:41.377977+00:00 - Testing for CSS inclusion...
+2025-05-29T13:03:41.377998+00:00 - ✅ CSS: Stylesheets found
+2025-05-29T13:03:41.378018+00:00 - Testing for interactive forms...
+2025-05-29T13:03:41.378062+00:00 - ℹ️ Forms: No forms found (may be expected)
+2025-05-29T13:03:41.378081+00:00 - Testing for interactive buttons...
+2025-05-29T13:03:41.378174+00:00 - ✅ Buttons: 9 button(s) found
+2025-05-29T13:03:41.378197+00:00 - Testing AI-specific features...
+2025-05-29T13:03:41.378221+00:00 - ✅ AI: AI-related content found
+2025-05-29T13:03:41.378454+00:00 - Test results saved: ai-assistant-custom-agents_functionality_results.json
+2025-05-29T13:03:41.378506+00:00 - ✅ Functionality tests: PASSED
+2025-05-29T13:03:41.378717+00:00 - Creating MICRO checkpoint: CP_096_AI-ASSISTANT-CUSTOM-AGENTS_FUNCTIONALITY_COMPLETE
+2025-05-29T13:03:41.379716+00:00 - ✓ MICRO Checkpoint CP_096_AI-ASSISTANT-CUSTOM-AGENTS_FUNCTIONALITY_COMPLETE recorded
+2025-05-29T13:03:41.379759+00:00 - 🚨 Phase 4: Error Handling Tests
+2025-05-29T13:03:41.379954+00:00 - Creating MICRO checkpoint: CP_097_AI-ASSISTANT-CUSTOM-AGENTS_ERROR_HANDLING_START
+2025-05-29T13:03:41.380893+00:00 - ✓ MICRO Checkpoint CP_097_AI-ASSISTANT-CUSTOM-AGENTS_ERROR_HANDLING_START recorded
+2025-05-29T13:03:41.380937+00:00 - 🚨 Testing error handling for: ai-assistant-custom-agents
+2025-05-29T13:03:41.380959+00:00 - Testing 404 error handling...
+2025-05-29T13:03:41.434225+00:00 - ✅ 404 Handling: Proper 404 response
+2025-05-29T13:03:41.510368+00:00 - ℹ️ Error Boundaries: Error-related content found (may indicate error state)
+2025-05-29T13:03:41.510686+00:00 - Test results saved: ai-assistant-custom-agents_error_handling_results.json
+2025-05-29T13:03:41.510730+00:00 - ✅ Error handling tests: PASSED
+2025-05-29T13:03:41.510963+00:00 - Creating MICRO checkpoint: CP_098_AI-ASSISTANT-CUSTOM-AGENTS_ERROR_HANDLING_COMPLETE
+2025-05-29T13:03:41.512021+00:00 - ✓ MICRO Checkpoint CP_098_AI-ASSISTANT-CUSTOM-AGENTS_ERROR_HANDLING_COMPLETE recorded
+2025-05-29T13:03:41.512169+00:00 - Page summary created: ai-assistant-custom-agents_summary.md
+2025-05-29T13:03:41.521098+00:00 - Creating MACRO checkpoint: CP_099_AI-ASSISTANT-CUSTOM-AGENTS_COMPLETE
+2025-05-29T13:03:41.522974+00:00 - ✓ MACRO Checkpoint CP_099_AI-ASSISTANT-CUSTOM-AGENTS_COMPLETE created successfully
+2025-05-29T13:03:41.523018+00:00 - ✅ PAGE AUDIT COMPLETE: ai-assistant-custom-agents (SUCCESS)
+2025-05-29T13:03:41.523071+00:00 - ✅ Page audit completed: ai-assistant-custom-agents
+2025-05-29T13:03:42.527780+00:00 - 
+2025-05-29T13:03:42.527919+00:00 - 📄 Auditing page 12/13: ai-assistant-settings
+2025-05-29T13:03:42.527947+00:00 - ==================================================
+2025-05-29T13:03:42.527972+00:00 - 🔍 AUDITING PAGE: ai-assistant-settings (http://localhost:3000/ai-assistant/settings)
+2025-05-29T13:03:42.529179+00:00 - 📊 Phase 1: Accessibility Tests
+2025-05-29T13:03:42.529435+00:00 - Creating MICRO checkpoint: CP_100_AI-ASSISTANT-SETTINGS_ACCESSIBILITY_START
+2025-05-29T13:03:42.541076+00:00 - ✓ MICRO Checkpoint CP_100_AI-ASSISTANT-SETTINGS_ACCESSIBILITY_START recorded
+2025-05-29T13:03:42.541136+00:00 - 🔍 Testing accessibility for: ai-assistant-settings
+2025-05-29T13:03:42.541160+00:00 - Testing HTTP status...
+2025-05-29T13:03:43.437292+00:00 - ✅ HTTP Status: 200 (OK)
+2025-05-29T13:03:43.437407+00:00 - Testing response time...
+2025-05-29T13:03:43.437434+00:00 - ✅ Response Time: 883ms (Good)
+2025-05-29T13:03:43.437454+00:00 - Testing content length...
+2025-05-29T13:03:43.437474+00:00 - ✅ Content Length: 91012 bytes (Good)
+2025-05-29T13:03:43.437690+00:00 - Test results saved: ai-assistant-settings_accessibility_results.json
+2025-05-29T13:03:43.437745+00:00 - ✅ Accessibility tests: PASSED
+2025-05-29T13:03:43.437997+00:00 - Creating MICRO checkpoint: CP_101_AI-ASSISTANT-SETTINGS_ACCESSIBILITY_COMPLETE
+2025-05-29T13:03:43.439035+00:00 - ✓ MICRO Checkpoint CP_101_AI-ASSISTANT-SETTINGS_ACCESSIBILITY_COMPLETE recorded
+2025-05-29T13:03:43.439078+00:00 - 🧭 Phase 2: Navigation Tests
+2025-05-29T13:03:43.444910+00:00 - Creating MICRO checkpoint: CP_102_AI-ASSISTANT-SETTINGS_NAVIGATION_START
+2025-05-29T13:03:43.446111+00:00 - ✓ MICRO Checkpoint CP_102_AI-ASSISTANT-SETTINGS_NAVIGATION_START recorded
+2025-05-29T13:03:43.446164+00:00 - 🧭 Testing navigation for: ai-assistant-settings
+2025-05-29T13:03:43.536162+00:00 - Testing navigation elements...
+2025-05-29T13:03:43.536403+00:00 - ✅ Found navigation element
+2025-05-29T13:03:43.536477+00:00 - ⚠️ Missing menu element
+2025-05-29T13:03:43.536550+00:00 - ⚠️ Missing sidebar element
+2025-05-29T13:03:43.536588+00:00 - ✅ Found header element
+2025-05-29T13:03:43.536609+00:00 - ✅ Found dashboard link
+2025-05-29T13:03:43.536629+00:00 - ✅ Found products link
+2025-05-29T13:03:43.536650+00:00 - ✅ Navigation: Good (4/6 elements found)
+2025-05-29T13:03:43.536932+00:00 - Test results saved: ai-assistant-settings_navigation_results.json
+2025-05-29T13:03:43.536992+00:00 - ✅ Navigation tests: PASSED
+2025-05-29T13:03:43.537276+00:00 - Creating MICRO checkpoint: CP_103_AI-ASSISTANT-SETTINGS_NAVIGATION_COMPLETE
+2025-05-29T13:03:43.538594+00:00 - ✓ MICRO Checkpoint CP_103_AI-ASSISTANT-SETTINGS_NAVIGATION_COMPLETE recorded
+2025-05-29T13:03:43.538652+00:00 - ⚙️ Phase 3: Functionality Tests
+2025-05-29T13:03:43.547508+00:00 - Creating MICRO checkpoint: CP_104_AI-ASSISTANT-SETTINGS_FUNCTIONALITY_START
+2025-05-29T13:03:43.548691+00:00 - ✓ MICRO Checkpoint CP_104_AI-ASSISTANT-SETTINGS_FUNCTIONALITY_START recorded
+2025-05-29T13:03:43.548743+00:00 - ⚙️ Testing functionality for: ai-assistant-settings
+2025-05-29T13:03:43.637107+00:00 - Testing for JavaScript inclusion...
+2025-05-29T13:03:43.637218+00:00 - ✅ JavaScript: Scripts found
+2025-05-29T13:03:43.637244+00:00 - Testing for CSS inclusion...
+2025-05-29T13:03:43.637263+00:00 - ✅ CSS: Stylesheets found
+2025-05-29T13:03:43.637282+00:00 - Testing for interactive forms...
+2025-05-29T13:03:43.637335+00:00 - ℹ️ Forms: No forms found (may be expected)
+2025-05-29T13:03:43.637354+00:00 - Testing for interactive buttons...
+2025-05-29T13:03:43.637502+00:00 - ✅ Buttons: 8 button(s) found
+2025-05-29T13:03:43.637633+00:00 - Testing AI-specific features...
+2025-05-29T13:03:43.637662+00:00 - ✅ AI: AI-related content found
+2025-05-29T13:03:43.637856+00:00 - Test results saved: ai-assistant-settings_functionality_results.json
+2025-05-29T13:03:43.637976+00:00 - ✅ Functionality tests: PASSED
+2025-05-29T13:03:43.638188+00:00 - Creating MICRO checkpoint: CP_105_AI-ASSISTANT-SETTINGS_FUNCTIONALITY_COMPLETE
+2025-05-29T13:03:43.639252+00:00 - ✓ MICRO Checkpoint CP_105_AI-ASSISTANT-SETTINGS_FUNCTIONALITY_COMPLETE recorded
+2025-05-29T13:03:43.639294+00:00 - 🚨 Phase 4: Error Handling Tests
+2025-05-29T13:03:43.648114+00:00 - Creating MICRO checkpoint: CP_106_AI-ASSISTANT-SETTINGS_ERROR_HANDLING_START
+2025-05-29T13:03:43.649170+00:00 - ✓ MICRO Checkpoint CP_106_AI-ASSISTANT-SETTINGS_ERROR_HANDLING_START recorded
+2025-05-29T13:03:43.649221+00:00 - 🚨 Testing error handling for: ai-assistant-settings
+2025-05-29T13:03:43.649244+00:00 - Testing 404 error handling...
+2025-05-29T13:03:43.695305+00:00 - ✅ 404 Handling: Proper 404 response
+2025-05-29T13:03:43.774329+00:00 - ℹ️ Error Boundaries: Error-related content found (may indicate error state)
+2025-05-29T13:03:43.774802+00:00 - Test results saved: ai-assistant-settings_error_handling_results.json
+2025-05-29T13:03:43.774850+00:00 - ✅ Error handling tests: PASSED
+2025-05-29T13:03:43.775048+00:00 - Creating MICRO checkpoint: CP_107_AI-ASSISTANT-SETTINGS_ERROR_HANDLING_COMPLETE
+2025-05-29T13:03:43.776124+00:00 - ✓ MICRO Checkpoint CP_107_AI-ASSISTANT-SETTINGS_ERROR_HANDLING_COMPLETE recorded
+2025-05-29T13:03:43.776260+00:00 - Page summary created: ai-assistant-settings_summary.md
+2025-05-29T13:03:43.785183+00:00 - Creating MACRO checkpoint: CP_108_AI-ASSISTANT-SETTINGS_COMPLETE
+2025-05-29T13:03:43.787280+00:00 - ✓ MACRO Checkpoint CP_108_AI-ASSISTANT-SETTINGS_COMPLETE created successfully
+2025-05-29T13:03:43.787330+00:00 - ✅ PAGE AUDIT COMPLETE: ai-assistant-settings (SUCCESS)
+2025-05-29T13:03:43.787381+00:00 - ✅ Page audit completed: ai-assistant-settings
+2025-05-29T13:03:44.791646+00:00 - 
+2025-05-29T13:03:44.791783+00:00 - 📄 Auditing page 13/13: settings
+2025-05-29T13:03:44.791807+00:00 - ==================================================
+2025-05-29T13:03:44.791830+00:00 - 🔍 AUDITING PAGE: settings (http://localhost:3000/settings)
+2025-05-29T13:03:44.793123+00:00 - 📊 Phase 1: Accessibility Tests
+2025-05-29T13:03:44.793336+00:00 - Creating MICRO checkpoint: CP_109_SETTINGS_ACCESSIBILITY_START
+2025-05-29T13:03:44.804005+00:00 - ✓ MICRO Checkpoint CP_109_SETTINGS_ACCESSIBILITY_START recorded
+2025-05-29T13:03:44.804107+00:00 - 🔍 Testing accessibility for: settings
+2025-05-29T13:03:44.804146+00:00 - Testing HTTP status...
+2025-05-29T13:03:45.632946+00:00 - ✅ HTTP Status: 200 (OK)
+2025-05-29T13:03:45.633056+00:00 - Testing response time...
+2025-05-29T13:03:45.633082+00:00 - ✅ Response Time: 819ms (Good)
+2025-05-29T13:03:45.633101+00:00 - Testing content length...
+2025-05-29T13:03:45.633120+00:00 - ✅ Content Length: 88630 bytes (Good)
+2025-05-29T13:03:45.633307+00:00 - Test results saved: settings_accessibility_results.json
+2025-05-29T13:03:45.633352+00:00 - ✅ Accessibility tests: PASSED
+2025-05-29T13:03:45.633552+00:00 - Creating MICRO checkpoint: CP_110_SETTINGS_ACCESSIBILITY_COMPLETE
+2025-05-29T13:03:45.634749+00:00 - ✓ MICRO Checkpoint CP_110_SETTINGS_ACCESSIBILITY_COMPLETE recorded
+2025-05-29T13:03:45.634797+00:00 - 🧭 Phase 2: Navigation Tests
+2025-05-29T13:03:45.634925+00:00 - Creating MICRO checkpoint: CP_111_SETTINGS_NAVIGATION_START
+2025-05-29T13:03:45.635997+00:00 - ✓ MICRO Checkpoint CP_111_SETTINGS_NAVIGATION_START recorded
+2025-05-29T13:03:45.636042+00:00 - 🧭 Testing navigation for: settings
+2025-05-29T13:03:45.728025+00:00 - Testing navigation elements...
+2025-05-29T13:03:45.728133+00:00 - ✅ Found navigation element
+2025-05-29T13:03:45.728204+00:00 - ⚠️ Missing menu element
+2025-05-29T13:03:45.728282+00:00 - ⚠️ Missing sidebar element
+2025-05-29T13:03:45.728346+00:00 - ✅ Found header element
+2025-05-29T13:03:45.728386+00:00 - ✅ Found dashboard link
+2025-05-29T13:03:45.728419+00:00 - ✅ Found products link
+2025-05-29T13:03:45.728442+00:00 - ✅ Navigation: Good (4/6 elements found)
+2025-05-29T13:03:45.728726+00:00 - Test results saved: settings_navigation_results.json
+2025-05-29T13:03:45.728775+00:00 - ✅ Navigation tests: PASSED
+2025-05-29T13:03:45.728980+00:00 - Creating MICRO checkpoint: CP_112_SETTINGS_NAVIGATION_COMPLETE
+2025-05-29T13:03:45.730157+00:00 - ✓ MICRO Checkpoint CP_112_SETTINGS_NAVIGATION_COMPLETE recorded
+2025-05-29T13:03:45.730208+00:00 - ⚙️ Phase 3: Functionality Tests
+2025-05-29T13:03:45.739056+00:00 - Creating MICRO checkpoint: CP_113_SETTINGS_FUNCTIONALITY_START
+2025-05-29T13:03:45.740254+00:00 - ✓ MICRO Checkpoint CP_113_SETTINGS_FUNCTIONALITY_START recorded
+2025-05-29T13:03:45.740311+00:00 - ⚙️ Testing functionality for: settings
+2025-05-29T13:03:45.832897+00:00 - Testing for JavaScript inclusion...
+2025-05-29T13:03:45.833016+00:00 - ✅ JavaScript: Scripts found
+2025-05-29T13:03:45.833040+00:00 - Testing for CSS inclusion...
+2025-05-29T13:03:45.833059+00:00 - ✅ CSS: Stylesheets found
+2025-05-29T13:03:45.833077+00:00 - Testing for interactive forms...
+2025-05-29T13:03:45.833127+00:00 - ℹ️ Forms: No forms found (may be expected)
+2025-05-29T13:03:45.833145+00:00 - Testing for interactive buttons...
+2025-05-29T13:03:45.833272+00:00 - ✅ Buttons: 16 button(s) found
+2025-05-29T13:03:45.833636+00:00 - Test results saved: settings_functionality_results.json
+2025-05-29T13:03:45.833688+00:00 - ✅ Functionality tests: PASSED
+2025-05-29T13:03:45.833962+00:00 - Creating MICRO checkpoint: CP_114_SETTINGS_FUNCTIONALITY_COMPLETE
+2025-05-29T13:03:45.835099+00:00 - ✓ MICRO Checkpoint CP_114_SETTINGS_FUNCTIONALITY_COMPLETE recorded
+2025-05-29T13:03:45.835146+00:00 - 🚨 Phase 4: Error Handling Tests
+2025-05-29T13:03:45.843961+00:00 - Creating MICRO checkpoint: CP_115_SETTINGS_ERROR_HANDLING_START
+2025-05-29T13:03:45.845178+00:00 - ✓ MICRO Checkpoint CP_115_SETTINGS_ERROR_HANDLING_START recorded
+2025-05-29T13:03:45.845227+00:00 - 🚨 Testing error handling for: settings
+2025-05-29T13:03:45.845249+00:00 - Testing 404 error handling...
+2025-05-29T13:03:45.891343+00:00 - ✅ 404 Handling: Proper 404 response
+2025-05-29T13:03:45.983073+00:00 - ℹ️ Error Boundaries: Error-related content found (may indicate error state)
+2025-05-29T13:03:45.983380+00:00 - Test results saved: settings_error_handling_results.json
+2025-05-29T13:03:45.983424+00:00 - ✅ Error handling tests: PASSED
+2025-05-29T13:03:45.983647+00:00 - Creating MICRO checkpoint: CP_116_SETTINGS_ERROR_HANDLING_COMPLETE
+2025-05-29T13:03:45.984998+00:00 - ✓ MICRO Checkpoint CP_116_SETTINGS_ERROR_HANDLING_COMPLETE recorded
+2025-05-29T13:03:45.985139+00:00 - Page summary created: settings_summary.md
+2025-05-29T13:03:45.993561+00:00 - Creating MACRO checkpoint: CP_117_SETTINGS_COMPLETE
+2025-05-29T13:03:45.995778+00:00 - ✓ MACRO Checkpoint CP_117_SETTINGS_COMPLETE created successfully
+2025-05-29T13:03:45.995862+00:00 - ✅ PAGE AUDIT COMPLETE: settings (SUCCESS)
+2025-05-29T13:03:45.996032+00:00 - ✅ Page audit completed: settings
+2025-05-29T13:03:46.998637+00:00 - 
+2025-05-29T13:03:46.998801+00:00 - 🎉 FULL AUDIT COMPLETED!
+2025-05-29T13:03:46.998828+00:00 - Total time: 30 seconds
+2025-05-29T13:03:46.998847+00:00 - Pages audited: 13
+2025-05-29T13:03:46.998867+00:00 - 📊 GENERATING FINAL AUDIT REPORT
+2025-05-29T13:03:47.010151+00:00 - 📋 Final report generated: final_audit_report_20250529_130346.md
+2025-05-29T13:03:47.010191+00:00 - 📊 System Health Score: 94/100
+2025-05-29T13:03:47.010338+00:00 - 📄 JSON summary created: final_audit_report_20250529_130346.json
+2025-05-29T13:04:09.876126+00:00 - 📊 CURRENT SESSION STATUS
+2025-05-29T13:04:09.876223+00:00 - Session ID: 9d70b7ad-4eb9-4111-88b3-58369c6a116d
+2025-05-29T13:04:09.876260+00:00 - Started: 2025-05-29T13:03:16.191541+00:00
+2025-05-29T13:04:09.876285+00:00 - Progress: 13/13 pages (100.0%)
+2025-05-29T13:04:09.876310+00:00 - Errors: Critical=0, High=0, Medium=1, Low=1
+[0;34m2025-05-29T09:14:02-04:00 - 🏗️ CREATING MASTER AUDIT BASELINE: BASELINE_20250529_091402[0m
+[0;31m2025-05-29T09:14:02-04:00 - ❌ Audit not completed: % (/ pages)[0m
+[0;31m2025-05-29T09:14:02-04:00 - ❌ Cannot create baseline - audit not properly completed[0m

@@ -1,0 +1,22 @@
+{
+  "page": "ai-assistant",
+  "test_phase": "accessibility",
+  "timestamp": "2025-05-29T13:03:38.921263+00:00",
+  "results": [
+    {
+      "test": "http_status",
+      "status": "PASS",
+      "details": "200"
+    },
+    {
+      "test": "response_time",
+      "status": "WARN",
+      "details": "3500ms"
+    },
+    {
+      "test": "content_length",
+      "status": "PASS",
+      "details": "74438bytes"
+    }
+  ]
+}

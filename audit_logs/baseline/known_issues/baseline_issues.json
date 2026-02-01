@@ -1,0 +1,42 @@
+{
+  "baseline_id": "BASELINE_20250529_130346",
+  "known_issues": [
+    {
+      "issue_id": "BASELINE_ISSUE_001",
+      "severity": "medium",
+      "category": "performance",
+      "type": "response_time",
+      "description": "Response time exceeding 3 seconds detected on 1 page",
+      "affected_pages": ["ai-assistant"],
+      "baseline_status": "accepted",
+      "tracking_status": "monitored",
+      "remediation_priority": "low",
+      "expected_resolution": "future_optimization"
+    },
+    {
+      "issue_id": "BASELINE_ISSUE_002", 
+      "severity": "low",
+      "category": "content",
+      "type": "content_length",
+      "description": "Content length below 1000 bytes detected on 1 page",
+      "affected_pages": ["unknown"],
+      "baseline_status": "accepted",
+      "tracking_status": "monitored",
+      "remediation_priority": "very_low",
+      "expected_resolution": "content_enhancement"
+    }
+  ],
+  "issue_tracking": {
+    "total_baseline_issues": 2,
+    "critical_issues": 0,
+    "high_issues": 0,
+    "medium_issues": 1,
+    "low_issues": 1,
+    "monitoring_schedule": "every_audit",
+    "escalation_criteria": {
+      "new_critical": "immediate",
+      "new_high": "24_hours",
+      "increased_severity": "next_audit_cycle"
+    }
+  }
+}

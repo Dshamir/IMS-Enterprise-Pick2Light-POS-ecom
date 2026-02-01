@@ -1,0 +1,40 @@
+{
+  "timestamp": "2025-07-08T22:09:30.382Z",
+  "originalCsv": "UpdateTest4units.csv",
+  "totalRows": 214,
+  "analysis": {
+    "validRows": 138,
+    "failedRows": 76,
+    "breakdown": {
+      "canFixAndUpdate": 65,
+      "needToImportAsNew": 0,
+      "needManualReview": 11
+    }
+  },
+  "filesGenerated": [
+    {
+      "filename": "fixed-update-products.csv",
+      "description": "Products that can be updated with cleaned barcodes",
+      "count": 65,
+      "action": "Run dynamic update with this CSV"
+    },
+    {
+      "filename": "new-products-import.csv",
+      "description": "Products that need to be imported as new items",
+      "count": 0,
+      "action": "Run regular import with this CSV"
+    },
+    {
+      "filename": "manual-review-report.json",
+      "description": "Products requiring manual review and fixes",
+      "count": 11,
+      "action": "Review and fix issues manually, then retry"
+    }
+  ],
+  "nextSteps": [
+    "1. Run dynamic update with fixed-update-products.csv",
+    "2. Run regular import with new-products-import.csv",
+    "3. Review manual-review-report.json and fix issues",
+    "4. Verify all 73 products are resolved"
+  ]
+}

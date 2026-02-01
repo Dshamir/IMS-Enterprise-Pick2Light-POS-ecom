@@ -1,0 +1,215 @@
+/* Stimulsoft Reports.JS Designer Styles */
+
+/* Designer container styles */
+.stimulsoft-designer-container {
+  width: 100%;
+  height: 100%;
+  min-height: 600px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Stimulsoft designer frame styles */
+.stiDesigner {
+  width: 100% !important;
+  height: 100% !important;
+  min-height: 600px !important;
+  border: none !important;
+  background: #ffffff !important;
+}
+
+/* Designer toolbar customization */
+.stiDesignerToolBar {
+  background: #ffffff !important;
+  border-bottom: 1px solid #e5e7eb !important;
+  padding: 8px !important;
+}
+
+/* Designer page area */
+.stiDesignerPageArea {
+  background: #f3f4f6 !important;
+}
+
+/* Designer panels */
+.stiDesignerPanel {
+  background: #ffffff !important;
+  border: 1px solid #e5e7eb !important;
+  border-radius: 6px !important;
+  margin: 4px !important;
+}
+
+/* Designer buttons and controls */
+.stiDesignerButton {
+  background: #ffffff !important;
+  border: 1px solid #d1d5db !important;
+  border-radius: 4px !important;
+  padding: 6px 12px !important;
+  font-size: 13px !important;
+  color: #374151 !important;
+  cursor: pointer !important;
+}
+
+.stiDesignerButton:hover {
+  background: #f9fafb !important;
+  border-color: #9ca3af !important;
+}
+
+.stiDesignerButton:active {
+  background: #f3f4f6 !important;
+}
+
+/* Designer properties panel */
+.stiDesignerPropertiesPanel {
+  background: #ffffff !important;
+  border-left: 1px solid #e5e7eb !important;
+  min-width: 250px !important;
+}
+
+/* Designer components panel */
+.stiDesignerComponentsPanel {
+  background: #ffffff !important;
+  border-right: 1px solid #e5e7eb !important;
+  min-width: 200px !important;
+}
+
+/* Designer status bar */
+.stiDesignerStatusBar {
+  background: #f9fafb !important;
+  border-top: 1px solid #e5e7eb !important;
+  height: 24px !important;
+  font-size: 11px !important;
+  color: #6b7280 !important;
+}
+
+/* Report page */
+.stiReportPage {
+  background: #ffffff !important;
+  border: 1px solid #d1d5db !important;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important;
+  margin: 20px !important;
+}
+
+/* Component selection */
+.stiComponentSelected {
+  outline: 2px solid #3b82f6 !important;
+  outline-offset: -2px !important;
+}
+
+/* Designer menu */
+.stiDesignerMenu {
+  background: #ffffff !important;
+  border: 1px solid #e5e7eb !important;
+  border-radius: 6px !important;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Designer tooltip */
+.stiDesignerTooltip {
+  background: #1f2937 !important;
+  color: #ffffff !important;
+  font-size: 12px !important;
+  border-radius: 4px !important;
+  padding: 6px 8px !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15) !important;
+}
+
+/* Data source tree */
+.stiDesignerDataSourceTree {
+  background: #ffffff !important;
+  border: 1px solid #e5e7eb !important;
+  border-radius: 4px !important;
+}
+
+/* Tree nodes */
+.stiDesignerTreeNode {
+  padding: 4px 8px !important;
+  font-size: 13px !important;
+  color: #374151 !important;
+}
+
+.stiDesignerTreeNode:hover {
+  background: #f3f4f6 !important;
+}
+
+.stiDesignerTreeNodeSelected {
+  background: #dbeafe !important;
+  color: #1d4ed8 !important;
+}
+
+/* Loading state */
+.stimulsoft-loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 400px;
+  background: #f9fafb;
+  border-radius: 8px;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Error state */
+.stimulsoft-error {
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .stiDesignerPropertiesPanel {
+    min-width: 200px !important;
+  }
+  
+  .stiDesignerComponentsPanel {
+    min-width: 150px !important;
+  }
+  
+  .stiDesigner {
+    min-height: 500px !important;
+  }
+}
+
+/* High DPI displays */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .stiDesignerButton {
+    border-width: 0.5px !important;
+  }
+}
+
+/* Dark mode support (if needed) */
+@media (prefers-color-scheme: dark) {
+  .stimulsoft-designer-container {
+    background: #1f2937;
+  }
+  
+  .stiDesigner {
+    background: #111827 !important;
+  }
+  
+  .stiDesignerToolBar {
+    background: #1f2937 !important;
+    border-bottom-color: #374151 !important;
+  }
+  
+  .stiDesignerPanel {
+    background: #1f2937 !important;
+    border-color: #374151 !important;
+  }
+}
+
+/* Accessibility improvements */
+.stiDesignerButton:focus {
+  outline: 2px solid #3b82f6 !important;
+  outline-offset: 2px !important;
+}
+
+/* Print styles */
+@media print {
+  .stimulsoft-designer-container {
+    display: none !important;
+  }
+}

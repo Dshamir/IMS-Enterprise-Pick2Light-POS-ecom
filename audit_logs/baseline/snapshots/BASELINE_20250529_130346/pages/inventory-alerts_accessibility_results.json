@@ -1,0 +1,22 @@
+{
+  "page": "inventory-alerts",
+  "test_phase": "accessibility",
+  "timestamp": "2025-05-29T13:03:34.108037+00:00",
+  "results": [
+    {
+      "test": "http_status",
+      "status": "PASS",
+      "details": "200"
+    },
+    {
+      "test": "response_time",
+      "status": "PASS",
+      "details": "68ms"
+    },
+    {
+      "test": "content_length",
+      "status": "PASS",
+      "details": "72907bytes"
+    }
+  ]
+}

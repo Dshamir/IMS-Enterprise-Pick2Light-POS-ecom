@@ -1,0 +1,39 @@
+{
+  "baseline_id": "BASELINE_20250529_130346",
+  "comparison_enabled": true,
+  "regression_detection": {
+    "performance_threshold": 0.2,
+    "error_increase_threshold": 1,
+    "health_score_drop_threshold": 5,
+    "response_time_degradation": "+20%",
+    "content_size_reduction": "-10%"
+  },
+  "reporting": {
+    "generate_delta_reports": true,
+    "highlight_regressions": true,
+    "track_improvements": true,
+    "include_baseline_comparison": true,
+    "show_trend_analysis": true
+  },
+  "alerting": {
+    "critical_regression_alert": true,
+    "new_error_alert": true,
+    "health_score_alert_threshold": 85,
+    "performance_degradation_alert": true,
+    "accessibility_regression_alert": true
+  },
+  "monitoring_schedule": {
+    "high_risk_pages": "weekly",
+    "medium_risk_pages": "bi_weekly", 
+    "low_risk_pages": "monthly",
+    "full_system_audit": "monthly"
+  },
+  "comparison_metrics": {
+    "track_response_times": true,
+    "track_error_counts": true,
+    "track_functionality_changes": true,
+    "track_accessibility_scores": true,
+    "track_navigation_completeness": true,
+    "track_content_quality": true
+  }
+}

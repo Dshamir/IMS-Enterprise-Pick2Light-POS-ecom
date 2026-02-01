@@ -1,0 +1,925 @@
+{
+  "session_id": "9d70b7ad-4eb9-4111-88b3-58369c6a116d",
+  "audit_start_time": "2025-05-29T13:03:16.191541+00:00",
+  "last_checkpoint": {
+    "checkpoint_id": "CP_108_AI-ASSISTANT-SETTINGS_COMPLETE",
+    "timestamp": "2025-05-29T13:03:43.785148+00:00",
+    "type": "MACRO",
+    "page": "ai-assistant-settings",
+    "phase": "complete",
+    "status": "SUCCESS"
+  },
+  "current_operation": {
+    "page": "ai-assistant-settings",
+    "phase": "starting",
+    "step": "initialization",
+    "started_at": "2025-05-29T13:03:42.528236+00:00"
+  },
+  "progress": {
+    "pages_completed": [
+      "home",
+      "dashboard",
+      "products",
+      "image-cataloging",
+      "scan",
+      "orders",
+      "customers",
+      "reports",
+      "inventory-alerts",
+      "ai-assistant",
+      "ai-assistant-custom-agents",
+      "ai-assistant-settings"
+    ],
+    "pages_in_progress": [],
+    "pages_remaining": [
+      "settings"
+    ],
+    "total_pages": 13,
+    "completion_percentage": 92.3
+  },
+  "checkpoint_history": [
+    {
+      "id": "CP_000_INIT",
+      "timestamp": "2025-05-29T13:03:16.191541+00:00",
+      "type": "INITIALIZATION",
+      "status": "SUCCESS"
+    },
+    {
+      "id": "CP_001_HOME_ACCESSIBILITY_START",
+      "timestamp": "2025-05-29T13:03:16.318056+00:00",
+      "type": "MICRO",
+      "page": "home",
+      "phase": "accessibility_start",
+      "status": "IN_PROGRESS"
+    },
+    {
+      "id": "CP_002_HOME_ACCESSIBILITY_COMPLETE",
+      "timestamp": "2025-05-29T13:03:16.452762+00:00",
+      "type": "MICRO",
+      "page": "home",
+      "phase": "accessibility_complete",
+      "status": "SUCCESS"
+    },
+    {
+      "id": "CP_003_HOME_NAVIGATION_START",
+      "timestamp": "2025-05-29T13:03:16.453203+00:00",
+      "type": "MICRO",
+      "page": "home",
+      "phase": "navigation_start",
+      "status": "IN_PROGRESS"
+    },
+    {
+      "id": "CP_004_HOME_NAVIGATION_COMPLETE",
+      "timestamp": "2025-05-29T13:03:16.568138+00:00",
+      "type": "MICRO",
+      "page": "home",
+      "phase": "navigation_complete",
+      "status": "SUCCESS"
+    },
+    {
+      "id": "CP_005_HOME_FUNCTIONALITY_START",
+      "timestamp": "2025-05-29T13:03:16.578217+00:00",
+      "type": "MICRO",
+      "page": "home",
+      "phase": "functionality_start",
+      "status": "IN_PROGRESS"
+    },
+    {
+      "id": "CP_006_HOME_FUNCTIONALITY_COMPLETE",
+      "timestamp": "2025-05-29T13:03:16.688963+00:00",
+      "type": "MICRO",
+      "page": "home",
+      "phase": "functionality_complete",
+      "status": "SUCCESS"
+    },
+    {
+      "id": "CP_007_HOME_ERROR_HANDLING_START",
+      "timestamp": "2025-05-29T13:03:16.698921+00:00",
+      "type": "MICRO",
+      "page": "home",
+      "phase": "error_handling_start",
+      "status": "IN_PROGRESS"
+    },
+    {
+      "id": "CP_008_HOME_ERROR_HANDLING_COMPLETE",
+      "timestamp": "2025-05-29T13:03:17.682395+00:00",
+      "type": "MICRO",
+      "page": "home",
+      "phase": "error_handling_complete",
+      "status": "SUCCESS"
+    },
+    {
+      "checkpoint_id": "CP_009_HOME_COMPLETE",
+      "timestamp": "2025-05-29T13:03:17.692388+00:00",
+      "type": "MACRO",
+      "page": "home",
+      "phase": "complete",
+      "status": "SUCCESS"
+    },
+    {
+      "id": "CP_010_DASHBOARD_ACCESSIBILITY_START",
+      "timestamp": "2025-05-29T13:03:18.695037+00:00",
+      "type": "MICRO",
+      "page": "dashboard",
+      "phase": "accessibility_start",
+      "status": "IN_PROGRESS"
+    },
+    {
+      "id": "CP_011_DASHBOARD_ACCESSIBILITY_COMPLETE",
+      "timestamp": "2025-05-29T13:03:19.312758+00:00",
+      "type": "MICRO",
+      "page": "dashboard",
+      "phase": "accessibility_complete",
+      "status": "SUCCESS"
+    },
+    {
+      "id": "CP_012_DASHBOARD_NAVIGATION_START",
+      "timestamp": "2025-05-29T13:03:19.322630+00:00",
+      "type": "MICRO",
+      "page": "dashboard",
+      "phase": "navigation_start",
+      "status": "IN_PROGRESS"
+    },
+    {
+      "id": "CP_013_DASHBOARD_NAVIGATION_COMPLETE",
+      "timestamp": "2025-05-29T13:03:19.423632+00:00",
+      "type": "MICRO",
+      "page": "dashboard",
+      "phase": "navigation_complete",
+      "status": "SUCCESS"
+    },
+    {
+      "id": "CP_014_DASHBOARD_FUNCTIONALITY_START",
+      "timestamp": "2025-05-29T13:03:19.433533+00:00",
+      "type": "MICRO",
+      "page": "dashboard",
+      "phase": "functionality_start",
+      "status": "IN_PROGRESS"
+    },
+    {
+      "id": "CP_015_DASHBOARD_FUNCTIONALITY_COMPLETE",
+      "timestamp": "2025-05-29T13:03:19.528539+00:00",
+      "type": "MICRO",
+      "page": "dashboard",
+      "phase": "functionality_complete",
+      "status": "SUCCESS"
+    },
+    {
+      "id": "CP_016_DASHBOARD_ERROR_HANDLING_START",
+      "timestamp": "2025-05-29T13:03:19.538433+00:00",
+      "type": "MICRO",
+      "page": "dashboard",
+      "phase": "error_handling_start",
+      "status": "IN_PROGRESS"
+    },
+    {
+      "id": "CP_017_DASHBOARD_ERROR_HANDLING_COMPLETE",
+      "timestamp": "2025-05-29T13:03:19.674078+00:00",
+      "type": "MICRO",
+      "page": "dashboard",
+      "phase": "error_handling_complete",
+      "status": "SUCCESS"
+    },
+    {
+      "checkpoint_id": "CP_018_DASHBOARD_COMPLETE",
+      "timestamp": "2025-05-29T13:03:19.684108+00:00",
+      "type": "MACRO",
+      "page": "dashboard",
+      "phase": "complete",
+      "status": "SUCCESS"
+    },
+    {
+      "id": "CP_019_PRODUCTS_ACCESSIBILITY_START",
+      "timestamp": "2025-05-29T13:03:20.686867+00:00",
+      "type": "MICRO",
+      "page": "products",
+      "phase": "accessibility_start",
+      "status": "IN_PROGRESS"
+    },
+    {
+      "id": "CP_020_PRODUCTS_ACCESSIBILITY_COMPLETE",
+      "timestamp": "2025-05-29T13:03:20.885408+00:00",
+      "type": "MICRO",
+      "page": "products",
+      "phase": "accessibility_complete",
+      "status": "SUCCESS"
+    },
+    {
+      "id": "CP_021_PRODUCTS_NAVIGATION_START",
+      "timestamp": "2025-05-29T13:03:20.895244+00:00",
+      "type": "MICRO",
+      "page": "products",
+      "phase": "navigation_start",
+      "status": "IN_PROGRESS"
+    },
+    {
+      "id": "CP_022_PRODUCTS_NAVIGATION_COMPLETE",
+      "timestamp": "2025-05-29T13:03:21.032098+00:00",
+      "type": "MICRO",
+      "page": "products",
+      "phase": "navigation_complete",
+      "status": "SUCCESS"
+    },
+    {
+      "id": "CP_023_PRODUCTS_FUNCTIONALITY_START",
+      "timestamp": "2025-05-29T13:03:21.042027+00:00",
+      "type": "MICRO",
+      "page": "products",
+      "phase": "functionality_start",
+      "status": "IN_PROGRESS"
+    },
+    {
+      "id": "CP_024_PRODUCTS_FUNCTIONALITY_COMPLETE",
+      "timestamp": "2025-05-29T13:03:21.179363+00:00",
+      "type": "MICRO",
+      "page": "products",
+      "phase": "functionality_complete",
+      "status": "SUCCESS"
+    },
+    {
+      "id": "CP_025_PRODUCTS_ERROR_HANDLING_START",
+      "timestamp": "2025-05-29T13:03:21.189093+00:00",
+      "type": "MICRO",
+      "page": "products",
+      "phase": "error_handling_start",
+      "status": "IN_PROGRESS"
+    },
+    {
+      "id": "CP_026_PRODUCTS_ERROR_HANDLING_COMPLETE",
+      "timestamp": "2025-05-29T13:03:23.540066+00:00",
+      "type": "MICRO",
+      "page": "products",
+      "phase": "error_handling_complete",
+      "status": "SUCCESS"
+    },
+    {
+      "checkpoint_id": "CP_027_PRODUCTS_COMPLETE",
+      "timestamp": "2025-05-29T13:03:23.549918+00:00",
+      "type": "MACRO",
+      "page": "products",
+      "phase": "complete",
+      "status": "SUCCESS"
+    },
+    {
+      "id": "CP_028_IMAGE-CATALOGING_ACCESSIBILITY_START",
+      "timestamp": "2025-05-29T13:03:24.552908+00:00",
+      "type": "MICRO",
+      "page": "image-cataloging",
+      "phase": "accessibility_start",
+      "status": "IN_PROGRESS"
+    },
+    {
+      "id": "CP_029_IMAGE-CATALOGING_ACCESSIBILITY_COMPLETE",
+      "timestamp": "2025-05-29T13:03:25.473952+00:00",
+      "type": "MICRO",
+      "page": "image-cataloging",
+      "phase": "accessibility_complete",
+      "status": "SUCCESS"
+    },
+    {
+      "id": "CP_030_IMAGE-CATALOGING_NAVIGATION_START",
+      "timestamp": "2025-05-29T13:03:25.474659+00:00",
+      "type": "MICRO",
+      "page": "image-cataloging",
+      "phase": "navigation_start",
+      "status": "IN_PROGRESS"
+    },
+    {
+      "id": "CP_031_IMAGE-CATALOGING_NAVIGATION_COMPLETE",
+      "timestamp": "2025-05-29T13:03:25.563385+00:00",
+      "type": "MICRO",
+      "page": "image-cataloging",
+      "phase": "navigation_complete",
+      "status": "SUCCESS"
+    },
+    {
+      "id": "CP_032_IMAGE-CATALOGING_FUNCTIONALITY_START",
+      "timestamp": "2025-05-29T13:03:25.573184+00:00",
+      "type": "MICRO",
+      "page": "image-cataloging",
+      "phase": "functionality_start",
+      "status": "IN_PROGRESS"
+    },
+    {
+      "id": "CP_033_IMAGE-CATALOGING_FUNCTIONALITY_COMPLETE",
+      "timestamp": "2025-05-29T13:03:25.655788+00:00",
+      "type": "MICRO",
+      "page": "image-cataloging",
+      "phase": "functionality_complete",
+      "status": "SUCCESS"
+    },
+    {
+      "id": "CP_034_IMAGE-CATALOGING_ERROR_HANDLING_START",
+      "timestamp": "2025-05-29T13:03:25.656486+00:00",
+      "type": "MICRO",
+      "page": "image-cataloging",
+      "phase": "error_handling_start",
+      "status": "IN_PROGRESS"
+    },
+    {
+      "id": "CP_035_IMAGE-CATALOGING_ERROR_HANDLING_COMPLETE",
+      "timestamp": "2025-05-29T13:03:25.780789+00:00",
+      "type": "MICRO",
+      "page": "image-cataloging",
+      "phase": "error_handling_complete",
+      "status": "SUCCESS"
+    },
+    {
+      "checkpoint_id": "CP_036_IMAGE-CATALOGING_COMPLETE",
+      "timestamp": "2025-05-29T13:03:25.781732+00:00",
+      "type": "MACRO",
+      "page": "image-cataloging",
+      "phase": "complete",
+      "status": "SUCCESS"
+    },
+    {
+      "id": "CP_037_SCAN_ACCESSIBILITY_START",
+      "timestamp": "2025-05-29T13:03:26.784962+00:00",
+      "type": "MICRO",
+      "page": "scan",
+      "phase": "accessibility_start",
+      "status": "IN_PROGRESS"
+    },
+    {
+      "id": "CP_038_SCAN_ACCESSIBILITY_COMPLETE",
+      "timestamp": "2025-05-29T13:03:28.304037+00:00",
+      "type": "MICRO",
+      "page": "scan",
+      "phase": "accessibility_complete",
+      "status": "SUCCESS"
+    },
+    {
+      "id": "CP_039_SCAN_NAVIGATION_START",
+      "timestamp": "2025-05-29T13:03:28.313839+00:00",
+      "type": "MICRO",
+      "page": "scan",
+      "phase": "navigation_start",
+      "status": "IN_PROGRESS"
+    },
+    {
+      "id": "CP_040_SCAN_NAVIGATION_COMPLETE",
+      "timestamp": "2025-05-29T13:03:28.378399+00:00",
+      "type": "MICRO",
+      "page": "scan",
+      "phase": "navigation_complete",
+      "status": "SUCCESS"
+    },
+    {
+      "id": "CP_041_SCAN_FUNCTIONALITY_START",
+      "timestamp": "2025-05-29T13:03:28.379130+00:00",
+      "type": "MICRO",
+      "page": "scan",
+      "phase": "functionality_start",
+      "status": "IN_PROGRESS"
+    },
+    {
+      "id": "CP_042_SCAN_FUNCTIONALITY_COMPLETE",
+      "timestamp": "2025-05-29T13:03:28.441169+00:00",
+      "type": "MICRO",
+      "page": "scan",
+      "phase": "functionality_complete",
+      "status": "SUCCESS"
+    },
+    {
+      "id": "CP_043_SCAN_ERROR_HANDLING_START",
+      "timestamp": "2025-05-29T13:03:28.441979+00:00",
+      "type": "MICRO",
+      "page": "scan",
+      "phase": "error_handling_start",
+      "status": "IN_PROGRESS"
+    },
+    {
+      "id": "CP_044_SCAN_ERROR_HANDLING_COMPLETE",
+      "timestamp": "2025-05-29T13:03:28.550635+00:00",
+      "type": "MICRO",
+      "page": "scan",
+      "phase": "error_handling_complete",
+      "status": "SUCCESS"
+    },
+    {
+      "checkpoint_id": "CP_045_SCAN_COMPLETE",
+      "timestamp": "2025-05-29T13:03:28.551895+00:00",
+      "type": "MACRO",
+      "page": "scan",
+      "phase": "complete",
+      "status": "SUCCESS"
+    },
+    {
+      "id": "CP_046_ORDERS_ACCESSIBILITY_START",
+      "timestamp": "2025-05-29T13:03:29.555788+00:00",
+      "type": "MICRO",
+      "page": "orders",
+      "phase": "accessibility_start",
+      "status": "IN_PROGRESS"
+    },
+    {
+      "id": "CP_047_ORDERS_ACCESSIBILITY_COMPLETE",
+      "timestamp": "2025-05-29T13:03:29.761650+00:00",
+      "type": "MICRO",
+      "page": "orders",
+      "phase": "accessibility_complete",
+      "status": "SUCCESS"
+    },
+    {
+      "id": "CP_048_ORDERS_NAVIGATION_START",
+      "timestamp": "2025-05-29T13:03:29.771475+00:00",
+      "type": "MICRO",
+      "page": "orders",
+      "phase": "navigation_start",
+      "status": "IN_PROGRESS"
+    },
+    {
+      "id": "CP_049_ORDERS_NAVIGATION_COMPLETE",
+      "timestamp": "2025-05-29T13:03:29.852677+00:00",
+      "type": "MICRO",
+      "page": "orders",
+      "phase": "navigation_complete",
+      "status": "SUCCESS"
+    },
+    {
+      "id": "CP_050_ORDERS_FUNCTIONALITY_START",
+      "timestamp": "2025-05-29T13:03:29.862463+00:00",
+      "type": "MICRO",
+      "page": "orders",
+      "phase": "functionality_start",
+      "status": "IN_PROGRESS"
+    },
+    {
+      "id": "CP_051_ORDERS_FUNCTIONALITY_COMPLETE",
+      "timestamp": "2025-05-29T13:03:29.936268+00:00",
+      "type": "MICRO",
+      "page": "orders",
+      "phase": "functionality_complete",
+      "status": "SUCCESS"
+    },
+    {
+      "id": "CP_052_ORDERS_ERROR_HANDLING_START",
+      "timestamp": "2025-05-29T13:03:29.946028+00:00",
+      "type": "MICRO",
+      "page": "orders",
+      "phase": "error_handling_start",
+      "status": "IN_PROGRESS"
+    },
+    {
+      "id": "CP_053_ORDERS_ERROR_HANDLING_COMPLETE",
+      "timestamp": "2025-05-29T13:03:30.071632+00:00",
+      "type": "MICRO",
+      "page": "orders",
+      "phase": "error_handling_complete",
+      "status": "SUCCESS"
+    },
+    {
+      "checkpoint_id": "CP_054_ORDERS_COMPLETE",
+      "timestamp": "2025-05-29T13:03:30.081441+00:00",
+      "type": "MACRO",
+      "page": "orders",
+      "phase": "complete",
+      "status": "SUCCESS"
+    },
+    {
+      "id": "CP_055_CUSTOMERS_ACCESSIBILITY_START",
+      "timestamp": "2025-05-29T13:03:31.085276+00:00",
+      "type": "MICRO",
+      "page": "customers",
+      "phase": "accessibility_start",
+      "status": "IN_PROGRESS"
+    },
+    {
+      "id": "CP_056_CUSTOMERS_ACCESSIBILITY_COMPLETE",
+      "timestamp": "2025-05-29T13:03:31.179808+00:00",
+      "type": "MICRO",
+      "page": "customers",
+      "phase": "accessibility_complete",
+      "status": "SUCCESS"
+    },
+    {
+      "id": "CP_057_CUSTOMERS_NAVIGATION_START",
+      "timestamp": "2025-05-29T13:03:31.180701+00:00",
+      "type": "MICRO",
+      "page": "customers",
+      "phase": "navigation_start",
+      "status": "IN_PROGRESS"
+    },
+    {
+      "id": "CP_058_CUSTOMERS_NAVIGATION_COMPLETE",
+      "timestamp": "2025-05-29T13:03:31.255279+00:00",
+      "type": "MICRO",
+      "page": "customers",
+      "phase": "navigation_complete",
+      "status": "SUCCESS"
+    },
+    {
+      "id": "CP_059_CUSTOMERS_FUNCTIONALITY_START",
+      "timestamp": "2025-05-29T13:03:31.265084+00:00",
+      "type": "MICRO",
+      "page": "customers",
+      "phase": "functionality_start",
+      "status": "IN_PROGRESS"
+    },
+    {
+      "id": "CP_060_CUSTOMERS_FUNCTIONALITY_COMPLETE",
+      "timestamp": "2025-05-29T13:03:31.348790+00:00",
+      "type": "MICRO",
+      "page": "customers",
+      "phase": "functionality_complete",
+      "status": "SUCCESS"
+    },
+    {
+      "id": "CP_061_CUSTOMERS_ERROR_HANDLING_START",
+      "timestamp": "2025-05-29T13:03:31.358419+00:00",
+      "type": "MICRO",
+      "page": "customers",
+      "phase": "error_handling_start",
+      "status": "IN_PROGRESS"
+    },
+    {
+      "id": "CP_062_CUSTOMERS_ERROR_HANDLING_COMPLETE",
+      "timestamp": "2025-05-29T13:03:31.475711+00:00",
+      "type": "MICRO",
+      "page": "customers",
+      "phase": "error_handling_complete",
+      "status": "SUCCESS"
+    },
+    {
+      "checkpoint_id": "CP_063_CUSTOMERS_COMPLETE",
+      "timestamp": "2025-05-29T13:03:31.485644+00:00",
+      "type": "MACRO",
+      "page": "customers",
+      "phase": "complete",
+      "status": "SUCCESS"
+    },
+    {
+      "id": "CP_064_REPORTS_ACCESSIBILITY_START",
+      "timestamp": "2025-05-29T13:03:32.489567+00:00",
+      "type": "MICRO",
+      "page": "reports",
+      "phase": "accessibility_start",
+      "status": "IN_PROGRESS"
+    },
+    {
+      "id": "CP_065_REPORTS_ACCESSIBILITY_COMPLETE",
+      "timestamp": "2025-05-29T13:03:32.664350+00:00",
+      "type": "MICRO",
+      "page": "reports",
+      "phase": "accessibility_complete",
+      "status": "SUCCESS"
+    },
+    {
+      "id": "CP_066_REPORTS_NAVIGATION_START",
+      "timestamp": "2025-05-29T13:03:32.674264+00:00",
+      "type": "MICRO",
+      "page": "reports",
+      "phase": "navigation_start",
+      "status": "IN_PROGRESS"
+    },
+    {
+      "id": "CP_067_REPORTS_NAVIGATION_COMPLETE",
+      "timestamp": "2025-05-29T13:03:32.763429+00:00",
+      "type": "MICRO",
+      "page": "reports",
+      "phase": "navigation_complete",
+      "status": "SUCCESS"
+    },
+    {
+      "id": "CP_068_REPORTS_FUNCTIONALITY_START",
+      "timestamp": "2025-05-29T13:03:32.773066+00:00",
+      "type": "MICRO",
+      "page": "reports",
+      "phase": "functionality_start",
+      "status": "IN_PROGRESS"
+    },
+    {
+      "id": "CP_069_REPORTS_FUNCTIONALITY_COMPLETE",
+      "timestamp": "2025-05-29T13:03:32.858665+00:00",
+      "type": "MICRO",
+      "page": "reports",
+      "phase": "functionality_complete",
+      "status": "SUCCESS"
+    },
+    {
+      "id": "CP_070_REPORTS_ERROR_HANDLING_START",
+      "timestamp": "2025-05-29T13:03:32.868342+00:00",
+      "type": "MICRO",
+      "page": "reports",
+      "phase": "error_handling_start",
+      "status": "IN_PROGRESS"
+    },
+    {
+      "id": "CP_071_REPORTS_ERROR_HANDLING_COMPLETE",
+      "timestamp": "2025-05-29T13:03:33.006494+00:00",
+      "type": "MICRO",
+      "page": "reports",
+      "phase": "error_handling_complete",
+      "status": "SUCCESS"
+    },
+    {
+      "checkpoint_id": "CP_072_REPORTS_COMPLETE",
+      "timestamp": "2025-05-29T13:03:33.016471+00:00",
+      "type": "MACRO",
+      "page": "reports",
+      "phase": "complete",
+      "status": "SUCCESS"
+    },
+    {
+      "id": "CP_073_INVENTORY-ALERTS_ACCESSIBILITY_START",
+      "timestamp": "2025-05-29T13:03:34.020608+00:00",
+      "type": "MICRO",
+      "page": "inventory-alerts",
+      "phase": "accessibility_start",
+      "status": "IN_PROGRESS"
+    },
+    {
+      "id": "CP_074_INVENTORY-ALERTS_ACCESSIBILITY_COMPLETE",
+      "timestamp": "2025-05-29T13:03:34.108432+00:00",
+      "type": "MICRO",
+      "page": "inventory-alerts",
+      "phase": "accessibility_complete",
+      "status": "SUCCESS"
+    },
+    {
+      "id": "CP_075_INVENTORY-ALERTS_NAVIGATION_START",
+      "timestamp": "2025-05-29T13:03:34.118324+00:00",
+      "type": "MICRO",
+      "page": "inventory-alerts",
+      "phase": "navigation_start",
+      "status": "IN_PROGRESS"
+    },
+    {
+      "id": "CP_076_INVENTORY-ALERTS_NAVIGATION_COMPLETE",
+      "timestamp": "2025-05-29T13:03:34.185652+00:00",
+      "type": "MICRO",
+      "page": "inventory-alerts",
+      "phase": "navigation_complete",
+      "status": "SUCCESS"
+    },
+    {
+      "id": "CP_077_INVENTORY-ALERTS_FUNCTIONALITY_START",
+      "timestamp": "2025-05-29T13:03:34.195450+00:00",
+      "type": "MICRO",
+      "page": "inventory-alerts",
+      "phase": "functionality_start",
+      "status": "IN_PROGRESS"
+    },
+    {
+      "id": "CP_078_INVENTORY-ALERTS_FUNCTIONALITY_COMPLETE",
+      "timestamp": "2025-05-29T13:03:34.264445+00:00",
+      "type": "MICRO",
+      "page": "inventory-alerts",
+      "phase": "functionality_complete",
+      "status": "SUCCESS"
+    },
+    {
+      "id": "CP_079_INVENTORY-ALERTS_ERROR_HANDLING_START",
+      "timestamp": "2025-05-29T13:03:34.274279+00:00",
+      "type": "MICRO",
+      "page": "inventory-alerts",
+      "phase": "error_handling_start",
+      "status": "IN_PROGRESS"
+    },
+    {
+      "id": "CP_080_INVENTORY-ALERTS_ERROR_HANDLING_COMPLETE",
+      "timestamp": "2025-05-29T13:03:34.389594+00:00",
+      "type": "MICRO",
+      "page": "inventory-alerts",
+      "phase": "error_handling_complete",
+      "status": "SUCCESS"
+    },
+    {
+      "checkpoint_id": "CP_081_INVENTORY-ALERTS_COMPLETE",
+      "timestamp": "2025-05-29T13:03:34.399307+00:00",
+      "type": "MACRO",
+      "page": "inventory-alerts",
+      "phase": "complete",
+      "status": "SUCCESS"
+    },
+    {
+      "id": "CP_082_AI-ASSISTANT_ACCESSIBILITY_START",
+      "timestamp": "2025-05-29T13:03:35.402293+00:00",
+      "type": "MICRO",
+      "page": "ai-assistant",
+      "phase": "accessibility_start",
+      "status": "IN_PROGRESS"
+    },
+    {
+      "id": "CP_083_AI-ASSISTANT_ACCESSIBILITY_COMPLETE",
+      "timestamp": "2025-05-29T13:03:38.921612+00:00",
+      "type": "MICRO",
+      "page": "ai-assistant",
+      "phase": "accessibility_complete",
+      "status": "SUCCESS"
+    },
+    {
+      "id": "CP_084_AI-ASSISTANT_NAVIGATION_START",
+      "timestamp": "2025-05-29T13:03:38.922658+00:00",
+      "type": "MICRO",
+      "page": "ai-assistant",
+      "phase": "navigation_start",
+      "status": "IN_PROGRESS"
+    },
+    {
+      "id": "CP_085_AI-ASSISTANT_NAVIGATION_COMPLETE",
+      "timestamp": "2025-05-29T13:03:39.032456+00:00",
+      "type": "MICRO",
+      "page": "ai-assistant",
+      "phase": "navigation_complete",
+      "status": "SUCCESS"
+    },
+    {
+      "id": "CP_086_AI-ASSISTANT_FUNCTIONALITY_START",
+      "timestamp": "2025-05-29T13:03:39.042750+00:00",
+      "type": "MICRO",
+      "page": "ai-assistant",
+      "phase": "functionality_start",
+      "status": "IN_PROGRESS"
+    },
+    {
+      "id": "CP_087_AI-ASSISTANT_FUNCTIONALITY_COMPLETE",
+      "timestamp": "2025-05-29T13:03:39.144832+00:00",
+      "type": "MICRO",
+      "page": "ai-assistant",
+      "phase": "functionality_complete",
+      "status": "SUCCESS"
+    },
+    {
+      "id": "CP_088_AI-ASSISTANT_ERROR_HANDLING_START",
+      "timestamp": "2025-05-29T13:03:39.155287+00:00",
+      "type": "MICRO",
+      "page": "ai-assistant",
+      "phase": "error_handling_start",
+      "status": "IN_PROGRESS"
+    },
+    {
+      "id": "CP_089_AI-ASSISTANT_ERROR_HANDLING_COMPLETE",
+      "timestamp": "2025-05-29T13:03:39.304406+00:00",
+      "type": "MICRO",
+      "page": "ai-assistant",
+      "phase": "error_handling_complete",
+      "status": "SUCCESS"
+    },
+    {
+      "checkpoint_id": "CP_090_AI-ASSISTANT_COMPLETE",
+      "timestamp": "2025-05-29T13:03:39.305821+00:00",
+      "type": "MACRO",
+      "page": "ai-assistant",
+      "phase": "complete",
+      "status": "SUCCESS"
+    },
+    {
+      "id": "CP_091_AI-ASSISTANT-CUSTOM-AGENTS_ACCESSIBILITY_START",
+      "timestamp": "2025-05-29T13:03:40.311212+00:00",
+      "type": "MICRO",
+      "page": "ai-assistant-custom-agents",
+      "phase": "accessibility_start",
+      "status": "IN_PROGRESS"
+    },
+    {
+      "id": "CP_092_AI-ASSISTANT-CUSTOM-AGENTS_ACCESSIBILITY_COMPLETE",
+      "timestamp": "2025-05-29T13:03:41.195960+00:00",
+      "type": "MICRO",
+      "page": "ai-assistant-custom-agents",
+      "phase": "accessibility_complete",
+      "status": "SUCCESS"
+    },
+    {
+      "id": "CP_093_AI-ASSISTANT-CUSTOM-AGENTS_NAVIGATION_START",
+      "timestamp": "2025-05-29T13:03:41.197160+00:00",
+      "type": "MICRO",
+      "page": "ai-assistant-custom-agents",
+      "phase": "navigation_start",
+      "status": "IN_PROGRESS"
+    },
+    {
+      "id": "CP_094_AI-ASSISTANT-CUSTOM-AGENTS_NAVIGATION_COMPLETE",
+      "timestamp": "2025-05-29T13:03:41.294316+00:00",
+      "type": "MICRO",
+      "page": "ai-assistant-custom-agents",
+      "phase": "navigation_complete",
+      "status": "SUCCESS"
+    },
+    {
+      "id": "CP_095_AI-ASSISTANT-CUSTOM-AGENTS_FUNCTIONALITY_START",
+      "timestamp": "2025-05-29T13:03:41.295561+00:00",
+      "type": "MICRO",
+      "page": "ai-assistant-custom-agents",
+      "phase": "functionality_start",
+      "status": "IN_PROGRESS"
+    },
+    {
+      "id": "CP_096_AI-ASSISTANT-CUSTOM-AGENTS_FUNCTIONALITY_COMPLETE",
+      "timestamp": "2025-05-29T13:03:41.378712+00:00",
+      "type": "MICRO",
+      "page": "ai-assistant-custom-agents",
+      "phase": "functionality_complete",
+      "status": "SUCCESS"
+    },
+    {
+      "id": "CP_097_AI-ASSISTANT-CUSTOM-AGENTS_ERROR_HANDLING_START",
+      "timestamp": "2025-05-29T13:03:41.379949+00:00",
+      "type": "MICRO",
+      "page": "ai-assistant-custom-agents",
+      "phase": "error_handling_start",
+      "status": "IN_PROGRESS"
+    },
+    {
+      "id": "CP_098_AI-ASSISTANT-CUSTOM-AGENTS_ERROR_HANDLING_COMPLETE",
+      "timestamp": "2025-05-29T13:03:41.510957+00:00",
+      "type": "MICRO",
+      "page": "ai-assistant-custom-agents",
+      "phase": "error_handling_complete",
+      "status": "SUCCESS"
+    },
+    {
+      "checkpoint_id": "CP_099_AI-ASSISTANT-CUSTOM-AGENTS_COMPLETE",
+      "timestamp": "2025-05-29T13:03:41.521089+00:00",
+      "type": "MACRO",
+      "page": "ai-assistant-custom-agents",
+      "phase": "complete",
+      "status": "SUCCESS"
+    },
+    {
+      "id": "CP_100_AI-ASSISTANT-SETTINGS_ACCESSIBILITY_START",
+      "timestamp": "2025-05-29T13:03:42.529365+00:00",
+      "type": "MICRO",
+      "page": "ai-assistant-settings",
+      "phase": "accessibility_start",
+      "status": "IN_PROGRESS"
+    },
+    {
+      "id": "CP_101_AI-ASSISTANT-SETTINGS_ACCESSIBILITY_COMPLETE",
+      "timestamp": "2025-05-29T13:03:43.437991+00:00",
+      "type": "MICRO",
+      "page": "ai-assistant-settings",
+      "phase": "accessibility_complete",
+      "status": "SUCCESS"
+    },
+    {
+      "id": "CP_102_AI-ASSISTANT-SETTINGS_NAVIGATION_START",
+      "timestamp": "2025-05-29T13:03:43.444889+00:00",
+      "type": "MICRO",
+      "page": "ai-assistant-settings",
+      "phase": "navigation_start",
+      "status": "IN_PROGRESS"
+    },
+    {
+      "id": "CP_103_AI-ASSISTANT-SETTINGS_NAVIGATION_COMPLETE",
+      "timestamp": "2025-05-29T13:03:43.537269+00:00",
+      "type": "MICRO",
+      "page": "ai-assistant-settings",
+      "phase": "navigation_complete",
+      "status": "SUCCESS"
+    },
+    {
+      "id": "CP_104_AI-ASSISTANT-SETTINGS_FUNCTIONALITY_START",
+      "timestamp": "2025-05-29T13:03:43.547481+00:00",
+      "type": "MICRO",
+      "page": "ai-assistant-settings",
+      "phase": "functionality_start",
+      "status": "IN_PROGRESS"
+    },
+    {
+      "id": "CP_105_AI-ASSISTANT-SETTINGS_FUNCTIONALITY_COMPLETE",
+      "timestamp": "2025-05-29T13:03:43.638183+00:00",
+      "type": "MICRO",
+      "page": "ai-assistant-settings",
+      "phase": "functionality_complete",
+      "status": "SUCCESS"
+    },
+    {
+      "id": "CP_106_AI-ASSISTANT-SETTINGS_ERROR_HANDLING_START",
+      "timestamp": "2025-05-29T13:03:43.648107+00:00",
+      "type": "MICRO",
+      "page": "ai-assistant-settings",
+      "phase": "error_handling_start",
+      "status": "IN_PROGRESS"
+    },
+    {
+      "id": "CP_107_AI-ASSISTANT-SETTINGS_ERROR_HANDLING_COMPLETE",
+      "timestamp": "2025-05-29T13:03:43.775042+00:00",
+      "type": "MICRO",
+      "page": "ai-assistant-settings",
+      "phase": "error_handling_complete",
+      "status": "SUCCESS"
+    },
+    {
+      "checkpoint_id": "CP_108_AI-ASSISTANT-SETTINGS_COMPLETE",
+      "timestamp": "2025-05-29T13:03:43.785148+00:00",
+      "type": "MACRO",
+      "page": "ai-assistant-settings",
+      "phase": "complete",
+      "status": "SUCCESS"
+    }
+  ],
+  "error_summary": {
+    "critical": 0,
+    "high": 0,
+    "medium": 1,
+    "low": 1,
+    "total": 2
+  },
+  "recovery_metadata": {
+    "browser_state": "initialized",
+    "session_storage": "clean",
+    "network_state": "unknown",
+    "last_successful_action": "session_initialization"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "baseline_id": "BASELINE_20250529_130346",
+  "performance_benchmarks": {
+    "response_time_targets": {
+      "excellent": "< 1000ms",
+      "good": "< 3000ms", 
+      "acceptable": "< 5000ms",
+      "poor": "> 5000ms"
+    },
+    "content_size_targets": {
+      "minimum": "> 1000 bytes",
+      "typical": "> 10000 bytes",
+      "large": "> 100000 bytes"
+    },
+    "http_status_requirements": {
+      "success": "200",
+      "acceptable_redirects": ["301", "302"],
+      "client_errors": ["400", "404"],
+      "server_errors": ["500", "502", "503"]
+    },
+    "baseline_measurements": {
+      "pages_under_1s": 0,
+      "pages_under_3s": 12,
+      "pages_under_5s": 1,
+      "pages_over_5s": 0,
+      "average_response_time": "2.1s",
+      "fastest_page": "home",
+      "slowest_page": "ai-assistant"
+    }
+  },
+  "regression_thresholds": {
+    "response_time_degradation": "+20%",
+    "content_size_reduction": "-10%",
+    "error_rate_increase": "+1%",
+    "accessibility_score_drop": "-5%"
+  }
+}

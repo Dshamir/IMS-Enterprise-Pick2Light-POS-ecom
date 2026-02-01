@@ -1,0 +1,59 @@
+{
+  "baseline_id": "BASELINE_20250529_130346",
+  "functionality_catalog": {
+    "javascript_requirements": {
+      "all_pages": "script_inclusion_required",
+      "baseline_compliance": "100%",
+      "critical_for": ["scan", "dashboard", "ai-assistant"]
+    },
+    "css_requirements": {
+      "all_pages": "stylesheet_inclusion_required", 
+      "baseline_compliance": "100%",
+      "styling_frameworks": ["tailwind", "custom"]
+    },
+    "interactive_elements": {
+      "forms": {
+        "expected_on": ["products", "settings", "ai-assistant"],
+        "baseline_detection": "varies_by_page",
+        "validation_required": true
+      },
+      "buttons": {
+        "expected_on": "all_pages",
+        "minimum_count": 1,
+        "baseline_compliance": "92%"
+      }
+    },
+    "page_specific_functionality": {
+      "dashboard": {
+        "required_elements": ["cards", "widgets", "metrics"],
+        "baseline_status": "PASSED"
+      },
+      "products": {
+        "required_elements": ["product_listings", "search_functionality"],
+        "baseline_status": "PASSED"
+      },
+      "scan": {
+        "required_elements": ["barcode_detection", "camera_access", "upload_capability"],
+        "baseline_status": "PASSED"
+      },
+      "ai_pages": {
+        "required_elements": ["ai_content", "interaction_elements"],
+        "baseline_status": "PASSED"
+      }
+    }
+  },
+  "error_handling_baseline": {
+    "404_handling": {
+      "requirement": "proper_404_response",
+      "baseline_compliance": "100%"
+    },
+    "timeout_handling": {
+      "requirement": "graceful_degradation",
+      "baseline_compliance": "100%"
+    },
+    "error_boundaries": {
+      "requirement": "no_visible_errors",
+      "baseline_compliance": "100%"
+    }
+  }
+}

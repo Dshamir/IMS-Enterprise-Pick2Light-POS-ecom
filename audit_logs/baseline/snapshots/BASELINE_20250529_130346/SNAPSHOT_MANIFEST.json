@@ -1,0 +1,13 @@
+{
+  "snapshot_id": "BASELINE_20250529_130346",
+  "creation_timestamp": "2025-05-29T13:14:18.713009+00:00",
+  "source_session": "9d70b7ad-4eb9-4111-88b3-58369c6a116d",
+  "contents": {
+    "pages": "Individual page test results",
+    "reports": "Final audit reports",
+    "checkpoints": "All audit checkpoints",
+    "session.json": "Complete session state",
+    "master_audit.log": "Full audit execution log"
+  },
+  "purpose": "Permanent baseline for future audit comparisons"
+}

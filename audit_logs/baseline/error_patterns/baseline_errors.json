@@ -1,0 +1,52 @@
+{
+  "baseline_id": "BASELINE_20250529_130346",
+  "error_patterns": {
+    "baseline_error_distribution": {
+      "critical": 0,
+      "high": 0,
+      "medium": 1,
+      "low": 1,
+      "total": 2
+    },
+    "acceptable_error_levels": {
+      "critical": 0,
+      "high": 0,
+      "medium": "<=2",
+      "low": "<=5",
+      "total": "<=7"
+    },
+    "error_categories": {
+      "performance_errors": {
+        "slow_response_times": 1,
+        "baseline_threshold": "<=2"
+      },
+      "content_errors": {
+        "insufficient_content": 1,
+        "baseline_threshold": "<=3"
+      },
+      "functionality_errors": {
+        "missing_features": 0,
+        "baseline_threshold": "0"
+      },
+      "accessibility_errors": {
+        "inaccessible_content": 0,
+        "baseline_threshold": "0"
+      }
+    }
+  },
+  "regression_indicators": {
+    "error_increase_threshold": "+1",
+    "severity_escalation_threshold": "any_new_high_or_critical",
+    "category_monitoring": {
+      "performance": "track_all",
+      "functionality": "zero_tolerance",
+      "accessibility": "zero_tolerance",
+      "content": "monitor_trends"
+    }
+  },
+  "monitoring_schedule": {
+    "daily_checks": ["critical", "high"],
+    "weekly_checks": ["medium"],
+    "monthly_reviews": ["low", "trends"]
+  }
+}

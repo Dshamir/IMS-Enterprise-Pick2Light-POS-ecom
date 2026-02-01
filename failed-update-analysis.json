@@ -1,0 +1,79 @@
+{
+  "timestamp": "2025-07-08T22:00:32.801Z",
+  "analysis": {
+    "totalProducts": 2502,
+    "productsWithBarcodes": 2498,
+    "productsWithoutBarcodes": 4,
+    "sampleBarcodes": [
+      {
+        "barcode": " 40-000059-A1",
+        "name": " 40-000059-A1   CONN HEADER 2POS 2MM "
+      },
+      {
+        "barcode": "10-000002-A",
+        "name": "NCR-007 - 10-000002-A RESISTOR 0 OHMS"
+      },
+      {
+        "barcode": "10-000003-A",
+        "name": "NCR-007 - 10-000003-A RES 0.15 OHM 20W 1% T0126"
+      },
+      {
+        "barcode": "10-000004-A",
+        "name": "NCR-007 - 10-000004-A RES 2.2K OHM 5% 11W CERAMIC AXIAL"
+      },
+      {
+        "barcode": "10-000005-A",
+        "name": "NCR-007 - 10-000005-A RES 2.2K OHM 1% 3W AXIAL"
+      }
+    ],
+    "pattern41Products": 43,
+    "recentUpdates": [
+      {
+        "updated_at": "2025-07-08 21:31:48",
+        "count": 139
+      },
+      {
+        "updated_at": "2025-07-08 12:51:13",
+        "count": 1
+      },
+      {
+        "updated_at": "2025-07-08 12:50:45",
+        "count": 1
+      },
+      {
+        "updated_at": "2025-07-08 12:50:29",
+        "count": 1
+      },
+      {
+        "updated_at": "2025-07-08 12:50:16",
+        "count": 1
+      },
+      {
+        "updated_at": "2025-07-08 12:50:00",
+        "count": 1
+      },
+      {
+        "updated_at": "2025-07-08 12:49:51",
+        "count": 1
+      },
+      {
+        "updated_at": "2025-07-08 12:49:42",
+        "count": 1
+      },
+      {
+        "updated_at": "2025-07-08 12:48:49",
+        "count": 1
+      },
+      {
+        "updated_at": "2025-07-08 12:48:02",
+        "count": 1
+      }
+    ]
+  },
+  "recommendations": [
+    "The original CSV file (UpdateTest4units.csv) needs to be provided to identify the exact 73 failed products",
+    "Based on the audit log, products failed to update but the specific error reasons are not detailed in the summary",
+    "Common failure reasons could be: missing barcodes, invalid unit_id values, or data format issues",
+    "The database has products with various barcode formats, suggesting a well-established inventory system"
+  ]
+}

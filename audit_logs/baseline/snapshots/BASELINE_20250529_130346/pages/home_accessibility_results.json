@@ -1,0 +1,22 @@
+{
+  "page": "home",
+  "test_phase": "accessibility",
+  "timestamp": "2025-05-29T13:03:16.442318+00:00",
+  "results": [
+    {
+      "test": "http_status",
+      "status": "PASS",
+      "details": "200"
+    },
+    {
+      "test": "response_time",
+      "status": "PASS",
+      "details": "93ms"
+    },
+    {
+      "test": "content_length",
+      "status": "PASS",
+      "details": "128257bytes"
+    }
+  ]
+}

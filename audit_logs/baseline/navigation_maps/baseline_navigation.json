@@ -1,0 +1,49 @@
+{
+  "baseline_id": "BASELINE_20250529_130346",
+  "navigation_structure": {
+    "core_pages": [
+      "home",
+      "dashboard", 
+      "products",
+      "image-cataloging",
+      "scan",
+      "orders",
+      "customers",
+      "reports",
+      "inventory-alerts"
+    ],
+    "ai_pages": [
+      "ai-assistant",
+      "ai-assistant-custom-agents",
+      "ai-assistant-settings"
+    ],
+    "system_pages": [
+      "settings"
+    ]
+  },
+  "navigation_patterns": {
+    "primary_navigation": {
+      "elements_expected": ["nav", "menu", "sidebar", "header"],
+      "baseline_detection_rate": "100%",
+      "critical_pages": ["dashboard", "products", "scan"]
+    },
+    "secondary_navigation": {
+      "elements_expected": ["breadcrumb", "pagination", "tabs"],
+      "baseline_detection_rate": "varies",
+      "optional_pages": ["reports", "settings"]
+    }
+  },
+  "link_structure": {
+    "internal_links": {
+      "dashboard_links": ["products", "orders", "reports"],
+      "product_links": ["scan", "image-cataloging"],
+      "ai_links": ["ai-assistant", "ai-assistant-custom-agents", "ai-assistant-settings"]
+    },
+    "navigation_completeness": {
+      "excellent": 6,
+      "good": 4, 
+      "partial": 2,
+      "poor": 0
+    }
+  }
+}

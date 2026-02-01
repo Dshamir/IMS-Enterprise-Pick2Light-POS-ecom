@@ -1,0 +1,22 @@
+{
+  "page": "image-cataloging",
+  "test_phase": "accessibility",
+  "timestamp": "2025-05-29T13:03:25.473414+00:00",
+  "results": [
+    {
+      "test": "http_status",
+      "status": "PASS",
+      "details": "200"
+    },
+    {
+      "test": "response_time",
+      "status": "PASS",
+      "details": "905ms"
+    },
+    {
+      "test": "content_length",
+      "status": "PASS",
+      "details": "56771bytes"
+    }
+  ]
+}

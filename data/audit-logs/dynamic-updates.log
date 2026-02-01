@@ -1,0 +1,6 @@
+2025-07-07 11:15:00 | Dynamic Update | test-update.csv | ✅ Successfully updated 3 products | All products updated without errors
+2025-07-07 20:45:18 | Dynamic Update | UpdateTest3Large.csv | ⚠️ Updated 1767 products, 1 failed | Partial success with 1 error
+2025-07-07 21:19:19 | Dynamic Update | UpdateEquip.csv | ✅ Successfully updated 22 products | All products were updated without errors
+2025-07-07 21:22:11 | Dynamic Update | UpdateEquip.csv | ✅ Successfully updated 22 products | All products were updated without errors
+2025-07-08 21:31:48 | Dynamic Update | UpdateTest4units.csv | ⚠️ Updated 140 products, 73 failed | Partial success with 73 errors
+2025-07-08 22:12:44 | Dynamic Update | fixed-update-products.csv | ✅ Successfully updated 65 products | All products were updated without errors
