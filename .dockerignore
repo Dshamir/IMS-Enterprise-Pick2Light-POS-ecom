@@ -1,0 +1,74 @@
+# IMS Enterprise - Docker Build Exclusions
+# These files are excluded from Docker build context for faster builds
+
+# Dependencies (rebuilt in container)
+node_modules
+.pnp
+.pnp.js
+
+# Build outputs
+.next
+out
+build
+dist
+
+# Development files
+.env*.local
+.env.development
+.env.test
+
+# IDE and editor
+.idea
+.vscode
+*.swp
+*.swo
+*~
+
+# Git
+.git
+.gitignore
+
+# Documentation (not needed in runtime)
+*.md
+!README.md
+docs/
+
+# Test files
+__tests__
+*.test.ts
+*.test.tsx
+*.spec.ts
+*.spec.tsx
+coverage
+.nyc_output
+
+# Local development
+.claude
+audit_logs
+*.log
+npm-debug.log*
+
+# Large upload directories (use MinIO in production)
+public/uploads/image-cataloging
+public/uploads/products
+public/uploads/projects
+public/uploads/manufacturing-boms
+public/uploads/production-lines
+public/uploads/production-runs
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Python virtual environment
+venv
+__pycache__
+*.pyc
+
+# Temporary files
+tmp
+temp
+*.tmp
+
+# Scripts (deployment only)
+scripts/

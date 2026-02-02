@@ -1,7 +1,6 @@
 import { NextRequest, NextResponse } from "next/server"
-import { writeFile, mkdir } from "fs/promises"
-import { join } from "path"
 import { v4 as uuidv4 } from "uuid"
+import { uploadToStorage } from "@/lib/storage/minio-client"
 
 type ManufacturingEntityType = 'projects' | 'production-lines' | 'manufacturing-boms' | 'production-runs'
 
@@ -50,33 +49,20 @@ export async function POST(request: NextRequest) {
       )
     }
 
-    // Create uploads directory for the specific entity type
-    const uploadsDir = join(process.cwd(), "public", "uploads", entityType)
-    console.log('Uploads directory:', uploadsDir)
-    try {
-      await mkdir(uploadsDir, { recursive: true })
-      console.log('Directory created successfully or already exists')
-    } catch (error) {
-      console.error('Error creating directory:', error)
-      // Directory might already exist, that's fine
-    }
-
     // Generate unique filename
     const fileExt = file.name.split(".").pop() || "jpg"
     const fileName = `${uuidv4()}.${fileExt}`
-    const filePath = join(uploadsDir, fileName)
+    const storageKey = `${entityType}/${fileName}`
 
-    // Convert file to buffer and save
+    // Convert file to buffer
     const buffer = Buffer.from(await file.arrayBuffer())
-    console.log('Writing file to:', filePath)
-    await writeFile(filePath, buffer)
-    console.log('File written successfully')
+    console.log('Uploading file:', storageKey)
 
-    // Return the public URL
-    const publicUrl = `/uploads/${entityType}/${fileName}`
-    console.log('Public URL:', publicUrl)
+    // Upload to storage (MinIO in production, local filesystem in development)
+    const publicUrl = await uploadToStorage(buffer, storageKey, file.type)
+    console.log('File uploaded successfully, URL:', publicUrl)
 
-    return NextResponse.json({ 
+    return NextResponse.json({
       url: publicUrl,
       fileName: fileName,
       entityType: entityType
